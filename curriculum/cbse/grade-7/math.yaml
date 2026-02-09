@@ -1,0 +1,154 @@
+grade: 7
+subject: mathematics
+board: CBSE
+textbook: "NCERT Mathematics Class VII"
+schema_version: "1.0"
+
+chapters:
+  - id: ch01
+    title: "Integers"
+    ncert_chapter: 1
+    topics:
+      - id: ch01_t01
+        title: "Properties of Addition and Subtraction of Integers"
+        learning_objectives:
+          - "Understand closure property of integers under addition and subtraction"
+          - "Apply commutative and associative properties of addition"
+          - "Recognize that subtraction is not commutative"
+          - "Solve problems involving addition and subtraction of integers"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Subtracting a negative number makes the result smaller (it actually makes it larger)"
+          - "Zero is not an integer (zero IS an integer - it's between positive and negative integers)"
+          - "Adding a negative is different from subtracting a positive (they are the same: a + (-b) = a - b)"
+        key_formulas:
+          - "Closure: a + b is always an integer (if a and b are integers)"
+          - "Commutative: a + b = b + a"
+          - "Associative: (a + b) + c = a + (b + c)"
+          - "Additive Identity: a + 0 = a"
+          - "Additive Inverse: a + (-a) = 0"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Number Line for Integers:
+              ←──┼──┼──┼──┼──┼──┼──┼──┼──┼──→
+                -4 -3 -2 -1  0  1  2  3  4
+            description: "Number line showing integer positions"
+          - type: "ncert_reference"
+            figure: "Fig 1.1, Page 3"
+            description: "Number line representation of integers"
+        example_problems:
+          - problem: "Find: (-5) + (-3)"
+            answer: "-8"
+            solution_steps:
+              - "Both numbers are negative"
+              - "Add their absolute values: |−5| + |−3| = 5 + 3 = 8"
+              - "Since both are negative, the result is negative: −8"
+            difficulty: 1
+            indian_context: "Think of it as owing ₹5 to one friend and ₹3 to another. Together you owe ₹8."
+
+          - problem: "Verify commutative property: (-7) + 5 = 5 + (-7)"
+            answer: "Both equal -2, demonstrating commutative property"
+            solution_steps:
+              - "LHS: (-7) + 5 = -2"
+              - "RHS: 5 + (-7) = -2"
+              - "LHS = RHS, hence commutative property verified: order doesn't matter for addition"
+            difficulty: 2
+            indian_context: "Whether you first lose ₹7 then gain ₹5, or first gain ₹5 then lose ₹7, your net change is -₹2."
+
+          - problem: "Find: 12 - (-5)"
+            answer: "17"
+            solution_steps:
+              - "Subtracting a negative is the same as adding a positive"
+              - "12 - (-5) = 12 + 5"
+              - "= 17"
+            difficulty: 2
+            indian_context: "You have ₹12. Someone cancels a ₹5 debt you owed them. You effectively gained ₹5, so you have ₹17 worth."
+
+          - problem: "Verify: Is subtraction commutative? Check if 8 - 3 = 3 - 8"
+            answer: "No, subtraction is not commutative. 8 - 3 = 5 but 3 - 8 = -5"
+            solution_steps:
+              - "LHS: 8 - 3 = 5"
+              - "RHS: 3 - 8 = -5"
+              - "LHS ≠ RHS"
+              - "Therefore, subtraction is NOT commutative (order matters)"
+            difficulty: 2
+            indian_context: "Earning ₹8 then spending ₹3 (net +₹5) is different from earning ₹3 then spending ₹8 (net -₹5)."
+
+          - problem: "Simplify using properties: (-15) + 32 + 15"
+            answer: "32"
+            solution_steps:
+              - "Notice that (-15) and (+15) are additive inverses"
+              - "Rearrange using commutative property: (-15) + 15 + 32"
+              - "(-15) + 15 = 0"
+              - "0 + 32 = 32"
+            difficulty: 3
+            indian_context: "You owe ₹15, have ₹32, and receive ₹15. The debt and the ₹15 received cancel out, leaving you with ₹32."
+
+      - id: ch01_t02
+        title: "Multiplication of Integers"
+        learning_objectives:
+          - "Multiply positive and negative integers"
+          - "Understand sign rules for multiplication"
+          - "Apply commutative, associative, and distributive properties"
+          - "Recognize patterns in integer multiplication"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "Negative × negative = negative (actually negative × negative = positive)"
+          - "Multiplying makes numbers bigger (multiplying by a fraction or negative makes it smaller/negative)"
+          - "Zero multiplied by any number gives that number (actually zero × anything = zero)"
+        key_formulas:
+          - "(+) × (+) = (+)"
+          - "(+) × (−) = (−)"
+          - "(−) × (+) = (−)"
+          - "(−) × (−) = (+)"
+          - "Zero property: a × 0 = 0"
+          - "Multiplicative identity: a × 1 = a"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Pattern to understand (−) × (−) = (+):
+              3 × (−4) = −12
+              2 × (−4) = −8
+              1 × (−4) = −4
+              0 × (−4) = 0
+              −1 × (−4) = +4    ← Pattern continues
+              −2 × (−4) = +8
+            description: "Multiplication pattern showing why negative × negative gives positive"
+          - type: "ncert_reference"
+            figure: "Fig 1.3, Page 9"
+            description: "Multiplication of integers on number line"
+        example_problems:
+          - problem: "Find: (-3) × (-4)"
+            answer: "12"
+            solution_steps:
+              - "Negative × negative = positive (sign rule)"
+              - "Multiply absolute values: 3 × 4 = 12"
+              - "Result is positive: +12 or just 12"
+            difficulty: 1
+            indian_context: "If you remove 3 debts of ₹4 each, you're effectively gaining ₹12."
+
+          - problem: "Find: (-6) × 7"
+            answer: "-42"
+            solution_steps:
+              - "Negative × positive = negative (sign rule)"
+              - "Multiply absolute values: 6 × 7 = 42"
+              - "Result is negative: -42"
+            difficulty: 1
+            indian_context: "If you lose ₹6 per day for 7 days, your total loss is ₹42."
+
+          - problem: "Verify distributive property: (-2) × [5 + (-3)]"
+            answer: "-4"
+            solution_steps:
+              - "Method 1 (simplify inside brackets first):"
+              - "  5 + (-3) = 2"
+              - "  (-2) × 2 = -4"
+              - "Method 2 (use distributive property):"
+              - "  (-2) × 5 + (-2) × (-3)"
+              - "  = -10 + 6"
+              - "  = -4"
+              - "Both methods give -4 ✓"
+            difficulty: 3
+            indian_context: "You buy 5 pens but return 3. Each pen costs ₹2 but you owe money. Either way, you owe ₹4 total."

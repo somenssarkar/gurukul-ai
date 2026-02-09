@@ -30,7 +30,7 @@ Gurukul AI is an open-source, AI-powered study tool that acts like a personal tu
 ### Currently Available
 
 - **Math (Grade 7):** Integers (addition, subtraction, multiplication)
-- **Command:** `/learn math integers`
+- **Try:** `/gurukul-ai teach me integers` or just type "learn about integers"
 
 ### Coming Soon (Phase 1-2)
 
@@ -64,11 +64,17 @@ cd gurukul-ai
 ### First Use
 
 1. Open the project in Claude Code
-2. Try your first command:
+2. Try one of these ways to start learning:
    ```
-   /learn math integers
+   /gurukul-ai teach me about integers
+   ```
+   Or simply type naturally:
+   ```
+   I want to learn about integers in math
    ```
 3. Claude will ask you Socratic questions to teach integers step-by-step
+
+> **Note:** In Claude Code, skills are invoked by their skill name (`/gurukul-ai`). You can also just type your question naturally and the skill activates automatically via keyword matching.
 
 ---
 
@@ -128,19 +134,16 @@ gurukul-ai/
 
 ---
 
-## Commands (Phase 0)
+## How to Use (Phase 0)
 
-| Command | Description | Example |
-|---------|-------------|---------|
-| `/learn <subject> <topic>` | Learn a concept with Socratic questioning | `/learn math integers` |
+| Method | Description | Example |
+|--------|-------------|---------|
+| `/gurukul-ai` + request | Invoke skill directly | `/gurukul-ai teach me integers` |
+| Natural language | Just type your question | `I want to learn about integers in math` |
 
-**Coming in Phase 1:**
-- `/practice <subject> <topic>` — Practice problems
-- `/quiz <subject>` — Timed assessment
-- `/solve <problem>` — Step-by-step solution
-- `/hint` — Get a hint
-- `/progress` — See your mastery dashboard
-- `/formulas <subject>` — View formula sheet
+**Current (Phase 0):** Learning concepts with Socratic questioning
+
+**Coming in Phase 1:** Practice problems, quizzes, step-by-step solving, hints, progress dashboard, formula sheets
 
 ---
 

@@ -1,0 +1,29 @@
+# Student tracking data - NEVER commit these files
+# Each student's data stays on their own machine
+tracking/
+#testing/
+
+# Content issues log (may contain student-reported errors)
+content-issues.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python cache (for future generators in Phase 4)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
