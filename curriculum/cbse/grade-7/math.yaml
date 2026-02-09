@@ -1,13 +1,18 @@
 grade: 7
 subject: mathematics
 board: CBSE
-textbook: "NCERT Mathematics Class VII"
+textbook: "Mathematics 7 by R S Aggarwal"
 schema_version: "1.0"
+total_chapters: 23
 
 chapters:
+  # ============================================================
+  # Chapter 1: Integers
+  # Exercises: 1A, 1B, 1C, 1D (MCQs), Test Paper
+  # ============================================================
   - id: ch01
     title: "Integers"
-    ncert_chapter: 1
+    textbook_chapter: 1
     topics:
       - id: ch01_t01
         title: "Properties of Addition and Subtraction of Integers"
@@ -35,9 +40,6 @@ chapters:
               ←──┼──┼──┼──┼──┼──┼──┼──┼──┼──→
                 -4 -3 -2 -1  0  1  2  3  4
             description: "Number line showing integer positions"
-          - type: "ncert_reference"
-            figure: "Fig 1.1, Page 3"
-            description: "Number line representation of integers"
         example_problems:
           - problem: "Find: (-5) + (-3)"
             answer: "-8"
@@ -117,9 +119,6 @@ chapters:
               −1 × (−4) = +4    ← Pattern continues
               −2 × (−4) = +8
             description: "Multiplication pattern showing why negative × negative gives positive"
-          - type: "ncert_reference"
-            figure: "Fig 1.3, Page 9"
-            description: "Multiplication of integers on number line"
         example_problems:
           - problem: "Find: (-3) × (-4)"
             answer: "12"
@@ -152,3 +151,1788 @@ chapters:
               - "Both methods give -4 ✓"
             difficulty: 3
             indian_context: "You buy 5 pens but return 3. Each pen costs ₹2 but you owe money. Either way, you owe ₹4 total."
+
+      - id: ch01_t03
+        title: "Division of Integers"
+        learning_objectives:
+          - "Divide positive and negative integers"
+          - "Understand sign rules for division"
+          - "Recognize that division by zero is undefined"
+          - "Apply properties of division of integers"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Division of integers is commutative (it is NOT: 6 ÷ 3 ≠ 3 ÷ 6)"
+          - "Division by zero gives zero (division by zero is undefined)"
+          - "Sign rules for division differ from multiplication (they are the same)"
+        key_formulas:
+          - "(+) ÷ (+) = (+)"
+          - "(+) ÷ (−) = (−)"
+          - "(−) ÷ (+) = (−)"
+          - "(−) ÷ (−) = (+)"
+          - "a ÷ 0 is undefined"
+          - "0 ÷ a = 0 (where a ≠ 0)"
+        example_problems:
+          - problem: "Find: (-36) ÷ (-6)"
+            answer: "6"
+            solution_steps:
+              - "Negative ÷ negative = positive (same sign rules as multiplication)"
+              - "Divide absolute values: 36 ÷ 6 = 6"
+              - "Result is positive: 6"
+            difficulty: 1
+            indian_context: "A total debt of ₹36 is shared equally among 6 friends who each owed that debt. Each friend's share cancels out at ₹6."
+
+          - problem: "Find: (-48) ÷ 8"
+            answer: "-6"
+            solution_steps:
+              - "Negative ÷ positive = negative"
+              - "Divide absolute values: 48 ÷ 8 = 6"
+              - "Result is negative: -6"
+            difficulty: 1
+            indian_context: "A loss of ₹48 spread over 8 months means a loss of ₹6 per month."
+
+          - problem: "Verify: Is division commutative? Check if (-12) ÷ 4 = 4 ÷ (-12)"
+            answer: "No. (-12) ÷ 4 = -3 but 4 ÷ (-12) = -1/3"
+            solution_steps:
+              - "LHS: (-12) ÷ 4 = -3"
+              - "RHS: 4 ÷ (-12) = -1/3"
+              - "LHS ≠ RHS"
+              - "Division is NOT commutative"
+            difficulty: 2
+            indian_context: "Splitting ₹12 loss among 4 people (-₹3 each) is different from splitting ₹4 among 12 people."
+
+  # ============================================================
+  # Chapter 2: Fractions
+  # Exercises: 2A, 2B, 2C, 2D (MCQs), Test Paper
+  # ============================================================
+  - id: ch02
+    title: "Fractions"
+    textbook_chapter: 2
+    topics:
+      - id: ch02_t01
+        title: "Types of Fractions and Conversion"
+        learning_objectives:
+          - "Identify proper, improper, and mixed fractions"
+          - "Convert unlike fractions to like fractions"
+          - "Convert mixed fractions to improper fractions and vice versa"
+          - "Find equivalent fractions"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "A fraction with a larger denominator is always larger (1/5 is NOT larger than 1/4)"
+          - "Mixed fractions and improper fractions are different things (they represent the same value)"
+          - "Equivalent fractions are different values (2/4 = 1/2, same value)"
+        key_formulas:
+          - "Mixed to improper: a b/c = (a × c + b)/c"
+          - "Improper to mixed: divide numerator by denominator, quotient is whole part, remainder is numerator"
+          - "Equivalent fractions: a/b = (a × n)/(b × n)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Types of Fractions:
+              Proper:   numerator < denominator  →  3/5
+              Improper: numerator ≥ denominator  →  7/4
+              Mixed:    whole + fraction          →  1 3/4
+
+              Equivalent fractions:
+              1/2 = 2/4 = 3/6 = 4/8
+            description: "Visual showing types and equivalence of fractions"
+        example_problems:
+          - problem: "Convert 3 2/5 to an improper fraction"
+            answer: "17/5"
+            solution_steps:
+              - "Multiply whole number by denominator: 3 × 5 = 15"
+              - "Add the numerator: 15 + 2 = 17"
+              - "Keep the same denominator: 17/5"
+            difficulty: 1
+            indian_context: "If you have 3 full rotis and 2/5 of another roti, total pieces (each 1/5 size) = 17 pieces of 1/5 each."
+
+          - problem: "Convert 23/7 to a mixed fraction"
+            answer: "3 2/7"
+            solution_steps:
+              - "Divide 23 by 7: 23 ÷ 7 = 3 remainder 2"
+              - "Quotient = 3 (whole number part)"
+              - "Remainder = 2 (numerator of fraction part)"
+              - "Denominator stays 7"
+              - "Answer: 3 2/7"
+            difficulty: 1
+            indian_context: "If 23 laddoos are shared equally among 7 friends, each gets 3 full laddoos and 2/7 of another."
+
+      - id: ch02_t02
+        title: "Comparing and Ordering Fractions"
+        learning_objectives:
+          - "Compare two or more fractions"
+          - "Arrange fractions in ascending or descending order"
+          - "Find LCM of denominators for comparison"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Bigger denominator means bigger fraction (1/8 < 1/4, not bigger)"
+          - "You can compare fractions without making denominators equal (you must find common denominator or cross-multiply)"
+        key_formulas:
+          - "To compare a/b and c/d: find LCM of b and d, convert both, then compare numerators"
+          - "Cross multiplication: a/b vs c/d → compare a×d with b×c"
+        example_problems:
+          - problem: "Compare 3/5 and 5/8"
+            answer: "3/5 < 5/8"
+            solution_steps:
+              - "LCM of 5 and 8 = 40"
+              - "3/5 = (3 × 8)/(5 × 8) = 24/40"
+              - "5/8 = (5 × 5)/(8 × 5) = 25/40"
+              - "24/40 < 25/40"
+              - "Therefore 3/5 < 5/8"
+            difficulty: 2
+            indian_context: "If Asha ate 3/5 of her chocolate and Ravi ate 5/8 of his (same size), Ravi ate more."
+
+          - problem: "Arrange in ascending order: 2/3, 5/6, 1/2, 3/4"
+            answer: "1/2, 2/3, 3/4, 5/6"
+            solution_steps:
+              - "LCM of 3, 6, 2, 4 = 12"
+              - "2/3 = 8/12, 5/6 = 10/12, 1/2 = 6/12, 3/4 = 9/12"
+              - "Ascending order of numerators: 6, 8, 9, 10"
+              - "Answer: 1/2, 2/3, 3/4, 5/6"
+            difficulty: 3
+            indian_context: "Four students completed different fractions of their homework. Arranging from least to most done."
+
+      - id: ch02_t03
+        title: "Operations on Fractions"
+        learning_objectives:
+          - "Add and subtract fractions (like and unlike)"
+          - "Multiply fractions and mixed numbers"
+          - "Divide fractions using reciprocal"
+          - "Solve word problems involving fractions"
+        prerequisites: ["ch02_t02"]
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "Adding fractions: add numerators AND denominators (1/2 + 1/3 ≠ 2/5)"
+          - "Multiplying fractions makes them bigger (it usually makes them smaller)"
+          - "Division by a fraction makes the result smaller (dividing by a fraction < 1 gives a larger result)"
+        key_formulas:
+          - "Addition (unlike): a/b + c/d = (ad + bc)/bd"
+          - "Multiplication: a/b × c/d = ac/bd"
+          - "Division: a/b ÷ c/d = a/b × d/c (multiply by reciprocal)"
+          - "Reciprocal of a/b = b/a"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Adding fractions (visual):
+              1/2 + 1/3:
+              ┌──────┬──────┐   ┌────┬────┬────┐
+              │ 1/2  │      │ + │1/3 │    │    │
+              └──────┴──────┘   └────┴────┴────┘
+              Convert to sixths:
+              ┌──┬──┬──┬──┬──┬──┐
+              │3/6     │2/6  │  │ = 5/6
+              └──┴──┴──┴──┴──┴──┘
+            description: "Visual representation of adding unlike fractions"
+        example_problems:
+          - problem: "Find: 2/5 + 3/4"
+            answer: "23/20 or 1 3/20"
+            solution_steps:
+              - "LCM of 5 and 4 = 20"
+              - "2/5 = 8/20"
+              - "3/4 = 15/20"
+              - "8/20 + 15/20 = 23/20 = 1 3/20"
+            difficulty: 2
+            indian_context: "You drank 2/5 of a litre of lassi in the morning and 3/4 of a litre in the evening. Total = 1 3/20 litres."
+
+          - problem: "Find: 3/7 × 14/9"
+            answer: "2/3"
+            solution_steps:
+              - "Multiply numerators: 3 × 14 = 42"
+              - "Multiply denominators: 7 × 9 = 63"
+              - "42/63 = 2/3 (divide both by 21)"
+            difficulty: 2
+            indian_context: "If 3/7 of the students in a class of 63 scored above 14/9 of the passing marks... simplify the fraction."
+
+          - problem: "Find: 4/5 ÷ 2/3"
+            answer: "6/5 or 1 1/5"
+            solution_steps:
+              - "Dividing by a fraction = multiplying by its reciprocal"
+              - "4/5 ÷ 2/3 = 4/5 × 3/2"
+              - "= 12/10 = 6/5 = 1 1/5"
+            difficulty: 2
+            indian_context: "If each bag holds 2/3 kg of rice, how many bags do you need for 4/5 kg? Answer: 1 1/5 bags."
+
+  # ============================================================
+  # Chapter 3: Decimals
+  # Exercises: 3A, 3B, 3C, 3D, 3E (MCQs), Test Paper
+  # ============================================================
+  - id: ch03
+    title: "Decimals"
+    textbook_chapter: 3
+    topics:
+      - id: ch03_t01
+        title: "Decimal and Fraction Conversions"
+        learning_objectives:
+          - "Convert a decimal into a fraction"
+          - "Convert a fraction into a decimal"
+          - "Understand place values in decimals (tenths, hundredths, thousandths)"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "0.5 and 0.50 are different values (they are equal)"
+          - "0.3 is bigger than 0.25 because 3 > 25 is wrong thinking (compare place values)"
+          - "Decimals are not fractions (every decimal IS a fraction with denominator as power of 10)"
+        key_formulas:
+          - "0.1 = 1/10, 0.01 = 1/100, 0.001 = 1/1000"
+          - "To convert decimal to fraction: write digits as numerator, denominator = 10^(decimal places)"
+          - "To convert fraction to decimal: divide numerator by denominator"
+        example_problems:
+          - problem: "Convert 0.375 to a fraction"
+            answer: "3/8"
+            solution_steps:
+              - "0.375 = 375/1000"
+              - "Simplify: divide both by 125"
+              - "375 ÷ 125 = 3, 1000 ÷ 125 = 8"
+              - "Answer: 3/8"
+            difficulty: 2
+            indian_context: "A shopkeeper gives 0.375 kg of sugar. That's 3/8 of a kilogram or 375 grams."
+
+          - problem: "Convert 5/8 to a decimal"
+            answer: "0.625"
+            solution_steps:
+              - "Divide 5 by 8"
+              - "5 ÷ 8 = 0.625"
+              - "Or: 5/8 = 625/1000 = 0.625"
+            difficulty: 2
+            indian_context: "If a pizza is cut into 8 slices and you eat 5, you ate 0.625 or 62.5% of the pizza."
+
+      - id: ch03_t02
+        title: "Operations on Decimals"
+        learning_objectives:
+          - "Add and subtract decimal numbers"
+          - "Multiply decimals by whole numbers and by decimals"
+          - "Multiply decimals by 10, 100, and 1000"
+          - "Divide decimals by whole numbers"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "When multiplying decimals, count decimal places in the answer wrong (total decimal places = sum of decimal places in both numbers)"
+          - "Multiplying by 10 means adding a zero (for decimals, it means shifting decimal point right)"
+          - "Aligning decimals is not important in addition (it IS critical — align decimal points)"
+        key_formulas:
+          - "Multiplying by 10: shift decimal 1 place right"
+          - "Multiplying by 100: shift decimal 2 places right"
+          - "Multiplying by 1000: shift decimal 3 places right"
+          - "Decimal places in product = sum of decimal places in both factors"
+        example_problems:
+          - problem: "Find: 23.45 + 7.8 + 0.367"
+            answer: "31.617"
+            solution_steps:
+              - "Align decimal points:"
+              - "  23.450"
+              - " + 7.800"
+              - " + 0.367"
+              - " -------"
+              - "  31.617"
+            difficulty: 1
+            indian_context: "You buy vegetables for ₹23.45, fruits for ₹7.80, and spices for ₹0.367... total bill?"
+
+          - problem: "Find: 2.5 × 0.4"
+            answer: "1.00 or 1"
+            solution_steps:
+              - "Multiply without decimals: 25 × 4 = 100"
+              - "Total decimal places: 1 + 1 = 2"
+              - "Place decimal 2 places from right: 1.00 = 1"
+            difficulty: 2
+            indian_context: "If 1 metre of ribbon costs ₹2.50, what does 0.4 metre cost? ₹1.00"
+
+          - problem: "Find: 7.5 ÷ 5"
+            answer: "1.5"
+            solution_steps:
+              - "Divide as usual: 75 ÷ 5 = 15"
+              - "Place decimal: 1.5"
+              - "Check: 1.5 × 5 = 7.5 ✓"
+            difficulty: 1
+            indian_context: "If 5 samosas cost ₹7.50, each samosa costs ₹1.50."
+
+  # ============================================================
+  # Chapter 4: Rational Numbers
+  # Exercises: 4A, 4B, 4C, 4D, 4E, 4F, 4G (MCQs), Test Paper
+  # ============================================================
+  - id: ch04
+    title: "Rational Numbers"
+    textbook_chapter: 4
+    topics:
+      - id: ch04_t01
+        title: "Introduction to Rational Numbers"
+        learning_objectives:
+          - "Define rational numbers as p/q where q ≠ 0"
+          - "Identify positive and negative rational numbers"
+          - "Write rational numbers in standard form"
+          - "Find equivalent rational numbers"
+        prerequisites: ["ch02_t01", "ch01_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "All fractions are rational numbers but not all rational numbers are fractions (negative fractions are rational but not 'fractions' in traditional sense)"
+          - "Rational numbers can have 0 in denominator (denominator can NEVER be 0)"
+          - "Standard form means smallest numbers (standard form means denominator is positive and HCF of numerator and denominator is 1)"
+        key_formulas:
+          - "Rational number: p/q where p, q are integers and q ≠ 0"
+          - "Standard form: denominator is positive, HCF(|p|, q) = 1"
+          - "Equivalent: p/q = (p × n)/(q × n) for any non-zero integer n"
+        example_problems:
+          - problem: "Write -18/24 in standard form"
+            answer: "-3/4"
+            solution_steps:
+              - "HCF of 18 and 24 = 6"
+              - "Divide both by 6: -18/24 = (-18 ÷ 6)/(24 ÷ 6) = -3/4"
+              - "Denominator is positive ✓"
+              - "HCF of 3 and 4 is 1 ✓"
+            difficulty: 2
+            indian_context: "If a student got -18 marks out of 24 on a penalty quiz, the simplified score is -3/4."
+
+          - problem: "Is -5/0 a rational number?"
+            answer: "No, -5/0 is not a rational number because denominator cannot be zero"
+            solution_steps:
+              - "For p/q to be rational, q must not be zero"
+              - "Here q = 0, so -5/0 is undefined"
+              - "Division by zero is not defined in mathematics"
+            difficulty: 1
+            indian_context: "If you try to divide ₹5 among 0 friends, it's impossible — you can't split something among nobody."
+
+      - id: ch04_t02
+        title: "Representation and Comparison of Rational Numbers"
+        learning_objectives:
+          - "Represent rational numbers on a number line"
+          - "Compare two or more rational numbers"
+          - "Arrange rational numbers in ascending/descending order"
+          - "Find rational numbers between two given rational numbers"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "-3/4 is greater than -1/2 (actually -3/4 < -1/2 on the number line)"
+          - "There are limited rational numbers between two rational numbers (there are infinitely many)"
+        key_formulas:
+          - "To compare a/b and c/d: cross multiply — if ad > bc then a/b > c/d"
+          - "On number line: numbers increase from left to right"
+        example_problems:
+          - problem: "Compare -3/5 and -2/3"
+            answer: "-3/5 > -2/3"
+            solution_steps:
+              - "Cross multiply: -3 × 3 = -9 and -2 × 5 = -10"
+              - "-9 > -10"
+              - "Therefore -3/5 > -2/3"
+            difficulty: 2
+            indian_context: "Losing 3/5 of your pocket money is less of a loss than losing 2/3 of it."
+
+      - id: ch04_t03
+        title: "Operations on Rational Numbers"
+        learning_objectives:
+          - "Add and subtract rational numbers"
+          - "Multiply rational numbers"
+          - "Divide rational numbers"
+          - "Apply properties (closure, commutative, associative, distributive)"
+        prerequisites: ["ch04_t02"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Adding rationals: add numerators and denominators separately (must find common denominator first)"
+          - "Division by a rational number is same as multiplication (you multiply by the RECIPROCAL)"
+        key_formulas:
+          - "a/b + c/d = (ad + bc)/bd"
+          - "a/b × c/d = ac/bd"
+          - "a/b ÷ c/d = a/b × d/c"
+        example_problems:
+          - problem: "Find: (-3/7) + (2/3)"
+            answer: "5/21"
+            solution_steps:
+              - "LCM of 7 and 3 = 21"
+              - "-3/7 = -9/21"
+              - "2/3 = 14/21"
+              - "-9/21 + 14/21 = 5/21"
+            difficulty: 2
+            indian_context: "You owe 3/7 of a kg of sugar but receive 2/3 of a kg. Net = 5/21 kg gained."
+
+          - problem: "Find: (-2/5) × (15/-8)"
+            answer: "3/4"
+            solution_steps:
+              - "Multiply numerators: (-2) × 15 = -30"
+              - "Multiply denominators: 5 × (-8) = -40"
+              - "-30/-40 = 30/40 = 3/4 (negative ÷ negative = positive)"
+            difficulty: 3
+            indian_context: "Calculating the product of two fractional measurements for a recipe."
+
+  # ============================================================
+  # Chapter 5: Exponents
+  # Exercises: 5A, 5B, 5C (MCQs), Test Paper
+  # ============================================================
+  - id: ch05
+    title: "Exponents"
+    textbook_chapter: 5
+    topics:
+      - id: ch05_t01
+        title: "Meaning and Laws of Exponents"
+        learning_objectives:
+          - "Understand base and exponent (power)"
+          - "Express numbers in exponential form"
+          - "Apply laws of exponents: product, quotient, power of a power"
+          - "Understand zero and negative exponents"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "2³ means 2 × 3 = 6 (it actually means 2 × 2 × 2 = 8)"
+          - "a⁰ = 0 (actually a⁰ = 1 for any non-zero a)"
+          - "(-2)² = -4 (actually (-2)² = (-2) × (-2) = +4)"
+          - "(2 + 3)² = 2² + 3² (actually (2+3)² = 5² = 25, not 4+9=13)"
+        key_formulas:
+          - "aⁿ = a × a × ... × a (n times)"
+          - "aᵐ × aⁿ = aᵐ⁺ⁿ"
+          - "aᵐ ÷ aⁿ = aᵐ⁻ⁿ"
+          - "(aᵐ)ⁿ = aᵐⁿ"
+          - "(a × b)ⁿ = aⁿ × bⁿ"
+          - "a⁰ = 1 (a ≠ 0)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Understanding 2⁴:
+              2⁴ = 2 × 2 × 2 × 2
+                 = 4 × 2 × 2
+                 = 8 × 2
+                 = 16
+
+              Powers of 2:
+              2¹ = 2, 2² = 4, 2³ = 8, 2⁴ = 16, 2⁵ = 32
+            description: "Step-by-step exponent calculation"
+        example_problems:
+          - problem: "Simplify: 2³ × 2⁵"
+            answer: "2⁸ = 256"
+            solution_steps:
+              - "When bases are same, add exponents"
+              - "2³ × 2⁵ = 2³⁺⁵ = 2⁸"
+              - "2⁸ = 256"
+            difficulty: 1
+            indian_context: "If bacteria double every hour, after 3 hours you have 2³, after 5 more hours 2⁵ times more. Total growth = 2⁸ = 256 times."
+
+          - problem: "Simplify: (3²)³"
+            answer: "3⁶ = 729"
+            solution_steps:
+              - "Power of a power: multiply exponents"
+              - "(3²)³ = 3²ˣ³ = 3⁶"
+              - "3⁶ = 729"
+            difficulty: 2
+            indian_context: "A tree has 3² = 9 branches per level and 3 levels. Total branch tips = 3⁶ = 729."
+
+      - id: ch05_t02
+        title: "Standard Form and Expanded Form"
+        learning_objectives:
+          - "Express large numbers in standard form (a × 10ⁿ)"
+          - "Write numbers in expanded form using exponents"
+          - "Find square roots of perfect squares"
+        prerequisites: ["ch05_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Standard form can have any number before × 10ⁿ (must be 1 ≤ a < 10)"
+          - "Square root of 16 is only 4 (technically ±4, but we usually take positive root)"
+        key_formulas:
+          - "Standard form: a × 10ⁿ where 1 ≤ a < 10"
+          - "√(a²) = a"
+        example_problems:
+          - problem: "Express 3,84,00,000 in standard form"
+            answer: "3.84 × 10⁷"
+            solution_steps:
+              - "Move decimal point to get a number between 1 and 10"
+              - "3,84,00,000 = 3.84 × 10⁷"
+              - "The decimal moved 7 places left"
+            difficulty: 2
+            indian_context: "India's tiger population target might be 3.84 × 10⁷... well, that's too many! But large populations are written this way."
+
+          - problem: "Write 47205 in expanded form using exponents"
+            answer: "4 × 10⁴ + 7 × 10³ + 2 × 10² + 0 × 10¹ + 5 × 10⁰"
+            solution_steps:
+              - "4 is in ten-thousands place: 4 × 10⁴"
+              - "7 is in thousands place: 7 × 10³"
+              - "2 is in hundreds place: 2 × 10²"
+              - "0 is in tens place: 0 × 10¹"
+              - "5 is in ones place: 5 × 10⁰"
+            difficulty: 2
+            indian_context: "The pin code 47205 — each digit has a place value expressed with powers of 10."
+
+  # ============================================================
+  # Chapter 6: Algebraic Expressions
+  # Exercises: 6A, 6B, 6C, 6D
+  # ============================================================
+  - id: ch06
+    title: "Algebraic Expressions"
+    textbook_chapter: 6
+    topics:
+      - id: ch06_t01
+        title: "Constants, Variables, and Terms"
+        learning_objectives:
+          - "Identify constants and variables in expressions"
+          - "Distinguish between monomials, binomials, trinomials, and polynomials"
+          - "Find the coefficient of a term"
+          - "Identify like and unlike terms"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "x and X are different variables (in school math, they're usually the same)"
+          - "2x means 2 + x (it means 2 × x)"
+          - "Like terms must have the same coefficient (like terms have same variables with same powers, coefficients can differ)"
+        key_formulas:
+          - "Monomial: single term (e.g., 3x²)"
+          - "Binomial: two terms (e.g., 2x + 3)"
+          - "Trinomial: three terms (e.g., x² + 2x + 1)"
+          - "Coefficient: numerical factor of a term"
+        example_problems:
+          - problem: "Identify the terms, coefficient, and type: 4x² - 3x + 7"
+            answer: "Terms: 4x², -3x, 7. Coefficients: 4, -3, 7. Type: Trinomial"
+            solution_steps:
+              - "Terms are separated by + or - signs: 4x², -3x, 7"
+              - "Coefficient of x² is 4"
+              - "Coefficient of x is -3"
+              - "7 is a constant term"
+              - "Three terms → trinomial"
+            difficulty: 1
+            indian_context: "If you earn ₹4x² from tutoring, spend ₹3x on books, and save ₹7 fixed, your expression has 3 terms."
+
+      - id: ch06_t02
+        title: "Addition and Subtraction of Algebraic Expressions"
+        learning_objectives:
+          - "Add algebraic expressions by combining like terms"
+          - "Subtract algebraic expressions by changing signs"
+          - "Simplify expressions after addition/subtraction"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "2x + 3x = 5x² (it equals 5x — you don't change the power)"
+          - "x + y = xy (you cannot combine unlike terms)"
+          - "Subtracting changes only the first term's sign (it changes ALL terms of the subtracted expression)"
+        key_formulas:
+          - "Like terms: ax^n + bx^n = (a+b)x^n"
+          - "Subtraction: change sign of every term being subtracted, then add"
+        example_problems:
+          - problem: "Add: (3x² + 5x - 2) and (x² - 3x + 4)"
+            answer: "4x² + 2x + 2"
+            solution_steps:
+              - "Group like terms:"
+              - "x² terms: 3x² + x² = 4x²"
+              - "x terms: 5x + (-3x) = 2x"
+              - "Constants: -2 + 4 = 2"
+              - "Answer: 4x² + 2x + 2"
+            difficulty: 2
+            indian_context: "Two shops' daily earnings: Shop A earns (3x² + 5x - 2) and Shop B earns (x² - 3x + 4) rupees. Total?"
+
+          - problem: "Subtract (2x² - 3x + 1) from (5x² + x - 4)"
+            answer: "3x² + 4x - 5"
+            solution_steps:
+              - "(5x² + x - 4) - (2x² - 3x + 1)"
+              - "= 5x² + x - 4 - 2x² + 3x - 1"
+              - "= (5-2)x² + (1+3)x + (-4-1)"
+              - "= 3x² + 4x - 5"
+            difficulty: 2
+            indian_context: "If total sales are (5x² + x - 4) and costs are (2x² - 3x + 1), profit = 3x² + 4x - 5."
+
+      - id: ch06_t03
+        title: "Multiplication of Algebraic Expressions"
+        learning_objectives:
+          - "Multiply monomials"
+          - "Multiply a monomial by a binomial"
+          - "Multiply two binomials"
+        prerequisites: ["ch06_t02"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "x × x = 2x (it equals x²)"
+          - "2x × 3x = 6x (it equals 6x²)"
+          - "Forgetting to distribute to ALL terms in the second bracket"
+        key_formulas:
+          - "xᵐ × xⁿ = xᵐ⁺ⁿ"
+          - "a(b + c) = ab + ac (distributive property)"
+          - "(a + b)(c + d) = ac + ad + bc + bd"
+        example_problems:
+          - problem: "Find: 3x² × 4x³"
+            answer: "12x⁵"
+            solution_steps:
+              - "Multiply coefficients: 3 × 4 = 12"
+              - "Multiply variables: x² × x³ = x²⁺³ = x⁵"
+              - "Answer: 12x⁵"
+            difficulty: 2
+            indian_context: "If a rectangular field has length 3x² metres and width 4x³ metres, area = 12x⁵ square metres."
+
+          - problem: "Expand: 2x(3x - 5)"
+            answer: "6x² - 10x"
+            solution_steps:
+              - "Distribute 2x to each term inside bracket:"
+              - "2x × 3x = 6x²"
+              - "2x × (-5) = -10x"
+              - "Answer: 6x² - 10x"
+            difficulty: 2
+            indian_context: "If 2x workers each produce (3x - 5) items, total production = 6x² - 10x items."
+
+  # ============================================================
+  # Chapter 7: Linear Equations in One Variable
+  # Exercises: 7A, 7B, 7C (MCQs), Test Paper
+  # ============================================================
+  - id: ch07
+    title: "Linear Equations in One Variable"
+    textbook_chapter: 7
+    topics:
+      - id: ch07_t01
+        title: "Solving Linear Equations"
+        learning_objectives:
+          - "Understand what a linear equation is"
+          - "Solve equations using transposition"
+          - "Verify solutions by substituting back"
+          - "Solve equations with variables on both sides"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "When moving a term to the other side, the sign stays same (sign CHANGES when transposing)"
+          - "3x = 12 means x = 12 - 3 = 9 (it means x = 12/3 = 4)"
+          - "An equation with x² is linear (linear means highest power of variable is 1)"
+        key_formulas:
+          - "Transposition: changing side changes sign (+ becomes -, × becomes ÷)"
+          - "Balance principle: whatever you do to one side, do to the other"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Equation as a balance:
+                  ┌─────┐         ┌─────┐
+                  │ 2x+3│    =    │ 11  │
+                  └──┬──┘         └──┬──┘
+                 ════╧═══════════════╧════
+              Subtract 3 from both sides:
+                  ┌─────┐         ┌─────┐
+                  │ 2x  │    =    │  8  │
+                  └──┬──┘         └──┬──┘
+              Divide both by 2:
+                  x = 4
+            description: "Balance scale model for solving equations"
+        example_problems:
+          - problem: "Solve: 3x + 7 = 22"
+            answer: "x = 5"
+            solution_steps:
+              - "Transpose +7 to RHS: 3x = 22 - 7"
+              - "3x = 15"
+              - "Divide both sides by 3: x = 15/3 = 5"
+              - "Check: 3(5) + 7 = 15 + 7 = 22 ✓"
+            difficulty: 1
+            indian_context: "You buy 3 notebooks and a pen worth ₹7. Total bill is ₹22. What's the cost of each notebook?"
+
+          - problem: "Solve: 5x - 3 = 2x + 12"
+            answer: "x = 5"
+            solution_steps:
+              - "Transpose 2x to LHS: 5x - 2x - 3 = 12"
+              - "3x - 3 = 12"
+              - "Transpose -3 to RHS: 3x = 12 + 3 = 15"
+              - "x = 15/3 = 5"
+              - "Check: 5(5)-3 = 22, 2(5)+12 = 22 ✓"
+            difficulty: 2
+            indian_context: "Amit has 5x - 3 marbles and Ravi has 2x + 12 marbles. They have equal marbles. Find x."
+
+      - id: ch07_t02
+        title: "Word Problems on Linear Equations"
+        learning_objectives:
+          - "Translate word problems into linear equations"
+          - "Solve age problems, number problems, and money problems"
+          - "Interpret the solution in context"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Not defining what the variable represents before setting up the equation"
+          - "Forgetting to check if the answer makes sense in context (e.g., negative age)"
+        example_problems:
+          - problem: "The sum of three consecutive numbers is 72. Find the numbers."
+            answer: "23, 24, 25"
+            solution_steps:
+              - "Let the numbers be x, x+1, x+2"
+              - "x + (x+1) + (x+2) = 72"
+              - "3x + 3 = 72"
+              - "3x = 69"
+              - "x = 23"
+              - "Numbers: 23, 24, 25"
+              - "Check: 23 + 24 + 25 = 72 ✓"
+            difficulty: 2
+            indian_context: "Three consecutive houses on a street have numbers that add up to 72. What are the house numbers?"
+
+          - problem: "A father is 30 years older than his son. After 5 years, father's age will be 3 times the son's age. Find their present ages."
+            answer: "Son: 10 years, Father: 40 years"
+            solution_steps:
+              - "Let son's present age = x"
+              - "Father's present age = x + 30"
+              - "After 5 years: son = x + 5, father = x + 35"
+              - "Father's age = 3 × son's age"
+              - "x + 35 = 3(x + 5)"
+              - "x + 35 = 3x + 15"
+              - "35 - 15 = 3x - x"
+              - "20 = 2x → x = 10"
+              - "Son: 10, Father: 40"
+            difficulty: 3
+            indian_context: "A father and son from Mumbai — typical age problem from Indian textbooks."
+
+  # ============================================================
+  # Chapter 8: Ratio and Proportion
+  # Exercises: 8A, 8B, 8C (MCQs), Test Paper
+  # ============================================================
+  - id: ch08
+    title: "Ratio and Proportion"
+    textbook_chapter: 8
+    topics:
+      - id: ch08_t01
+        title: "Ratio"
+        learning_objectives:
+          - "Express ratios in simplest form"
+          - "Compare ratios"
+          - "Divide a quantity in a given ratio"
+          - "Find equivalent ratios"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Ratio 2:3 is the same as 3:2 (order matters)"
+          - "Ratios can only be between two quantities (can have three-part ratios too)"
+          - "Ratio and fraction are completely different (a:b = a/b)"
+        key_formulas:
+          - "Simplest form: divide both terms by their HCF"
+          - "Dividing Q in ratio a:b → first part = Q × a/(a+b), second = Q × b/(a+b)"
+        example_problems:
+          - problem: "Divide ₹1200 between A and B in the ratio 3:5"
+            answer: "A gets ₹450, B gets ₹750"
+            solution_steps:
+              - "Total parts = 3 + 5 = 8"
+              - "A's share = 1200 × 3/8 = ₹450"
+              - "B's share = 1200 × 5/8 = ₹750"
+              - "Check: 450 + 750 = 1200 ✓"
+            difficulty: 2
+            indian_context: "₹1200 prize money from a school quiz is split between two winners in ratio 3:5."
+
+          - problem: "Express 45 minutes to 2 hours as a ratio in simplest form"
+            answer: "3:8"
+            solution_steps:
+              - "Convert to same units: 2 hours = 120 minutes"
+              - "Ratio = 45:120"
+              - "HCF of 45 and 120 = 15"
+              - "45/15 : 120/15 = 3:8"
+            difficulty: 2
+            indian_context: "A cricket test session lasts 2 hours. Drinks break is 45 minutes. Ratio of break to session = 3:8."
+
+      - id: ch08_t02
+        title: "Proportion"
+        learning_objectives:
+          - "Understand when four numbers are in proportion"
+          - "Find the missing term in a proportion"
+          - "Apply mean proportion"
+        prerequisites: ["ch08_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Proportion means equal (it means equal ratios)"
+          - "Any four numbers form a proportion (only when a:b = c:d)"
+        key_formulas:
+          - "a:b :: c:d means a/b = c/d"
+          - "Product of extremes = Product of means (a × d = b × c)"
+          - "Mean proportion of a and b = √(ab)"
+        example_problems:
+          - problem: "Are 2, 3, 8, 12 in proportion?"
+            answer: "Yes"
+            solution_steps:
+              - "Check: product of extremes = product of means?"
+              - "Extremes: 2 × 12 = 24"
+              - "Means: 3 × 8 = 24"
+              - "24 = 24 ✓ → Yes, they are in proportion"
+            difficulty: 1
+            indian_context: "If 2 kg mangoes cost ₹3, do 8 kg cost ₹12? Check if the prices are proportional."
+
+          - problem: "Find x if 4:x :: 12:15"
+            answer: "x = 5"
+            solution_steps:
+              - "Product of extremes = Product of means"
+              - "4 × 15 = x × 12"
+              - "60 = 12x"
+              - "x = 60/12 = 5"
+            difficulty: 2
+            indian_context: "If 4 workers can finish a task in the same time as 12 workers for a bigger task with 15 units, find x."
+
+  # ============================================================
+  # Chapter 9: Unitary Method
+  # Exercises: 9A, 9B, 9C (MCQs), Test Paper
+  # ============================================================
+  - id: ch09
+    title: "Unitary Method"
+    textbook_chapter: 9
+    topics:
+      - id: ch09_t01
+        title: "Direct Variation"
+        learning_objectives:
+          - "Understand direct variation (more → more, less → less)"
+          - "Apply unitary method for direct variation problems"
+          - "Solve word problems involving direct proportion"
+        prerequisites: ["ch08_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "All problems are direct variation (some are inverse)"
+          - "Forgetting to find the value of one unit first"
+        key_formulas:
+          - "Direct variation: if 'a' units cost ₹b, then 1 unit costs ₹b/a"
+          - "Cost of n units = (b/a) × n"
+        example_problems:
+          - problem: "If 5 kg of rice costs ₹350, find the cost of 8 kg"
+            answer: "₹560"
+            solution_steps:
+              - "Cost of 1 kg = 350/5 = ₹70"
+              - "Cost of 8 kg = 70 × 8 = ₹560"
+            difficulty: 1
+            indian_context: "Buying rice from the local kirana store — basmati rice at ₹70 per kg."
+
+          - problem: "A car travels 240 km in 4 hours. How far will it travel in 7 hours at the same speed?"
+            answer: "420 km"
+            solution_steps:
+              - "Distance in 1 hour = 240/4 = 60 km"
+              - "Distance in 7 hours = 60 × 7 = 420 km"
+            difficulty: 1
+            indian_context: "Driving from Delhi to Jaipur — if the car maintains 60 km/h, the 420 km journey takes 7 hours."
+
+      - id: ch09_t02
+        title: "Inverse Variation"
+        learning_objectives:
+          - "Understand inverse variation (more → less, less → more)"
+          - "Apply unitary method for inverse variation problems"
+          - "Distinguish between direct and inverse variation"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "More workers always means more time (more workers = LESS time)"
+          - "Inverse variation means subtraction (it means the product stays constant)"
+        key_formulas:
+          - "Inverse variation: if 'a' workers take 'b' days, then 1 worker takes a × b days"
+          - "n workers take (a × b)/n days"
+          - "Product is constant: workers × days = constant"
+        example_problems:
+          - problem: "If 12 workers can build a wall in 10 days, how many days will 15 workers take?"
+            answer: "8 days"
+            solution_steps:
+              - "This is inverse variation (more workers → fewer days)"
+              - "Total work = 12 × 10 = 120 worker-days"
+              - "With 15 workers: 120/15 = 8 days"
+            difficulty: 2
+            indian_context: "Building a wall for a school in a village — more workers finish faster."
+
+          - problem: "A hostel has provisions for 50 students for 20 days. If 25 more students join, how long will the provisions last?"
+            answer: "13 days 8 hours (or 40/3 days)"
+            solution_steps:
+              - "Total provisions = 50 × 20 = 1000 student-days"
+              - "Total students now = 50 + 25 = 75"
+              - "Days = 1000/75 = 40/3 = 13⅓ days"
+            difficulty: 3
+            indian_context: "A school hostel in Rajasthan gets more students mid-term. Provisions need to be recalculated."
+
+  # ============================================================
+  # Chapter 10: Percentage
+  # Exercises: 10A, 10B, 10C (MCQs), Test Paper
+  # ============================================================
+  - id: ch10
+    title: "Percentage"
+    textbook_chapter: 10
+    topics:
+      - id: ch10_t01
+        title: "Converting Between Fractions, Decimals, and Percentages"
+        learning_objectives:
+          - "Convert fractions to percentages and vice versa"
+          - "Convert decimals to percentages and vice versa"
+          - "Convert ratios to percentages"
+        prerequisites: ["ch02_t01", "ch03_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "50% means 50 (it means 50/100 = 1/2)"
+          - "To convert fraction to percentage, just multiply by 100 (multiply by 100%)"
+          - "0.5% = 50% (0.5% is actually a very small percentage)"
+        key_formulas:
+          - "Fraction to %: multiply by 100"
+          - "% to fraction: divide by 100"
+          - "Decimal to %: multiply by 100"
+          - "% to decimal: divide by 100"
+        example_problems:
+          - problem: "Convert 3/8 to a percentage"
+            answer: "37.5%"
+            solution_steps:
+              - "3/8 × 100 = 300/8 = 37.5%"
+            difficulty: 1
+            indian_context: "If 3 out of 8 students passed with distinction, that's 37.5% of the class."
+
+          - problem: "Express 0.045 as a percentage"
+            answer: "4.5%"
+            solution_steps:
+              - "Multiply by 100: 0.045 × 100 = 4.5%"
+            difficulty: 1
+            indian_context: "A savings account offers 0.045 interest rate. That's 4.5% interest — typical for Indian bank FDs."
+
+      - id: ch10_t02
+        title: "Applications of Percentage"
+        learning_objectives:
+          - "Find the percentage of a given number"
+          - "Find what percentage one number is of another"
+          - "Find the whole when percentage and part are given"
+          - "Solve real-world percentage problems"
+        prerequisites: ["ch10_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Percentage increase and decrease use the same base (increase uses original, decrease uses original too — but students confuse which is the base)"
+        key_formulas:
+          - "x% of N = (x/100) × N"
+          - "What % is A of B = (A/B) × 100"
+          - "If x% of N = A, then N = A × 100/x"
+        example_problems:
+          - problem: "A student scored 72 out of 80 in Math. Find the percentage."
+            answer: "90%"
+            solution_steps:
+              - "Percentage = (72/80) × 100"
+              - "= 0.9 × 100"
+              - "= 90%"
+            difficulty: 1
+            indian_context: "A CBSE student scored 72/80 in the math unit test. 90% — that's an excellent score!"
+
+          - problem: "The population of a town increased by 8% to become 54,000. What was the original population?"
+            answer: "50,000"
+            solution_steps:
+              - "New population = Original + 8% of Original = 108% of Original"
+              - "108% of Original = 54,000"
+              - "Original = 54,000 × 100/108"
+              - "= 50,000"
+            difficulty: 3
+            indian_context: "A small town near Pune grew by 8%. Census shows 54,000 now. Original population?"
+
+  # ============================================================
+  # Chapter 11: Profit and Loss
+  # Exercises: 11A, 11B (MCQs), Test Paper
+  # ============================================================
+  - id: ch11
+    title: "Profit and Loss"
+    textbook_chapter: 11
+    topics:
+      - id: ch11_t01
+        title: "Basic Profit and Loss Concepts"
+        learning_objectives:
+          - "Understand cost price (CP), selling price (SP), profit, and loss"
+          - "Calculate profit percentage and loss percentage"
+          - "Find SP when CP and profit/loss % are given"
+          - "Find CP when SP and profit/loss % are given"
+        prerequisites: ["ch10_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Profit % is calculated on SP (it is calculated on CP)"
+          - "If SP > CP there is always profit (correct, but students confuse the subtraction order)"
+          - "10% profit on ₹100 and 10% loss on ₹110 cancel out (they don't — net result is a loss)"
+        key_formulas:
+          - "Profit = SP - CP"
+          - "Loss = CP - SP"
+          - "Profit% = (Profit/CP) × 100"
+          - "Loss% = (Loss/CP) × 100"
+          - "SP = CP × (100 + Profit%)/100"
+          - "SP = CP × (100 - Loss%)/100"
+          - "CP = SP × 100/(100 + Profit%)"
+          - "CP = SP × 100/(100 - Loss%)"
+        example_problems:
+          - problem: "A shopkeeper buys an article for ₹450 and sells it for ₹540. Find the profit percentage."
+            answer: "20%"
+            solution_steps:
+              - "CP = ₹450, SP = ₹540"
+              - "Profit = SP - CP = 540 - 450 = ₹90"
+              - "Profit% = (90/450) × 100 = 20%"
+            difficulty: 1
+            indian_context: "A shopkeeper in a local bazaar buys a kurta for ₹450 and sells it for ₹540 during a festival."
+
+          - problem: "A bicycle is sold at a loss of 12% for ₹4,400. Find the cost price."
+            answer: "₹5,000"
+            solution_steps:
+              - "SP = CP × (100 - Loss%)/100"
+              - "4400 = CP × 88/100"
+              - "CP = 4400 × 100/88"
+              - "CP = ₹5,000"
+            difficulty: 2
+            indian_context: "A second-hand Hero bicycle sold at 12% loss in a Delhi market."
+
+          - problem: "A trader buys goods for ₹2,000 and wants a 15% profit. What should be the selling price?"
+            answer: "₹2,300"
+            solution_steps:
+              - "SP = CP × (100 + Profit%)/100"
+              - "SP = 2000 × 115/100"
+              - "SP = ₹2,300"
+            difficulty: 1
+            indian_context: "A wholesale trader in Chandni Chowk marks up goods by 15% for retail sale."
+
+  # ============================================================
+  # Chapter 12: Simple Interest
+  # Exercises: 12A, 12B (MCQs), Test Paper
+  # ============================================================
+  - id: ch12
+    title: "Simple Interest"
+    textbook_chapter: 12
+    topics:
+      - id: ch12_t01
+        title: "Simple Interest Formula and Applications"
+        learning_objectives:
+          - "Understand principal, rate, time, and interest"
+          - "Calculate simple interest using formula SI = PRT/100"
+          - "Find amount (A = P + SI)"
+          - "Find P, R, or T when other values are given"
+        prerequisites: ["ch10_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Interest is always annual (time must match the rate period — convert months to years if rate is annual)"
+          - "Amount and interest are the same (Amount = Principal + Interest)"
+          - "Simple and compound interest are the same (they differ: SI is on original principal only)"
+        key_formulas:
+          - "SI = (P × R × T)/100"
+          - "Amount = P + SI = P(1 + RT/100)"
+          - "P = (SI × 100)/(R × T)"
+          - "R = (SI × 100)/(P × T)"
+          - "T = (SI × 100)/(P × R)"
+        example_problems:
+          - problem: "Find the simple interest on ₹8,000 at 5% per annum for 3 years"
+            answer: "₹1,200"
+            solution_steps:
+              - "P = ₹8,000, R = 5%, T = 3 years"
+              - "SI = (P × R × T)/100"
+              - "SI = (8000 × 5 × 3)/100"
+              - "SI = 120000/100 = ₹1,200"
+            difficulty: 1
+            indian_context: "You deposit ₹8,000 in a post office savings account at 5% per annum for 3 years."
+
+          - problem: "At what rate of interest will ₹6,000 amount to ₹7,500 in 5 years?"
+            answer: "5%"
+            solution_steps:
+              - "SI = Amount - Principal = 7500 - 6000 = ₹1,500"
+              - "R = (SI × 100)/(P × T)"
+              - "R = (1500 × 100)/(6000 × 5)"
+              - "R = 150000/30000 = 5%"
+            difficulty: 2
+            indian_context: "Your grandfather invested ₹6,000 in a bank FD and got back ₹7,500 after 5 years. What was the rate?"
+
+          - problem: "In how many years will ₹5,000 double itself at 10% per annum simple interest?"
+            answer: "10 years"
+            solution_steps:
+              - "To double, SI must equal P: SI = ₹5,000"
+              - "T = (SI × 100)/(P × R)"
+              - "T = (5000 × 100)/(5000 × 10)"
+              - "T = 500000/50000 = 10 years"
+            difficulty: 2
+            indian_context: "A common investment question — 'Rule of Doubling' is popular in Indian financial planning."
+
+  # ============================================================
+  # Chapter 13: Lines and Angles
+  # Exercises: Exercise 13
+  # ============================================================
+  - id: ch13
+    title: "Lines and Angles"
+    textbook_chapter: 13
+    topics:
+      - id: ch13_t01
+        title: "Types of Angle Pairs"
+        learning_objectives:
+          - "Identify supplementary angles (sum = 180°)"
+          - "Identify complementary angles (sum = 90°)"
+          - "Identify adjacent angles"
+          - "Understand linear pair and vertically opposite angles"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Supplementary means 90° (supplementary = 180°, complementary = 90°)"
+          - "Adjacent angles must be supplementary (not necessarily — they just share a common arm)"
+          - "Vertically opposite angles are supplementary (they are EQUAL)"
+        key_formulas:
+          - "Supplementary: a + b = 180°"
+          - "Complementary: a + b = 90°"
+          - "Linear pair: supplementary AND adjacent"
+          - "Vertically opposite angles are equal"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Vertically Opposite Angles:
+                    a
+                  ╲   ╱
+                   ╲ ╱
+                    X
+                   ╱ ╲
+                  ╱   ╲
+                b       a = b (vertically opposite)
+
+              Linear Pair:
+                ←───── a | b ─────→
+                   a + b = 180°
+            description: "Angle pair types illustrated"
+        example_problems:
+          - problem: "Find the supplement of 65°"
+            answer: "115°"
+            solution_steps:
+              - "Supplementary angles sum to 180°"
+              - "Supplement = 180° - 65° = 115°"
+            difficulty: 1
+            indian_context: "When a door opens at 65° from the wall, the angle on the other side is 115°."
+
+          - problem: "Two lines intersect. One angle is 72°. Find all four angles."
+            answer: "72°, 108°, 72°, 108°"
+            solution_steps:
+              - "Vertically opposite angles are equal: 72° and 72°"
+              - "Adjacent angles form a linear pair: 180° - 72° = 108°"
+              - "Four angles: 72°, 108°, 72°, 108°"
+            difficulty: 2
+            indian_context: "Two roads crossing at an intersection — the angles between the roads."
+
+          - problem: "Find the complement of 35°"
+            answer: "55°"
+            solution_steps:
+              - "Complementary angles sum to 90°"
+              - "Complement = 90° - 35° = 55°"
+            difficulty: 1
+            indian_context: "A ladder leans against a wall making 35° with the ground. The angle with the wall = 55°."
+
+  # ============================================================
+  # Chapter 14: Properties of Parallel Lines
+  # Exercises: Exercise 14
+  # ============================================================
+  - id: ch14
+    title: "Properties of Parallel Lines"
+    textbook_chapter: 14
+    topics:
+      - id: ch14_t01
+        title: "Transversal and Angle Properties"
+        learning_objectives:
+          - "Identify parallel lines and transversal"
+          - "Know corresponding, alternate interior, alternate exterior, and co-interior angles"
+          - "Use properties to find unknown angles"
+          - "Prove lines are parallel using angle conditions"
+        prerequisites: ["ch13_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Corresponding angles are always equal (only when lines are PARALLEL)"
+          - "Alternate angles are supplementary (they are EQUAL when lines are parallel)"
+          - "Co-interior angles are equal (they are SUPPLEMENTARY: sum = 180°)"
+        key_formulas:
+          - "Corresponding angles are equal (when lines are parallel)"
+          - "Alternate interior angles are equal"
+          - "Alternate exterior angles are equal"
+          - "Co-interior (same-side interior) angles are supplementary (sum = 180°)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Parallel lines cut by a transversal:
+                  ─── l₁ ───
+                1 │ 2
+                3 │ 4
+                  ╲
+                  ╲  (transversal t)
+                5 │ 6
+                7 │ 8
+                  ─── l₂ ───
+
+              Corresponding: ∠1=∠5, ∠2=∠6, ∠3=∠7, ∠4=∠8
+              Alternate interior: ∠3=∠6, ∠4=∠5
+              Co-interior: ∠3+∠5=180°, ∠4+∠6=180°
+            description: "Angles formed by parallel lines and transversal"
+        example_problems:
+          - problem: "Two parallel lines are cut by a transversal. One of the corresponding angles is 55°. Find all eight angles."
+            answer: "55°, 125°, 55°, 125°, 55°, 125°, 55°, 125°"
+            solution_steps:
+              - "Given corresponding angle = 55°"
+              - "Its supplementary angle = 180° - 55° = 125°"
+              - "Corresponding angles are equal → four angles of 55°"
+              - "Their supplements → four angles of 125°"
+            difficulty: 2
+            indian_context: "Railway tracks (parallel lines) crossed by a road (transversal) — angles at the crossing."
+
+          - problem: "If co-interior angles are (2x + 10)° and (3x - 5)°, find x and both angles."
+            answer: "x = 35°; angles are 80° and 100°"
+            solution_steps:
+              - "Co-interior angles are supplementary"
+              - "(2x + 10) + (3x - 5) = 180"
+              - "5x + 5 = 180"
+              - "5x = 175"
+              - "x = 35"
+              - "Angle 1 = 2(35) + 10 = 80°"
+              - "Angle 2 = 3(35) - 5 = 100°"
+              - "Check: 80 + 100 = 180° ✓"
+            difficulty: 3
+            indian_context: "Finding angles where a bridge crosses parallel canal banks."
+
+  # ============================================================
+  # Chapter 15: Properties of Triangles
+  # Exercises: 15A, 15B, 15C, 15D
+  # ============================================================
+  - id: ch15
+    title: "Properties of Triangles"
+    textbook_chapter: 15
+    topics:
+      - id: ch15_t01
+        title: "Types of Triangles and Angle Sum Property"
+        learning_objectives:
+          - "Classify triangles by sides (scalene, isosceles, equilateral)"
+          - "Classify triangles by angles (acute, right, obtuse)"
+          - "Apply angle sum property (sum of angles = 180°)"
+          - "Find unknown angles in a triangle"
+        prerequisites: ["ch13_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "An equilateral triangle can have a right angle (it cannot — all angles are 60°)"
+          - "Angle sum property is 360° for triangles (it's 180° for triangles, 360° for quadrilaterals)"
+        key_formulas:
+          - "Sum of angles in a triangle = 180°"
+          - "Equilateral: all angles = 60°"
+          - "Isosceles: base angles are equal"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Types of Triangles:
+              By sides:              By angles:
+              Equilateral  Isosceles  Scalene    Acute   Right   Obtuse
+                 /\         /\        /\         /\       |╲       /\
+                /  \       /  \      /  \       / .\     |  ╲    /.  \
+               /____\     /____\    /____\     /____\    |___╲  /____\
+              all =      2 sides=  all ≠     all<90° one=90° one>90°
+            description: "Classification of triangles"
+        example_problems:
+          - problem: "Find the third angle of a triangle if two angles are 65° and 45°"
+            answer: "70°"
+            solution_steps:
+              - "Sum of angles = 180°"
+              - "Third angle = 180° - 65° - 45° = 70°"
+            difficulty: 1
+            indian_context: "A triangular garden has two corner angles of 65° and 45°. What is the third angle?"
+
+          - problem: "In an isosceles triangle, the vertex angle is 80°. Find the base angles."
+            answer: "50° each"
+            solution_steps:
+              - "Base angles are equal in an isosceles triangle"
+              - "Let each base angle = x"
+              - "80° + x + x = 180°"
+              - "2x = 100°"
+              - "x = 50°"
+            difficulty: 2
+            indian_context: "A tent pole creates an isosceles triangle shape with vertex angle 80°."
+
+      - id: ch15_t02
+        title: "Exterior Angle Property and Triangle Inequality"
+        learning_objectives:
+          - "Understand exterior angle of a triangle"
+          - "Apply exterior angle property (exterior = sum of two interior opposite)"
+          - "Apply triangle inequality (sum of any two sides > third side)"
+          - "Apply Pythagoras theorem for right triangles"
+        prerequisites: ["ch15_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Any three lengths can form a triangle (no — sum of any two sides must be greater than the third)"
+          - "Pythagoras theorem works for all triangles (only for right-angled triangles)"
+          - "Exterior angle equals the adjacent interior angle (it equals the SUM of the two OPPOSITE interior angles)"
+        key_formulas:
+          - "Exterior angle = sum of two non-adjacent interior angles"
+          - "Triangle inequality: a + b > c, b + c > a, a + c > b"
+          - "Pythagoras: hypotenuse² = base² + height² (right triangle only)"
+        example_problems:
+          - problem: "Can a triangle have sides 3 cm, 4 cm, and 8 cm?"
+            answer: "No"
+            solution_steps:
+              - "Check triangle inequality:"
+              - "3 + 4 = 7, but 7 < 8"
+              - "Sum of two sides is NOT greater than the third"
+              - "These lengths cannot form a triangle"
+            difficulty: 2
+            indian_context: "Can you make a triangular rangoli frame with sticks of 3 cm, 4 cm, and 8 cm? No!"
+
+          - problem: "In a right triangle, the two legs are 6 cm and 8 cm. Find the hypotenuse."
+            answer: "10 cm"
+            solution_steps:
+              - "By Pythagoras theorem: h² = 6² + 8²"
+              - "h² = 36 + 64 = 100"
+              - "h = √100 = 10 cm"
+            difficulty: 2
+            indian_context: "A ladder of length 10 m reaches 8 m up a wall. The base is 6 m from the wall — the classic 3-4-5 triple scaled by 2."
+
+  # ============================================================
+  # Chapter 16: Congruence
+  # Exercises: Exercise 16
+  # ============================================================
+  - id: ch16
+    title: "Congruence"
+    textbook_chapter: 16
+    topics:
+      - id: ch16_t01
+        title: "Congruence of Triangles"
+        learning_objectives:
+          - "Understand congruent figures (same shape and size)"
+          - "Identify corresponding parts of congruent triangles"
+          - "Apply congruence criteria: SSS, SAS, ASA, RHS"
+          - "Write congruence statements correctly"
+        prerequisites: ["ch15_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Similar and congruent are the same (similar = same shape, congruent = same shape AND size)"
+          - "AAA is a congruence criterion (AAA proves similarity, not congruence)"
+          - "Order of vertices in congruence statement doesn't matter (it does — corresponding vertices must match)"
+        key_formulas:
+          - "SSS: three sides equal"
+          - "SAS: two sides and included angle equal"
+          - "ASA: two angles and included side equal"
+          - "RHS: right angle, hypotenuse, and one side equal"
+          - "CPCT: Corresponding Parts of Congruent Triangles are equal"
+        example_problems:
+          - problem: "In ΔABC and ΔDEF, AB = DE, BC = EF, AC = DF. Are they congruent? By which criterion?"
+            answer: "Yes, by SSS (Side-Side-Side) criterion"
+            solution_steps:
+              - "All three sides of ΔABC match with three sides of ΔDEF"
+              - "AB = DE, BC = EF, AC = DF"
+              - "By SSS criterion, ΔABC ≅ ΔDEF"
+            difficulty: 2
+            indian_context: "Two identical triangular tiles for a kitchen floor — same shape and size means congruent."
+
+          - problem: "In ΔPQR, ∠P = 90°, PQ = 5 cm, QR = 13 cm. In ΔXYZ, ∠X = 90°, XY = 5 cm, YZ = 13 cm. Are they congruent?"
+            answer: "Yes, by RHS criterion"
+            solution_steps:
+              - "Both have a right angle: ∠P = ∠X = 90°"
+              - "Hypotenuse: QR = YZ = 13 cm"
+              - "One side: PQ = XY = 5 cm"
+              - "By RHS criterion, ΔPQR ≅ ΔXYZ"
+            difficulty: 3
+            indian_context: "Two identical right-angled shelf brackets — congruent by RHS."
+
+  # ============================================================
+  # Chapter 17: Constructions
+  # Exercises: 17A, 17B, 17C (MCQs), Test Paper
+  # ============================================================
+  - id: ch17
+    title: "Constructions"
+    textbook_chapter: 17
+    topics:
+      - id: ch17_t01
+        title: "Construction of Lines and Triangles"
+        learning_objectives:
+          - "Construct a line parallel to a given line through a point"
+          - "Construct triangles given SSS"
+          - "Construct triangles given SAS"
+          - "Construct triangles given ASA"
+          - "Construct right triangles given RHS"
+        prerequisites: ["ch15_t01", "ch16_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "You can construct any triangle with any three measurements (check triangle inequality first)"
+          - "Compass width doesn't need to be exact (precision matters in constructions)"
+          - "You can use a protractor for angle in compass-ruler constructions (use compass and straightedge only unless stated otherwise)"
+        key_formulas:
+          - "SSS construction: draw base, use compass arcs for other vertices"
+          - "SAS construction: draw base, construct angle, mark side length"
+          - "ASA construction: draw base, construct both angles, find intersection"
+          - "RHS construction: draw base, construct right angle, use compass for hypotenuse"
+        example_problems:
+          - problem: "Construct ΔABC where AB = 5 cm, BC = 6 cm, CA = 7 cm"
+            answer: "Triangle with sides 5, 6, 7 cm (SSS construction)"
+            solution_steps:
+              - "Step 1: Draw BC = 6 cm (base)"
+              - "Step 2: With B as center, draw arc of radius 5 cm"
+              - "Step 3: With C as center, draw arc of radius 7 cm"
+              - "Step 4: The arcs intersect at A"
+              - "Step 5: Join AB and AC"
+              - "ΔABC is constructed"
+            difficulty: 2
+            indian_context: "Constructing a triangular flower bed in a school garden with sides 5 m, 6 m, and 7 m."
+
+          - problem: "Construct ΔPQR where PQ = 4.5 cm, ∠P = 60°, PR = 5 cm"
+            answer: "Triangle constructed using SAS"
+            solution_steps:
+              - "Step 1: Draw PQ = 4.5 cm"
+              - "Step 2: At P, construct angle of 60° using compass"
+              - "Step 3: Along this ray, mark R at 5 cm from P"
+              - "Step 4: Join QR"
+              - "ΔPQR is constructed"
+            difficulty: 3
+            indian_context: "Designing a triangular kite — one side 4.5 cm, angle 60°, another side 5 cm."
+
+  # ============================================================
+  # Chapter 18: Reflection and Rotational Symmetry
+  # Exercises: 18A, 18B
+  # ============================================================
+  - id: ch18
+    title: "Reflection and Rotational Symmetry"
+    textbook_chapter: 18
+    topics:
+      - id: ch18_t01
+        title: "Reflection Symmetry"
+        learning_objectives:
+          - "Identify line of symmetry in figures"
+          - "Understand mirror images (reflection)"
+          - "Find number of lines of symmetry in regular shapes"
+          - "Complete symmetric figures given half"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "All shapes have at least one line of symmetry (a scalene triangle has zero)"
+          - "A rectangle has 4 lines of symmetry (it has only 2 — horizontal and vertical)"
+          - "Reflection changes the size of a figure (it doesn't — only orientation changes)"
+        key_formulas:
+          - "Regular polygon with n sides has n lines of symmetry"
+          - "Circle has infinite lines of symmetry"
+          - "Equilateral triangle: 3 lines"
+          - "Square: 4 lines"
+        example_problems:
+          - problem: "How many lines of symmetry does a regular hexagon have?"
+            answer: "6"
+            solution_steps:
+              - "A regular hexagon has 6 sides"
+              - "Regular polygon with n sides has n lines of symmetry"
+              - "Answer: 6 lines of symmetry"
+            difficulty: 1
+            indian_context: "A honeycomb cell is a regular hexagon — think of how many ways you can fold it symmetrically."
+
+      - id: ch18_t02
+        title: "Rotational Symmetry"
+        learning_objectives:
+          - "Understand rotational symmetry and order of rotation"
+          - "Find the angle of rotation"
+          - "Identify centre of rotation"
+          - "Determine if a figure has rotational symmetry"
+        prerequisites: ["ch18_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Every figure with a line of symmetry has rotational symmetry (not always true)"
+          - "Rotational symmetry means the figure rotates 360° (order of rotation is how many times it fits in 360°)"
+        key_formulas:
+          - "Angle of rotation = 360°/order of rotation"
+          - "Order of rotation for regular polygon with n sides = n"
+          - "Every figure has rotational symmetry of order at least 1 (360° rotation)"
+        example_problems:
+          - problem: "What is the order of rotational symmetry of a square?"
+            answer: "4"
+            solution_steps:
+              - "A square looks the same 4 times in a 360° rotation"
+              - "At 90°, 180°, 270°, and 360°"
+              - "Order = 4, angle of rotation = 90°"
+            difficulty: 1
+            indian_context: "A carrom board (square) — it looks the same if rotated 90° at a time."
+
+  # ============================================================
+  # Chapter 19: Three-Dimensional Shapes
+  # Exercises: Exercise 19
+  # ============================================================
+  - id: ch19
+    title: "Three-Dimensional Shapes"
+    textbook_chapter: 19
+    topics:
+      - id: ch19_t01
+        title: "Solids — Faces, Edges, Vertices"
+        learning_objectives:
+          - "Identify 3D shapes: cuboid, cube, cylinder, cone, sphere"
+          - "Count faces, edges, and vertices of 3D shapes"
+          - "Apply Euler's formula: F + V - E = 2"
+          - "Identify nets of 3D shapes"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "A cylinder has edges (it has 2 curved edges, not straight edges in the traditional sense)"
+          - "A cone has a vertex but no edge (it has 1 vertex and 1 curved edge)"
+          - "Euler's formula works for cylinders and cones (it works for polyhedra — flat-faced solids)"
+        key_formulas:
+          - "Euler's formula: F + V - E = 2 (for polyhedra)"
+          - "Cuboid: 6 faces, 8 vertices, 12 edges"
+          - "Cube: 6 faces, 8 vertices, 12 edges"
+          - "Triangular prism: 5 faces, 6 vertices, 9 edges"
+          - "Pyramid (square base): 5 faces, 5 vertices, 8 edges"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Cuboid:           Cylinder:       Cone:
+              ┌──────┐         ┌───┐           /\
+              │      │         │   │          /  \
+              │      │         │   │         /    \
+              └──────┘         └───┘        /______\
+              6F, 8V, 12E     2F+1curved   1F+1 curved
+            description: "Common 3D shapes"
+        example_problems:
+          - problem: "A polyhedron has 8 vertices and 12 edges. How many faces does it have?"
+            answer: "6 faces"
+            solution_steps:
+              - "Use Euler's formula: F + V - E = 2"
+              - "F + 8 - 12 = 2"
+              - "F - 4 = 2"
+              - "F = 6"
+            difficulty: 2
+            indian_context: "A dice (cube) has 8 corners and 12 edges. How many faces? 6 — each showing 1 to 6 dots."
+
+          - problem: "Verify Euler's formula for a triangular prism"
+            answer: "F + V - E = 5 + 6 - 9 = 2 ✓"
+            solution_steps:
+              - "Triangular prism: 2 triangles + 3 rectangles = 5 faces"
+              - "Vertices: 3 on top + 3 on bottom = 6"
+              - "Edges: 3 on top + 3 on bottom + 3 lateral = 9"
+              - "F + V - E = 5 + 6 - 9 = 2 ✓"
+            difficulty: 2
+            indian_context: "A Toblerone chocolate box is a triangular prism. Count its faces, edges, and vertices."
+
+  # ============================================================
+  # Chapter 20: Mensuration
+  # Exercises: 20A, 20B, 20C, 20D, 20E, 20F, 20G (MCQs), Test Paper
+  # ============================================================
+  - id: ch20
+    title: "Mensuration"
+    textbook_chapter: 20
+    topics:
+      - id: ch20_t01
+        title: "Perimeter and Area of Rectangles, Squares, and Parallelograms"
+        learning_objectives:
+          - "Calculate perimeter and area of rectangles"
+          - "Calculate perimeter and area of squares"
+          - "Calculate area of parallelograms"
+          - "Solve word problems on perimeter and area"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Area and perimeter use the same formula (perimeter is sum of sides, area is base × height)"
+          - "Doubling the side doubles the area (it quadruples the area)"
+          - "Parallelogram area = side × side (it's base × HEIGHT, not side)"
+        key_formulas:
+          - "Rectangle: Perimeter = 2(l + b), Area = l × b"
+          - "Square: Perimeter = 4a, Area = a²"
+          - "Parallelogram: Area = base × height"
+        example_problems:
+          - problem: "Find the area of a rectangular field 120 m long and 80 m wide"
+            answer: "9,600 m²"
+            solution_steps:
+              - "Area = length × width"
+              - "Area = 120 × 80 = 9,600 m²"
+            difficulty: 1
+            indian_context: "A farmer's rectangular field in Punjab is 120 m × 80 m. How much area for growing wheat?"
+
+          - problem: "The perimeter of a square garden is 64 m. Find its area."
+            answer: "256 m²"
+            solution_steps:
+              - "Side = Perimeter/4 = 64/4 = 16 m"
+              - "Area = side² = 16² = 256 m²"
+            difficulty: 2
+            indian_context: "A square park in your colony has a walking track of 64 m around it. What's the area inside?"
+
+      - id: ch20_t02
+        title: "Area of Triangles"
+        learning_objectives:
+          - "Calculate area of a triangle"
+          - "Find height or base when area is given"
+          - "Apply area formula to different triangle types"
+        prerequisites: ["ch20_t01", "ch15_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Area of triangle = base × height (it's HALF of that: ½ × base × height)"
+          - "Any side can be the base without changing the height (height must be perpendicular to the chosen base)"
+        key_formulas:
+          - "Area of triangle = ½ × base × height"
+        example_problems:
+          - problem: "Find the area of a triangle with base 14 cm and height 10 cm"
+            answer: "70 cm²"
+            solution_steps:
+              - "Area = ½ × base × height"
+              - "Area = ½ × 14 × 10 = 70 cm²"
+            difficulty: 1
+            indian_context: "A triangular piece of cloth for a flag — base 14 cm, height 10 cm."
+
+          - problem: "The area of a triangle is 150 cm² and its base is 20 cm. Find the height."
+            answer: "15 cm"
+            solution_steps:
+              - "Area = ½ × base × height"
+              - "150 = ½ × 20 × height"
+              - "150 = 10 × height"
+              - "height = 150/10 = 15 cm"
+            difficulty: 2
+            indian_context: "A triangular toran (door decoration) has area 150 cm² and base 20 cm. How tall is it?"
+
+      - id: ch20_t03
+        title: "Circumference and Area of Circles"
+        learning_objectives:
+          - "Calculate circumference of a circle"
+          - "Calculate area of a circle"
+          - "Find radius when circumference or area is given"
+          - "Solve problems involving semicircles and quadrants"
+        prerequisites: ["ch20_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "π = 3.14 exactly (it's an approximation; π is irrational)"
+          - "Circumference and area are the same thing (circumference is perimeter, area is space inside)"
+          - "Doubling the radius doubles the area (it quadruples the area, since area ∝ r²)"
+        key_formulas:
+          - "Circumference = 2πr = πd"
+          - "Area = πr²"
+          - "π ≈ 22/7 or 3.14"
+        example_problems:
+          - problem: "Find the circumference of a circle with radius 7 cm (use π = 22/7)"
+            answer: "44 cm"
+            solution_steps:
+              - "Circumference = 2πr"
+              - "= 2 × 22/7 × 7"
+              - "= 2 × 22 = 44 cm"
+            difficulty: 1
+            indian_context: "A circular bangle has radius 7 cm. The length of wire needed to make it = 44 cm."
+
+          - problem: "Find the area of a circle with radius 14 cm (use π = 22/7)"
+            answer: "616 cm²"
+            solution_steps:
+              - "Area = πr²"
+              - "= 22/7 × 14 × 14"
+              - "= 22/7 × 196"
+              - "= 22 × 28 = 616 cm²"
+            difficulty: 2
+            indian_context: "A circular rangoli with radius 14 cm — area to be decorated = 616 cm²."
+
+  # ============================================================
+  # Chapter 21: Collection and Organisation of Data
+  # Exercises: 21A, 21B, 21C
+  # ============================================================
+  - id: ch21
+    title: "Collection and Organisation of Data"
+    textbook_chapter: 21
+    topics:
+      - id: ch21_t01
+        title: "Mean, Median, and Mode"
+        learning_objectives:
+          - "Calculate mean (average) of ungrouped data"
+          - "Calculate mean of tabulated (frequency) data"
+          - "Find median of ungrouped data"
+          - "Find mode of ungrouped data"
+          - "Understand when to use mean, median, or mode"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Mean, median, and mode are always the same (they can be very different)"
+          - "Median requires data to be in any order (data MUST be arranged in ascending/descending order)"
+          - "Mode is always unique (data can have no mode, one mode, or multiple modes)"
+          - "Mean is always a whole number (it can be a decimal)"
+        key_formulas:
+          - "Mean = Sum of all observations / Number of observations"
+          - "Mean (frequency table) = Σ(f × x) / Σf"
+          - "Median: middle value when data is arranged in order"
+          - "If n is odd: median = ((n+1)/2)th observation"
+          - "If n is even: median = average of (n/2)th and (n/2 + 1)th observations"
+          - "Mode = most frequently occurring value"
+        example_problems:
+          - problem: "Find the mean of: 12, 15, 18, 22, 13"
+            answer: "16"
+            solution_steps:
+              - "Sum = 12 + 15 + 18 + 22 + 13 = 80"
+              - "Number of observations = 5"
+              - "Mean = 80/5 = 16"
+            difficulty: 1
+            indian_context: "Five students scored 12, 15, 18, 22, 13 in a class test. What's the average score?"
+
+          - problem: "Find the median of: 7, 3, 5, 9, 11, 6, 8"
+            answer: "7"
+            solution_steps:
+              - "Arrange in order: 3, 5, 6, 7, 8, 9, 11"
+              - "n = 7 (odd)"
+              - "Median = (7+1)/2 = 4th value"
+              - "4th value = 7"
+            difficulty: 1
+            indian_context: "Heights (in cm) of 7 students in a row — the middle student's height is the median."
+
+          - problem: "Find the mode of: 4, 6, 7, 4, 9, 4, 6, 8, 6, 4"
+            answer: "4"
+            solution_steps:
+              - "Count frequency of each:"
+              - "4 appears 4 times"
+              - "6 appears 3 times"
+              - "7, 8, 9 appear once each"
+              - "Mode = 4 (highest frequency)"
+            difficulty: 1
+            indian_context: "Shoe sizes of 10 students in a class — size 4 is most common (the mode)."
+
+  # ============================================================
+  # Chapter 22: Bar Graphs
+  # Exercises: Exercise 22
+  # ============================================================
+  - id: ch22
+    title: "Bar Graphs"
+    textbook_chapter: 22
+    topics:
+      - id: ch22_t01
+        title: "Reading and Drawing Bar Graphs"
+        learning_objectives:
+          - "Read and interpret bar graphs"
+          - "Draw bar graphs from given data"
+          - "Understand double bar graphs"
+          - "Compare data using bar graphs"
+        prerequisites: ["ch21_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Bars can have different widths (all bars must have equal width)"
+          - "Gaps between bars are not needed (bar graphs for categorical data should have gaps)"
+          - "The scale on y-axis doesn't matter (incorrect scale can misrepresent data)"
+        key_formulas:
+          - "Bar width should be uniform"
+          - "Equal gaps between bars"
+          - "Scale chosen should accommodate all data values"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Bar Graph Example (marks of students):
+              100│
+               90│    ██
+               80│    ██ ██
+               70│ ██ ██ ██
+               60│ ██ ██ ██ ██
+               50│ ██ ██ ██ ██
+                 └──────────────
+                  Ram Sita Anu Raj
+            description: "Simple bar graph"
+        example_problems:
+          - problem: "From the bar graph: Ram=70, Sita=90, Anu=85, Raj=65. Who scored the highest and what is the difference between highest and lowest?"
+            answer: "Sita scored highest. Difference = 90 - 65 = 25"
+            solution_steps:
+              - "Read heights: Ram=70, Sita=90, Anu=85, Raj=65"
+              - "Highest = Sita (90)"
+              - "Lowest = Raj (65)"
+              - "Difference = 90 - 65 = 25"
+            difficulty: 1
+            indian_context: "Marks of four students in a CBSE school test — reading the bar graph."
+
+  # ============================================================
+  # Chapter 23: Probability
+  # Exercises: Exercise 23
+  # ============================================================
+  - id: ch23
+    title: "Probability"
+    textbook_chapter: 23
+    topics:
+      - id: ch23_t01
+        title: "Introduction to Probability"
+        learning_objectives:
+          - "Understand experiment, outcome, and event"
+          - "Define and calculate empirical (experimental) probability"
+          - "Find probability of simple events (coins, dice, cards)"
+          - "Understand that probability ranges from 0 to 1"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Probability can be greater than 1 (probability is always between 0 and 1)"
+          - "If something hasn't happened, it never will (past results don't affect future probability in independent events)"
+          - "Getting heads 3 times means tails is 'due' (gambler's fallacy — each toss is independent)"
+        key_formulas:
+          - "P(Event) = Number of favourable outcomes / Total number of outcomes"
+          - "0 ≤ P(E) ≤ 1"
+          - "P(certain event) = 1"
+          - "P(impossible event) = 0"
+          - "P(E) + P(not E) = 1"
+        example_problems:
+          - problem: "A coin is tossed. What is the probability of getting heads?"
+            answer: "1/2"
+            solution_steps:
+              - "Total outcomes = {Head, Tail} = 2"
+              - "Favourable outcomes (head) = 1"
+              - "P(Head) = 1/2"
+            difficulty: 1
+            indian_context: "Cricket match toss — what's the probability your team captain calls it correctly?"
+
+          - problem: "A dice is thrown. What is the probability of getting a number greater than 4?"
+            answer: "1/3"
+            solution_steps:
+              - "Total outcomes = {1, 2, 3, 4, 5, 6} = 6"
+              - "Favourable outcomes (>4) = {5, 6} = 2"
+              - "P(>4) = 2/6 = 1/3"
+            difficulty: 1
+            indian_context: "Playing Ludo and rolling the dice — what's the chance of getting 5 or 6?"
+
+          - problem: "A bag contains 3 red balls, 5 blue balls, and 2 green balls. A ball is drawn at random. Find P(blue)."
+            answer: "1/2"
+            solution_steps:
+              - "Total balls = 3 + 5 + 2 = 10"
+              - "Blue balls = 5"
+              - "P(blue) = 5/10 = 1/2"
+            difficulty: 2
+            indian_context: "A bag of marbles at a village fair — pick one blindfolded. What's the chance it's blue?"
+
+          - problem: "In a class of 40 students, 25 like cricket and 15 like football. If a student is selected randomly, what is the probability that the student likes cricket?"
+            answer: "5/8"
+            solution_steps:
+              - "Total students = 40"
+              - "Students who like cricket = 25"
+              - "P(cricket) = 25/40 = 5/8"
+            difficulty: 2
+            indian_context: "In an Indian school, cricket is very popular — 25 out of 40 students prefer it over football."
