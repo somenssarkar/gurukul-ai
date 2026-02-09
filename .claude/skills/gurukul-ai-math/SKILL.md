@@ -179,23 +179,19 @@ Both skills work together when a student learns math topics.
 
 ## File References
 
-Math curriculum files:
+**Curriculum (source of truth — includes per-topic misconceptions, formulas, answer keys):**
 ```
 curriculum/cbse/grade-7/math.yaml
 curriculum/cbse/grade-8/math.yaml
 ```
 
-Math misconceptions:
-```
-misconceptions/math-grade-7.yaml
-misconceptions/math-grade-8.yaml
-```
-
-Math formulas:
+**Formula Quick Reference (consolidated student-facing reference):**
 ```
 resources/formulas/cbse/grade-7/math-formulas.md
 resources/formulas/cbse/grade-8/math-formulas.md
 ```
+
+Note: Misconceptions are embedded per-topic in curriculum YAML and as teaching patterns in this SKILL.md. No separate misconception files.
 
 ## NCERT Alignment
 

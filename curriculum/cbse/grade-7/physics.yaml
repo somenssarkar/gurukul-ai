@@ -1,0 +1,1189 @@
+grade: 7
+subject: physics
+board: CBSE
+textbook: "Learning Elementary Physics by Goyal Brothers Prakashan"
+schema_version: "1.0"
+total_chapters: 7
+
+chapters:
+  # ============================================================
+  # Chapter 1: Physical Quantities and Measurement
+  # Units: 1A (Area), 1B (Volume), 1C (Density & Speed)
+  # ============================================================
+  - id: ch01
+    title: "Physical Quantities and Measurement"
+    textbook_chapter: 1
+    topics:
+      - id: ch01_t01
+        title: "Area and Its Measurement"
+        learning_objectives:
+          - "Define area as space occupied by a 2D surface"
+          - "Know SI unit of area (m²) and conversions to cm², mm², hectare, km²"
+          - "Calculate area of rectangle, triangle, and circle"
+          - "Measure area of irregular shapes using graph paper"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "1 m² = 100 cm² (WRONG: 1 m² = 10,000 cm² because 1 m = 100 cm, so 1 m × 1 m = 100 cm × 100 cm)"
+          - "Area and perimeter are the same (perimeter is length around, area is space inside)"
+          - "All shapes use length × breadth for area (each shape has its own formula)"
+        key_formulas:
+          - "Rectangle: Area = length × breadth"
+          - "Triangle: Area = ½ × base × height"
+          - "Circle: Area = πr² (π ≈ 22/7)"
+          - "1 m² = 10,000 cm²"
+          - "1 hectare = 10,000 m²"
+          - "1 km² = 100 hectares"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Unit Conversion for Area:
+              1 m = 100 cm
+              1 m² = 100 cm × 100 cm = 10,000 cm²
+
+              ┌──── 1 m ────┐     ┌── 100 cm ──┐
+              │             │     │            │
+              │  1 m²       │ 1m  │ 10,000 cm² │ 100cm
+              │             │     │            │
+              └─────────────┘     └────────────┘
+            description: "Why 1 m² = 10,000 cm², not 100 cm²"
+        example_problems:
+          - problem: "Find the area of a rectangular playground 50 m long and 30 m wide"
+            answer: "1500 m²"
+            solution_steps:
+              - "Given: length = 50 m, breadth = 30 m"
+              - "Formula: Area = length × breadth"
+              - "Area = 50 × 30 = 1500 m²"
+            difficulty: 1
+            indian_context: "A school playground in your colony — 50 m long and 30 m wide."
+
+          - problem: "Convert 5 m² to cm²"
+            answer: "50,000 cm²"
+            solution_steps:
+              - "1 m² = 10,000 cm²"
+              - "5 m² = 5 × 10,000 = 50,000 cm²"
+            difficulty: 1
+            indian_context: "A shop floor of 5 m² — how many square centimetre tiles would cover it?"
+
+          - problem: "Find the area of a circular garden with radius 14 m (π = 22/7)"
+            answer: "616 m²"
+            solution_steps:
+              - "Given: radius = 14 m"
+              - "Formula: Area = πr²"
+              - "Area = 22/7 × 14 × 14"
+              - "= 22/7 × 196 = 22 × 28 = 616 m²"
+            difficulty: 2
+            indian_context: "A circular garden in a housing society with radius 14 m."
+
+          - problem: "A farmer has a triangular plot with base 80 m and height 60 m. Find the area in hectares."
+            answer: "0.24 hectares"
+            solution_steps:
+              - "Area = ½ × base × height"
+              - "= ½ × 80 × 60 = 2400 m²"
+              - "Convert to hectares: 2400/10,000 = 0.24 hectares"
+            difficulty: 3
+            indian_context: "A farmer's triangular field in Haryana."
+
+      - id: ch01_t02
+        title: "Volume and Its Measurement"
+        learning_objectives:
+          - "Define volume as the space occupied by a 3D object"
+          - "Know SI unit of volume (m³) and conversions to cm³, litres, mL"
+          - "Calculate volume of cube, cuboid, cylinder, and sphere"
+          - "Measure volume of irregular objects by displacement method"
+          - "Know measuring instruments: measuring cylinder, burette, pipette, overflow jar"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "1 m³ = 100 cm³ (WRONG: 1 m³ = 1,000,000 cm³ = 10⁶ cm³)"
+          - "Volume and capacity are always the same unit (volume in m³ or cm³, capacity in litres or mL)"
+          - "Displacement method only works for solids (it works for any object denser than the liquid)"
+        key_formulas:
+          - "Cube: Volume = l³"
+          - "Cuboid: Volume = l × b × h"
+          - "Cylinder: Volume = πr²h"
+          - "Sphere: Volume = (4/3)πr³"
+          - "1 m³ = 1,000 litres = 1,000,000 mL"
+          - "1 litre = 1000 mL = 1000 cm³"
+          - "1 mL = 1 cm³"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Displacement Method for Irregular Objects:
+              Before:           After dropping stone:
+              ┌────┐            ┌────┐
+              │    │ ← 200 mL   │    │ ← 250 mL
+              │~~~~│            │~~~~│
+              │    │            │ ⬟  │ ← stone
+              │    │            │    │
+              └────┘            └────┘
+              Volume of stone = 250 - 200 = 50 mL = 50 cm³
+            description: "Finding volume of irregular object by water displacement"
+        example_problems:
+          - problem: "Find the volume of a water tank that is 2 m long, 1.5 m wide, and 1 m deep. Express in litres."
+            answer: "3000 litres"
+            solution_steps:
+              - "Given: l = 2 m, b = 1.5 m, h = 1 m"
+              - "Volume = l × b × h = 2 × 1.5 × 1 = 3 m³"
+              - "Convert: 1 m³ = 1000 litres"
+              - "Volume = 3 × 1000 = 3000 litres"
+            difficulty: 2
+            indian_context: "A water tank on the roof of a house in Chennai — how many litres does it hold?"
+
+          - problem: "A stone dropped into a measuring cylinder raises the water level from 40 mL to 55 mL. Find the volume of the stone."
+            answer: "15 cm³"
+            solution_steps:
+              - "Volume = Final reading - Initial reading"
+              - "= 55 mL - 40 mL = 15 mL"
+              - "Since 1 mL = 1 cm³, volume = 15 cm³"
+            difficulty: 1
+            indian_context: "A science experiment in your school lab — finding the volume of a pebble."
+
+          - problem: "A cylindrical vessel has radius 7 cm and height 20 cm. Find its volume (π = 22/7)"
+            answer: "3080 cm³"
+            solution_steps:
+              - "Volume = πr²h"
+              - "= 22/7 × 7 × 7 × 20"
+              - "= 22 × 7 × 20 = 3080 cm³"
+            difficulty: 2
+            indian_context: "A steel water glass (cylindrical) with radius 7 cm and height 20 cm."
+
+      - id: ch01_t03
+        title: "Measurement of Density and Speed"
+        learning_objectives:
+          - "Define density as mass per unit volume"
+          - "Calculate density using formula D = M/V"
+          - "Know SI unit (kg/m³) and CGS unit (g/cm³) of density"
+          - "Convert between CGS and SI density units"
+          - "Define speed and calculate using S = D/T"
+          - "Distinguish between uniform and average speed"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Density of water is 1 g/cm³ = 1 kg/m³ (WRONG: 1 g/cm³ = 1000 kg/m³)"
+          - "Heavier objects are always denser (a large block of wood is heavier than a small iron nail, but iron is denser)"
+          - "Speed and velocity are the same thing (speed has no direction, velocity has direction)"
+        key_formulas:
+          - "Density = Mass / Volume (D = M/V)"
+          - "Speed = Distance / Time (S = D/T)"
+          - "1 g/cm³ = 1000 kg/m³"
+          - "Density of water = 1 g/cm³ = 1000 kg/m³"
+          - "Average speed = Total distance / Total time"
+        example_problems:
+          - problem: "A block of iron has mass 390 g and volume 50 cm³. Find its density in g/cm³ and kg/m³."
+            answer: "7.8 g/cm³ = 7800 kg/m³"
+            solution_steps:
+              - "D = M/V = 390/50 = 7.8 g/cm³"
+              - "Convert to SI: 7.8 × 1000 = 7800 kg/m³"
+            difficulty: 2
+            indian_context: "An iron block used as a paperweight in your father's office."
+
+          - problem: "A car travels 150 km in 2.5 hours. Find its average speed in km/h and m/s."
+            answer: "60 km/h = 16.67 m/s"
+            solution_steps:
+              - "Speed = Distance/Time = 150/2.5 = 60 km/h"
+              - "Convert to m/s: 60 × 1000/3600 = 60 × 5/18 = 16.67 m/s"
+            difficulty: 2
+            indian_context: "A Maruti Suzuki car traveling from Jaipur to Ajmer (150 km) in 2.5 hours."
+
+          - problem: "An object has density 0.8 g/cm³. Will it float or sink in water?"
+            answer: "It will float (density < 1 g/cm³, which is less than water's density)"
+            solution_steps:
+              - "Density of water = 1 g/cm³"
+              - "Object's density = 0.8 g/cm³"
+              - "Since 0.8 < 1, the object is less dense than water"
+              - "Objects less dense than the liquid float"
+            difficulty: 1
+            indian_context: "Wood floats in water but iron sinks — it's all about density!"
+
+  # ============================================================
+  # Chapter 2: Force and Pressure — Motion
+  # Units: 2A (Rest & Motion), 2B (Speed & Velocity)
+  # ============================================================
+  - id: ch02
+    title: "Force and Pressure — Motion"
+    textbook_chapter: 2
+    topics:
+      - id: ch02_t01
+        title: "Rest and Motion — Kinds of Motion"
+        learning_objectives:
+          - "Define rest and motion with examples"
+          - "Understand that rest and motion are relative"
+          - "Identify types: rectilinear, curvilinear, rotatory, circular, oscillatory, vibratory"
+          - "Distinguish between periodic and non-periodic motion"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "An object is either at rest or in motion, never both (it depends on the frame of reference — a train passenger is at rest relative to the train but moving relative to the ground)"
+          - "Circular and rotatory motion are the same (rotatory: spinning about own axis like a top; circular: moving in a circle around an external point like a satellite)"
+          - "Oscillatory and vibratory are the same (oscillatory: large visible to-and-fro like pendulum; vibratory: rapid invisible back-and-forth like tuning fork)"
+        key_formulas:
+          - "No formulas — this is a conceptual topic"
+          - "Motion is change of position with time relative to a reference point"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Types of Motion:
+              Rectilinear:    ──────→ (straight line, e.g., ball rolling on flat surface)
+              Curvilinear:    ╱╲╱╲   (curved path, e.g., ball thrown in air)
+              Circular:       ○ → ● (moving around a point, e.g., Earth around Sun)
+              Rotatory:       ⟳     (spinning on own axis, e.g., spinning top)
+              Oscillatory:    ←  ●  → (to-and-fro, e.g., pendulum)
+              Vibratory:      ‹●›    (rapid vibration, e.g., tuning fork)
+            description: "Types of motion illustrated"
+        example_problems:
+          - problem: "A person is sitting in a moving bus. Is the person at rest or in motion?"
+            answer: "Both — at rest relative to the bus, in motion relative to the road/ground"
+            solution_steps:
+              - "Relative to the bus: the person's position does not change → at rest"
+              - "Relative to the ground: the person's position keeps changing → in motion"
+              - "Rest and motion are relative — they depend on the reference point"
+            difficulty: 1
+            indian_context: "Sitting in a DTC bus in Delhi — you're still relative to the bus, but moving relative to the road."
+
+          - problem: "Classify these motions: (a) swing, (b) hands of a clock, (c) a car on a straight road, (d) a spinning top"
+            answer: "(a) oscillatory, (b) circular, (c) rectilinear, (d) rotatory"
+            solution_steps:
+              - "(a) Swing: moves to-and-fro about a fixed point → oscillatory"
+              - "(b) Clock hands: move in a circle around a fixed center → circular"
+              - "(c) Car on straight road: moves in a straight line → rectilinear"
+              - "(d) Spinning top: spins around its own axis → rotatory"
+            difficulty: 1
+            indian_context: "Everyday motions: jhoola (swing) at a mela, clock in your classroom, car on NH highway, lattu (top)."
+
+          - problem: "Give an example of an object that has both rotatory and rectilinear motion simultaneously."
+            answer: "A ball rolling on the ground — it rotates about its own axis while moving forward in a line"
+            solution_steps:
+              - "A rolling ball spins (rotatory) while also moving forward (rectilinear)"
+              - "A drill bit: rotates while moving forward into the wall"
+              - "Wheels of a moving bicycle: rotate and translate"
+            difficulty: 2
+            indian_context: "A cricket ball bowled on the pitch — it rolls and moves forward at the same time."
+
+      - id: ch02_t02
+        title: "Speed and Velocity"
+        learning_objectives:
+          - "Define speed and its SI unit (m/s)"
+          - "Define velocity as speed with direction"
+          - "Distinguish between uniform and variable speed/velocity"
+          - "Distinguish between distance and displacement"
+          - "Distinguish between mass and weight"
+          - "Convert speed units: km/h to m/s and vice versa"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Speed and velocity are the same (speed is scalar — just magnitude; velocity is vector — magnitude AND direction)"
+          - "Distance and displacement are always equal (only if path is a straight line in one direction)"
+          - "Mass and weight are the same (mass = amount of matter in kg, constant everywhere; weight = gravitational force in N, changes with gravity)"
+          - "A body with zero velocity must have zero speed (true — but zero displacement doesn't mean zero distance)"
+        key_formulas:
+          - "Speed = Distance / Time"
+          - "Velocity = Displacement / Time"
+          - "1 km/h = 5/18 m/s"
+          - "1 m/s = 18/5 km/h"
+          - "Weight = Mass × g (g ≈ 9.8 m/s² on Earth)"
+          - "Average speed = Total distance / Total time"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Distance vs. Displacement:
+              A ──→ 3 km ──→ B ──→ 4 km ──→ C
+              │                              │
+              │    displacement = 7 km →     │
+              │    distance = 7 km           │
+              (Same here because path is straight)
+
+              But if path is curved:
+              A ─╲         ╱─ B
+                  ╲_______╱
+              Distance (along curve) > Displacement (straight A→B)
+            description: "Distance vs displacement comparison"
+        example_problems:
+          - problem: "The Rajdhani Express covers 1384 km from Delhi to Mumbai in 16 hours. Find its average speed in km/h and m/s."
+            answer: "86.5 km/h = 24.03 m/s"
+            solution_steps:
+              - "Speed = Distance/Time = 1384/16 = 86.5 km/h"
+              - "Convert to m/s: 86.5 × 5/18 = 432.5/18 = 24.03 m/s"
+            difficulty: 2
+            indian_context: "The famous Rajdhani Express connecting Delhi and Mumbai."
+
+          - problem: "A boy walks 4 km east and then 3 km north. Find (a) total distance (b) displacement."
+            answer: "(a) 7 km, (b) 5 km"
+            solution_steps:
+              - "(a) Distance = total path = 4 + 3 = 7 km"
+              - "(b) Displacement = straight line from start to end"
+              - "Using Pythagoras: √(4² + 3²) = √(16 + 9) = √25 = 5 km"
+            difficulty: 3
+            indian_context: "Walking from your house 4 km east to the market, then 3 km north to school."
+
+          - problem: "A person weighs 60 kg. Find their weight on Earth (g = 9.8 m/s²) and on the Moon (g = 1.6 m/s²)."
+            answer: "Earth: 588 N, Moon: 96 N"
+            solution_steps:
+              - "Mass = 60 kg (same everywhere)"
+              - "Weight on Earth = m × g = 60 × 9.8 = 588 N"
+              - "Weight on Moon = m × g = 60 × 1.6 = 96 N"
+              - "Mass stays constant, weight changes with gravity"
+            difficulty: 2
+            indian_context: "If Kalpana Chawla weighed 60 kg on Earth, she would feel much lighter on the Moon!"
+
+  # ============================================================
+  # Chapter 3: Energy
+  # Units: 3A (Energy & Work), 3B (Forms of Energy)
+  # ============================================================
+  - id: ch03
+    title: "Energy"
+    textbook_chapter: 3
+    topics:
+      - id: ch03_t01
+        title: "Energy, Work, and Their Units"
+        learning_objectives:
+          - "Define work as force × displacement in the direction of force"
+          - "Know SI unit of work: Joule (J) = Newton × metre"
+          - "Understand when work is zero (no displacement, or displacement perpendicular to force)"
+          - "Define energy as the capacity to do work"
+          - "Calculate work done in simple scenarios"
+        prerequisites: ["ch02_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Pushing a wall means doing work (no displacement = no work done, even if you feel tired)"
+          - "Carrying a bag while walking horizontally is work against gravity (displacement is horizontal, gravity is vertical — zero work against gravity)"
+          - "Work is always positive (work can be negative if force and displacement are in opposite directions)"
+        key_formulas:
+          - "Work = Force × Displacement (W = F × d)"
+          - "SI unit: 1 Joule = 1 Newton × 1 metre"
+          - "1 calorie = 4.18 Joules"
+          - "Work = 0 when displacement = 0"
+          - "Work = 0 when force ⊥ displacement"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              When is work done?
+              Case 1: WORK DONE          Case 2: NO WORK
+              F →→→ ■ ──→ displacement   F →→→ ■ (wall, no movement)
+              W = F × d                  W = 0 (d = 0)
+
+              Case 3: NO WORK (perpendicular)
+                    F (up)
+                    ↑
+                    ■ ──→ displacement (horizontal)
+              W = 0 (force ⊥ displacement)
+            description: "When work is done and when it is not"
+        example_problems:
+          - problem: "A boy pushes a box with a force of 50 N across 8 m. Find the work done."
+            answer: "400 J"
+            solution_steps:
+              - "Given: F = 50 N, d = 8 m"
+              - "W = F × d = 50 × 8 = 400 J"
+            difficulty: 1
+            indian_context: "Pushing a heavy box across your room — 50 N force over 8 metres."
+
+          - problem: "A girl carries a 5 kg bag on her head and walks 200 m horizontally. How much work is done against gravity?"
+            answer: "0 J (zero)"
+            solution_steps:
+              - "Force (weight) acts downward = 5 × 9.8 = 49 N"
+              - "Displacement is horizontal (200 m)"
+              - "Force is perpendicular to displacement"
+              - "Work against gravity = 0"
+              - "Note: She IS doing work against friction and air resistance, but NOT against gravity"
+            difficulty: 2
+            indian_context: "A woman carrying a water pot on her head, walking to the well and back — a common rural India scene."
+
+          - problem: "A crane lifts a 200 kg load to a height of 15 m. Calculate the work done (g = 10 m/s²)."
+            answer: "30,000 J = 30 kJ"
+            solution_steps:
+              - "Force = weight = m × g = 200 × 10 = 2000 N"
+              - "Displacement = height = 15 m (in direction of force)"
+              - "W = F × d = 2000 × 15 = 30,000 J = 30 kJ"
+            difficulty: 2
+            indian_context: "A crane at a construction site in Bengaluru lifting steel beams."
+
+      - id: ch03_t02
+        title: "Various Forms of Energy and Their Interconversion"
+        learning_objectives:
+          - "Identify different forms of energy: kinetic, potential, heat, light, electric, chemical, nuclear, magnetic, sound"
+          - "Understand energy conversion from one form to another"
+          - "State the law of conservation of energy"
+          - "Give real-world examples of energy conversions"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Energy is 'used up' when we do work (energy is CONVERTED, not created or destroyed)"
+          - "Potential energy only exists at very high heights (any object above the reference level has PE)"
+          - "Electricity is a form of energy that comes from nowhere (it comes from conversion of other forms)"
+        key_formulas:
+          - "Potential Energy: PE = mgh (mass × gravity × height)"
+          - "Kinetic Energy: KE = ½mv² (½ × mass × speed²)"
+          - "Law of conservation: Energy cannot be created or destroyed, only converted"
+          - "Total energy = KE + PE = constant (in ideal case)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Energy Conversions in a Dam (Hydroelectric):
+              Water at height  →  Water falling  →  Turbine spins  →  Generator  →  Electricity
+              (Potential E)      (Kinetic E)       (Mechanical E)    (Electrical E)   (to homes)
+
+              Energy Conversion in a Car:
+              Petrol  →  Engine  →  Wheels move  →  Car moves
+              (Chemical E) (Heat E)  (Mechanical E)  (Kinetic E)
+            description: "Energy conversion chain examples"
+        example_problems:
+          - problem: "Name the energy conversion in: (a) electric heater, (b) solar cell, (c) loudspeaker, (d) photosynthesis"
+            answer: "(a) Electrical → Heat, (b) Light → Electrical, (c) Electrical → Sound, (d) Light → Chemical"
+            solution_steps:
+              - "(a) Electric heater: Electrical energy → Heat energy"
+              - "(b) Solar cell: Light energy → Electrical energy"
+              - "(c) Loudspeaker: Electrical energy → Sound energy"
+              - "(d) Photosynthesis: Light energy → Chemical energy (stored in food)"
+            difficulty: 1
+            indian_context: "Everyday devices: electric room heater in winter, solar panels on rooftops, loudspeaker at a wedding."
+
+          - problem: "A ball of mass 2 kg is at a height of 10 m. Find its potential energy (g = 10 m/s²). If it falls freely, what is its KE just before hitting the ground?"
+            answer: "PE = 200 J. KE just before ground = 200 J"
+            solution_steps:
+              - "PE = mgh = 2 × 10 × 10 = 200 J"
+              - "By conservation of energy, when ball reaches ground:"
+              - "All PE converts to KE (ignoring air resistance)"
+              - "KE = 200 J"
+              - "Total energy at any point = PE + KE = 200 J (constant)"
+            difficulty: 2
+            indian_context: "Dropping a coconut from a 10 m tall tree — potential energy converts to kinetic energy as it falls."
+
+          - problem: "In a hydroelectric power plant, water falls from 50 m height. If 1000 kg of water falls per second, how much potential energy is converted per second? (g = 10 m/s²)"
+            answer: "500,000 J/s = 500 kW"
+            solution_steps:
+              - "PE = mgh = 1000 × 10 × 50 = 500,000 J"
+              - "This energy is converted per second"
+              - "Power = 500,000 J/s = 500 kW"
+            difficulty: 3
+            indian_context: "The Bhakra Nangal Dam in Punjab — one of India's largest hydroelectric projects."
+
+  # ============================================================
+  # Chapter 4: Light Energy
+  # Units: 4A (Light Basics), 4B (Reflection)
+  # ============================================================
+  - id: ch04
+    title: "Light Energy"
+    textbook_chapter: 4
+    topics:
+      - id: ch04_t01
+        title: "Light and General Terms"
+        learning_objectives:
+          - "Define light as a form of energy that enables vision"
+          - "Distinguish between luminous and non-luminous bodies"
+          - "Classify materials as transparent, translucent, or opaque"
+          - "Understand rectilinear propagation of light"
+          - "Distinguish between ray and beam of light"
+          - "Know types of beams: parallel, convergent, divergent"
+          - "Understand shadow formation"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "The Moon is a luminous body (it is NOT — it reflects the Sun's light)"
+          - "We can see objects because our eyes emit light (WRONG — objects reflect light that enters our eyes)"
+          - "Light can bend around obstacles (light travels in straight lines; bending is diffraction, an advanced topic)"
+          - "Translucent means transparent (translucent allows partial light, making objects appear blurry)"
+        key_formulas:
+          - "Light travels in straight lines (rectilinear propagation)"
+          - "Speed of light in vacuum ≈ 3 × 10⁸ m/s"
+          - "No formulas for calculation — this is a conceptual topic"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Types of Beams:
+              Parallel:     ═══→   (from distant source like Sun)
+                           ═══→
+                           ═══→
+
+              Convergent:   ═══╲
+                           ═══→● (rays meet at a point)
+                           ═══╱
+
+              Divergent:    ╱═══
+                           ●═══→ (rays spread out from a point)
+                           ╲═══
+
+              Shadow Formation:
+              Light )))  ■ opaque  │████│ shadow
+              source     object    │████│ on screen
+            description: "Types of light beams and shadow formation"
+        example_problems:
+          - problem: "Classify as luminous or non-luminous: (a) Sun, (b) Moon, (c) candle flame, (d) mirror, (e) stars"
+            answer: "(a) luminous, (b) non-luminous, (c) luminous, (d) non-luminous, (e) luminous"
+            solution_steps:
+              - "Luminous = produces its own light"
+              - "(a) Sun: produces light by nuclear fusion → luminous"
+              - "(b) Moon: reflects Sun's light → non-luminous"
+              - "(c) Candle flame: produces light by combustion → luminous"
+              - "(d) Mirror: reflects light, doesn't produce → non-luminous"
+              - "(e) Stars: produce light like our Sun → luminous"
+            difficulty: 1
+            indian_context: "During Diwali, diyas (oil lamps) are luminous bodies. The rangoli reflecting their light is non-luminous."
+
+          - problem: "Classify as transparent, translucent, or opaque: (a) clear glass, (b) oiled paper, (c) wooden door, (d) clean water, (e) frosted glass"
+            answer: "(a) transparent, (b) translucent, (c) opaque, (d) transparent, (e) translucent"
+            solution_steps:
+              - "Transparent: light passes through, objects seen clearly"
+              - "Translucent: some light passes, objects seen dimly/blurred"
+              - "Opaque: no light passes, objects not visible"
+              - "(a) Clear glass: see through clearly → transparent"
+              - "(b) Oiled paper: light passes but blurry → translucent"
+              - "(c) Wooden door: blocks all light → opaque"
+              - "(d) Clean water: see through → transparent"
+              - "(e) Frosted glass: light passes but can't see clearly → translucent"
+            difficulty: 1
+            indian_context: "Your classroom window (glass = transparent), bathroom window (frosted glass = translucent), classroom door (wood = opaque)."
+
+          - problem: "Why can you not see around corners?"
+            answer: "Because light travels in straight lines (rectilinear propagation). It cannot bend around obstacles."
+            solution_steps:
+              - "Light travels in straight lines"
+              - "When light hits an opaque obstacle (wall/corner), it is blocked"
+              - "The light cannot curve around the corner to reach your eyes"
+              - "This is why shadows are formed — because light can't bend around objects"
+            difficulty: 1
+            indian_context: "Standing behind a wall at your school — you can hear your friends but can't see them."
+
+      - id: ch04_t02
+        title: "Reflection of Light on Plane Surfaces"
+        learning_objectives:
+          - "Define reflection of light"
+          - "Identify incident ray, reflected ray, normal, angle of incidence, angle of reflection"
+          - "State the two laws of reflection"
+          - "Distinguish between regular and diffuse (irregular) reflection"
+          - "Describe properties of images formed by plane mirrors"
+          - "Understand lateral inversion"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Mirrors flip left and right (they actually reverse front-back; the lateral inversion is a consequence)"
+          - "Smooth surfaces reflect light, rough surfaces don't (ALL surfaces reflect; rough surfaces scatter the light in different directions — diffuse reflection)"
+          - "Angle of incidence is measured from the mirror surface (it is measured from the NORMAL, which is perpendicular to the surface)"
+        key_formulas:
+          - "Law 1: Angle of incidence = Angle of reflection (∠i = ∠r)"
+          - "Law 2: Incident ray, reflected ray, and normal all lie in the same plane"
+          - "Image distance from mirror = Object distance from mirror"
+          - "Image is virtual, erect, same size, and laterally inverted"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Laws of Reflection:
+                      Normal (N)
+                        │
+              Incident  │  Reflected
+              ray  ╲  i │ r  ╱  ray
+                    ╲   │   ╱
+                     ╲  │  ╱
+              ═══════╧══╧══╧═══════ Mirror surface
+                         P (point of incidence)
+
+              ∠i = ∠r (always!)
+
+              Image in Plane Mirror:
+              Object ☺    │  Mirror  │    ☺ Image (laterally inverted)
+              (real)       │          │    (virtual)
+              ←── d ──→    │          │   ←── d ──→
+            description: "Reflection at plane mirror with laws"
+        example_problems:
+          - problem: "A ray of light makes an angle of 35° with a plane mirror. Find the angle of incidence and angle of reflection."
+            answer: "Angle of incidence = 55°, Angle of reflection = 55°"
+            solution_steps:
+              - "The angle given (35°) is with the mirror surface, NOT the normal"
+              - "Angle of incidence is measured from the NORMAL"
+              - "∠i = 90° - 35° = 55°"
+              - "By law of reflection: ∠r = ∠i = 55°"
+            difficulty: 2
+            indian_context: "A light ray hitting a mirror on a solar cooker at an angle."
+
+          - problem: "If a ray of light strikes a plane mirror at an angle of incidence of 40°, what is the angle between the incident ray and the reflected ray?"
+            answer: "80°"
+            solution_steps:
+              - "∠i = 40° (from normal)"
+              - "∠r = ∠i = 40° (law of reflection)"
+              - "Angle between incident and reflected ray = ∠i + ∠r"
+              - "= 40° + 40° = 80°"
+            difficulty: 2
+            indian_context: "Using a mirror to reflect sunlight — a game kids play in Indian schools."
+
+          - problem: "Why does the word AMBULANCE appear reversed on the front of an ambulance?"
+            answer: "So that when seen through a rear-view mirror of a car ahead, the word reads correctly due to lateral inversion"
+            solution_steps:
+              - "Plane mirrors produce laterally inverted images"
+              - "When you read the word through your rear-view mirror (a plane mirror):"
+              - "The mirror reverses the already-reversed text → it reads correctly"
+              - "This allows drivers ahead to quickly read 'AMBULANCE' and make way"
+            difficulty: 2
+            indian_context: "In India, ambulances (102/108 services) write एम्बुलेंस / AMBULANCE reversed on the front."
+
+  # ============================================================
+  # Chapter 5: Heat
+  # Units: 5A (Heat Energy), 5B (Temperature), 5C (Thermal Expansion), 5D (Transmission)
+  # ============================================================
+  - id: ch05
+    title: "Heat"
+    textbook_chapter: 5
+    topics:
+      - id: ch05_t01
+        title: "Heat Energy and Its General Effects"
+        learning_objectives:
+          - "Define heat as a form of energy that flows from hot to cold"
+          - "Know SI unit of heat: Joule (J), also calorie and kilocalorie"
+          - "Understand effects of heat: change in temperature, change in state, change in dimensions, chemical change"
+          - "Define melting, boiling, evaporation, condensation, sublimation"
+          - "Distinguish between flammable and non-flammable substances"
+        prerequisites: ["ch03_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Heat and temperature are the same (heat is energy transferred; temperature is measure of hotness)"
+          - "Cold flows from one object to another (WRONG — heat flows from hot to cold; 'cold' is absence of heat)"
+          - "Melting point and boiling point change for different amounts of substance (they don't — they're fixed for a pure substance at given pressure)"
+          - "Evaporation and boiling are the same (evaporation occurs at any temperature at the surface; boiling occurs at a fixed temperature throughout the liquid)"
+        key_formulas:
+          - "1 kilocalorie (kcal) = 1000 calories"
+          - "1 calorie = 4.18 Joules"
+          - "Melting point of ice = 0°C"
+          - "Boiling point of water = 100°C"
+          - "Heat flows from higher temperature to lower temperature"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Changes of State:
+                                    Vaporization
+              SOLID ──────→ LIQUID ──────────→ GAS
+                   melting              boiling
+              SOLID ←────── LIQUID ←────────── GAS
+                   freezing           condensation
+
+              Sublimation: SOLID ──────────→ GAS (directly)
+              e.g., camphor, dry ice, iodine
+            description: "Phase changes with heat"
+        example_problems:
+          - problem: "Name the change of state: (a) ice to water, (b) water to steam, (c) camphor disappearing, (d) dew on grass"
+            answer: "(a) melting, (b) vaporization/boiling, (c) sublimation, (d) condensation"
+            solution_steps:
+              - "(a) Solid → liquid = melting (at 0°C for ice)"
+              - "(b) Liquid → gas = vaporization (at 100°C for water)"
+              - "(c) Solid → gas directly = sublimation (camphor sublimates)"
+              - "(d) Gas → liquid = condensation (water vapor → dew drops)"
+            difficulty: 1
+            indian_context: "Ice gola (ice → water), pressure cooker whistle (steam), camphor in pooja, dew on winter mornings in Delhi."
+
+          - problem: "Convert 500 calories to Joules"
+            answer: "2090 J"
+            solution_steps:
+              - "1 calorie = 4.18 J"
+              - "500 calories = 500 × 4.18 = 2090 J"
+            difficulty: 1
+            indian_context: "Food energy is measured in calories — a gulab jamun has about 150 calories."
+
+      - id: ch05_t02
+        title: "Temperature and Its Measurement"
+        learning_objectives:
+          - "Define temperature as the measure of hotness or coldness"
+          - "Know the three temperature scales: Celsius, Fahrenheit, Kelvin"
+          - "Convert between temperature scales"
+          - "Understand how a thermometer works (expansion of liquid)"
+          - "Know properties of thermometric liquids (mercury, alcohol)"
+        prerequisites: ["ch05_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "0°C means no temperature (0°C is the freezing point of water, not absence of temperature)"
+          - "Temperature can go below 0 K (no — 0 K = -273°C is absolute zero, the lowest possible temperature)"
+          - "Mercury and alcohol are equally good for all temperature ranges (mercury freezes at -39°C; alcohol works to -100°C, better for polar regions)"
+        key_formulas:
+          - "Celsius to Fahrenheit: °F = (9/5 × °C) + 32"
+          - "Fahrenheit to Celsius: °C = 5/9 × (°F - 32)"
+          - "Celsius to Kelvin: K = °C + 273"
+          - "Lower fixed point: 0°C = 32°F = 273 K (melting ice)"
+          - "Upper fixed point: 100°C = 212°F = 373 K (boiling water)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Three Temperature Scales:
+              Boiling    100°C  ─── 212°F  ─── 373 K
+              point        │          │          │
+              of water     │          │          │
+                          │          │          │
+              Body temp   37°C ─── 98.6°F ─── 310 K
+                          │          │          │
+              Freezing     0°C  ───  32°F  ─── 273 K
+              point        │          │          │
+              of water     │          │          │
+              Absolute   -273°C      -460°F ──  0 K
+              zero
+            description: "Comparing Celsius, Fahrenheit, and Kelvin scales"
+        example_problems:
+          - problem: "Convert 37°C (human body temperature) to Fahrenheit and Kelvin"
+            answer: "98.6°F and 310 K"
+            solution_steps:
+              - "°F = (9/5 × 37) + 32 = 66.6 + 32 = 98.6°F"
+              - "K = 37 + 273 = 310 K"
+            difficulty: 1
+            indian_context: "Normal body temperature — important to know during fever season in India."
+
+          - problem: "The temperature in Phalodi, Rajasthan reached 51°C in summer 2016. Convert to Fahrenheit."
+            answer: "123.8°F"
+            solution_steps:
+              - "°F = (9/5 × 51) + 32"
+              - "= 91.8 + 32 = 123.8°F"
+            difficulty: 2
+            indian_context: "Phalodi in Rajasthan holds the record for India's highest temperature: 51°C (May 2016)."
+
+          - problem: "At what temperature do Celsius and Fahrenheit readings become equal?"
+            answer: "-40° (both -40°C and -40°F)"
+            solution_steps:
+              - "Let the temperature be x"
+              - "x = (9/5)x + 32"
+              - "x - (9/5)x = 32"
+              - "(5x - 9x)/5 = 32"
+              - "-4x = 160"
+              - "x = -40"
+              - "Check: -40°F = 5/9(-40-32) = 5/9(-72) = -40°C ✓"
+            difficulty: 3
+            indian_context: "An interesting mathematical puzzle — the only temperature where both scales agree!"
+
+      - id: ch05_t03
+        title: "Thermal Expansion and Its Applications"
+        learning_objectives:
+          - "Understand that materials expand when heated and contract when cooled"
+          - "Know three types: linear, superficial, and cubical expansion"
+          - "Know that different materials expand at different rates"
+          - "Know that gases expand most, liquids next, solids least"
+          - "Understand applications: railway gaps, bridge rollers, bimetallic strips"
+        prerequisites: ["ch05_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "All materials expand equally when heated (different materials have different expansion rates)"
+          - "Only solids expand (liquids and gases also expand — gases expand the most)"
+          - "Thermal expansion is always bad (it can be useful — e.g., bimetallic strips in thermostats, riveting)"
+        key_formulas:
+          - "Linear expansion: increase in length"
+          - "Superficial expansion: increase in area"
+          - "Cubical expansion: increase in volume"
+          - "Order of expansion: Gases > Liquids > Solids"
+          - "Bimetallic strip: two metals with different expansion rates bonded together"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Railway Track Gaps:
+              Cold:  ═══╴  ╶═══╴  ╶═══  (gaps between rails)
+              Hot:   ══════════════════  (rails expand, gaps close)
+              No gap: ═══╬═══╬═══  BUCKLING! (dangerous)
+
+              Bimetallic Strip:
+              Cold:  ═══════════  (straight)
+              Hot:   ╱══════════  (bends — metal A expands more)
+                    Used in: thermostats, fire alarms
+            description: "Practical applications of thermal expansion"
+        example_problems:
+          - problem: "Why do railway tracks have small gaps between sections?"
+            answer: "To allow for thermal expansion in hot weather. Without gaps, rails would buckle and bend."
+            solution_steps:
+              - "Metals expand when heated (linear expansion)"
+              - "In summer, temperature rises, rails become longer"
+              - "If there's no gap, the expanding rails push against each other"
+              - "This can cause buckling — rails bend sideways, dangerous for trains"
+              - "Small gaps allow room for expansion"
+            difficulty: 1
+            indian_context: "Indian Railways — with extreme temperatures from -10°C in Kashmir to 50°C in Rajasthan, expansion gaps are critical."
+
+          - problem: "Why are bridges built with one end on rollers instead of fixed?"
+            answer: "To allow the bridge girders to expand and contract with temperature changes without cracking"
+            solution_steps:
+              - "Bridge girders are made of steel"
+              - "Steel expands in summer and contracts in winter"
+              - "If both ends were fixed, the expansion would cause stress and cracks"
+              - "Rollers at one end allow the bridge to slide slightly as it expands/contracts"
+            difficulty: 2
+            indian_context: "The Howrah Bridge in Kolkata — steel girders expand up to 1.5 cm in peak summer."
+
+          - problem: "Why do telephone wires sag in summer but become taut in winter?"
+            answer: "Wires expand (become longer) in summer heat, causing sag. In winter cold, they contract (become shorter), pulling tight."
+            solution_steps:
+              - "Metallic wires undergo linear expansion when heated"
+              - "Summer: temperature rises → wire gets longer → sags between poles"
+              - "Winter: temperature drops → wire contracts → becomes taut"
+              - "That's why wires are installed with some slack — to prevent snapping in winter"
+            difficulty: 1
+            indian_context: "Electricity wires between poles in your colony — notice they sag more in May-June!"
+
+      - id: ch05_t04
+        title: "Transmission of Heat"
+        learning_objectives:
+          - "Define conduction: heat transfer in solids without particle movement"
+          - "Define convection: heat transfer in fluids by actual particle movement"
+          - "Define radiation: heat transfer without any medium"
+          - "Classify materials as good and bad conductors"
+          - "Understand practical applications of each mode"
+          - "Understand ventilation as application of convection"
+        prerequisites: ["ch05_t03"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Heat can only travel through solids (it also travels through liquids, gases, and even vacuum)"
+          - "Metals feel cold because they ARE colder (they're at room temperature; they FEEL cold because they conduct heat away from your hand quickly)"
+          - "Radiation requires a medium (radiation is the only mode that needs NO medium — that's how Sun's heat reaches us)"
+          - "Convection happens in solids (convection needs fluid particles that can move — only in liquids and gases)"
+        key_formulas:
+          - "Conduction: heat transfer through solids (particles vibrate, don't move)"
+          - "Convection: heat transfer through fluids (particles actually move)"
+          - "Radiation: heat transfer without any medium (electromagnetic waves)"
+          - "Good conductors: silver, copper, aluminium, iron"
+          - "Bad conductors (insulators): wood, plastic, rubber, glass, air"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Three Modes of Heat Transfer:
+              CONDUCTION (solids):
+              🔥 → ○→○→○→○→○ (vibrations pass along, particles stay)
+                    hot          cold
+
+              CONVECTION (fluids):
+                 ↑ hot   ↓ cool
+                 ↑       ↓
+                 ↑ 🔥    ↓  (circular flow — convection current)
+                 ↑_______↓
+
+              RADIATION (no medium needed):
+              ☀ ～～～～～～～ 🌍  (through vacuum of space)
+            description: "Three modes of heat transfer"
+        example_problems:
+          - problem: "Why are cooking utensils made of metal but have wooden or plastic handles?"
+            answer: "Metal is a good conductor of heat (heats food efficiently). Wood/plastic are bad conductors (insulates your hand from heat)."
+            solution_steps:
+              - "Metal (good conductor) transfers heat quickly from stove to food"
+              - "Wood/plastic (bad conductor) does not transfer heat to your hand"
+              - "This combination: efficient cooking + safe handling"
+            difficulty: 1
+            indian_context: "A steel kadhai (wok) with a wooden handle — everyday in Indian kitchens."
+
+          - problem: "How does a Thermos flask (vacuum flask) keep liquids hot for long?"
+            answer: "It minimizes all three modes of heat transfer: conduction, convection, and radiation."
+            solution_steps:
+              - "Double-walled glass with vacuum between walls:"
+              - "Vacuum prevents conduction (no material to conduct through)"
+              - "Vacuum prevents convection (no fluid to carry heat)"
+              - "Silvered inner walls reflect radiation back (minimizes radiation loss)"
+              - "Cork stopper prevents convection from the top"
+              - "Result: heat is trapped inside for hours"
+            difficulty: 3
+            indian_context: "Carrying hot chai in a flask on a train journey — stays warm for hours!"
+
+          - problem: "Why do we wear dark-colored clothes in winter and light-colored clothes in summer?"
+            answer: "Dark colors are good absorbers of heat radiation (warm in winter). Light colors are good reflectors of heat radiation (cool in summer)."
+            solution_steps:
+              - "Dark surfaces absorb more heat radiation from the environment"
+              - "In winter, we want to absorb heat → dark clothes"
+              - "Light surfaces reflect more heat radiation"
+              - "In summer, we want to reflect heat → light/white clothes"
+            difficulty: 1
+            indian_context: "White kurta-pajama in Rajasthani summer vs. dark shawls in Kashmir winter."
+
+  # ============================================================
+  # Chapter 6: Sound
+  # Units: 6A (Production & Propagation), 6B (Reflection & Characteristics)
+  # ============================================================
+  - id: ch06
+    title: "Sound"
+    textbook_chapter: 6
+    topics:
+      - id: ch06_t01
+        title: "Sound — Its Production and Propagation"
+        learning_objectives:
+          - "Understand that sound is produced by vibrating objects"
+          - "Know that sound requires a material medium to travel (cannot travel in vacuum)"
+          - "Understand that sound travels as longitudinal waves"
+          - "Know speed of sound varies: fastest in solids, slowest in gases"
+          - "Know approximate speed of sound in air (~332 m/s), water (~1500 m/s), steel (~5100 m/s)"
+        prerequisites: ["ch03_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Sound can travel through vacuum (it CANNOT — it needs a medium of particles)"
+          - "Sound travels fastest in air (WRONG: fastest in solids, then liquids, then gases)"
+          - "Louder sound travels faster (loudness doesn't affect speed — all sounds travel at the same speed in a given medium)"
+          - "Sound and light travel at the same speed (light is MUCH faster: ~3 × 10⁸ m/s vs sound ~332 m/s)"
+        key_formulas:
+          - "Sound needs a medium (solid, liquid, or gas) to propagate"
+          - "Speed of sound in air ≈ 332 m/s (at room temperature)"
+          - "Speed of sound in water ≈ 1500 m/s"
+          - "Speed of sound in steel ≈ 5100 m/s"
+          - "Speed in solids > speed in liquids > speed in gases"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Sound Production (Tuning Fork):
+                  ╔╗
+              hit→║║←→ vibration creates
+                  ║║   pressure waves
+                  ║║   in surrounding air
+                  ╚╝
+
+              Sound Propagation:
+              Source ))) → → → → → → ))) Ear
+                    compressions and rarefactions
+                    C  R  C  R  C  R
+
+              Speed Comparison:
+              Steel:  ═══════════════════════ 5100 m/s
+              Water:  ══════════  1500 m/s
+              Air:    ════  332 m/s
+            description: "Sound production and speed in different media"
+        example_problems:
+          - problem: "Why can astronauts not talk to each other directly on the Moon?"
+            answer: "The Moon has no atmosphere (vacuum). Sound needs a medium to travel. No medium = no sound propagation."
+            solution_steps:
+              - "Sound is produced by vibrations"
+              - "These vibrations need particles of a medium to travel through"
+              - "Moon has no atmosphere → no air particles → no medium"
+              - "Without a medium, sound cannot propagate"
+              - "Astronauts use radio waves (electromagnetic, travel through vacuum)"
+            difficulty: 1
+            indian_context: "When Rakesh Sharma went to space in 1984, he used radio communication, not voice."
+
+          - problem: "You see lightning and hear thunder 5 seconds later. How far away is the lightning? (Speed of sound = 330 m/s)"
+            answer: "1650 m or 1.65 km"
+            solution_steps:
+              - "Light travels almost instantly (3 × 10⁸ m/s)"
+              - "Sound takes 5 seconds to reach you"
+              - "Distance = Speed × Time"
+              - "= 330 × 5 = 1650 m = 1.65 km"
+            difficulty: 2
+            indian_context: "During monsoon thunderstorms — counting seconds between lightning and thunder to estimate distance."
+
+          - problem: "Why can you hear a train approaching by placing your ear on the rail before you hear it through air?"
+            answer: "Sound travels faster in solids (steel rail ≈ 5100 m/s) than in air (≈ 332 m/s). So sound through the rail reaches you first."
+            solution_steps:
+              - "Steel is a solid — sound travels at ~5100 m/s"
+              - "Air is a gas — sound travels at ~332 m/s"
+              - "Same distance, different speeds"
+              - "Sound through rail is ~15 times faster than through air"
+              - "So you hear it through the rail first"
+            difficulty: 2
+            indian_context: "In old Hindi movies, people put their ear on the railway track to detect approaching trains."
+
+      - id: ch06_t02
+        title: "Reflection and Characteristics of Sound"
+        learning_objectives:
+          - "Define amplitude, frequency, and time period"
+          - "Understand relationship between frequency and time period"
+          - "Distinguish between loudness (amplitude) and pitch (frequency)"
+          - "Understand quality/timbre of sound"
+          - "Classify sounds: infrasonic (<20 Hz), audible (20-20,000 Hz), ultrasonic (>20,000 Hz)"
+          - "Understand echo as reflection of sound"
+          - "Know applications of ultrasound: sonar, medical imaging"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Loudness and pitch are the same (loudness depends on amplitude, pitch depends on frequency)"
+          - "Ultrasonic means very loud (it means frequency above 20,000 Hz — we can't hear it at all)"
+          - "Echo is always heard (echo requires a hard surface at least ~17 m away)"
+          - "All animals hear the same frequency range (different animals have different hearing ranges)"
+        key_formulas:
+          - "Frequency (f) = Number of vibrations per second (unit: Hz)"
+          - "Time Period (T) = Time for one complete vibration (unit: seconds)"
+          - "f = 1/T and T = 1/f"
+          - "Loudness depends on amplitude (more amplitude = louder)"
+          - "Pitch depends on frequency (higher frequency = higher pitch)"
+          - "Audible range: 20 Hz to 20,000 Hz"
+          - "Minimum distance for echo = ~17 m (in air)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Loudness vs Pitch:
+              Loud:    ╱╲      ╱╲        Soft:  ╱╲  ╱╲
+                      ╱  ╲    ╱  ╲             ╱  ╲╱  ╲
+                     ╱    ╲  ╱    ╲            (small amplitude)
+                    (large amplitude)
+
+              High pitch: ╱╲╱╲╱╲╱╲╱╲╱╲   Low pitch: ╱╲    ╱╲
+                         (high frequency)            (low frequency)
+
+              Sound Classification by Frequency:
+              ←── Infrasonic ──│── Audible ──│── Ultrasonic ──→
+                   <20 Hz      20 Hz    20,000 Hz    >20,000 Hz
+              (earthquakes,    (human hearing)    (bats, dolphins,
+               elephants)                          medical scans)
+            description: "Sound characteristics and frequency ranges"
+        example_problems:
+          - problem: "A tuning fork vibrates 512 times per second. Find its frequency and time period."
+            answer: "Frequency = 512 Hz, Time period = 0.00195 s"
+            solution_steps:
+              - "Frequency = number of vibrations per second = 512 Hz"
+              - "Time period = 1/frequency = 1/512 = 0.00195 s (approximately)"
+            difficulty: 1
+            indian_context: "A tuning fork used in your school music class."
+
+          - problem: "A bat emits ultrasonic waves of frequency 50,000 Hz. Can humans hear this sound? Why?"
+            answer: "No. 50,000 Hz is above the human audible range (20 Hz to 20,000 Hz)."
+            solution_steps:
+              - "Human hearing range: 20 Hz to 20,000 Hz"
+              - "Bat's frequency: 50,000 Hz"
+              - "50,000 Hz > 20,000 Hz → ultrasonic"
+              - "Humans cannot hear ultrasonic sounds"
+              - "But bats can — they use it for echolocation (finding objects in the dark)"
+            difficulty: 1
+            indian_context: "Bats are common in old Indian buildings and temples — they navigate using ultrasound."
+
+          - problem: "You shout towards a cliff and hear the echo after 4 seconds. How far is the cliff? (Speed of sound = 340 m/s)"
+            answer: "680 m"
+            solution_steps:
+              - "Sound travels to the cliff AND back in 4 seconds"
+              - "Total distance = speed × time = 340 × 4 = 1360 m"
+              - "This is the round trip distance (to cliff and back)"
+              - "Distance to cliff = 1360/2 = 680 m"
+            difficulty: 2
+            indian_context: "Shouting 'echo!' in a valley in the Western Ghats or at a hill station."
+
+          - problem: "Why does a tabla produce a different sound from a flute even when both play the same note?"
+            answer: "Because of the difference in quality/timbre. Each instrument produces a different combination of overtones (harmonics), giving it a unique 'voice'."
+            solution_steps:
+              - "Both can play the same note (same fundamental frequency = same pitch)"
+              - "But each instrument produces different overtones/harmonics"
+              - "The combination of fundamental + overtones gives each instrument its unique quality"
+              - "This property is called timbre or quality of sound"
+              - "That's why you can tell instruments apart even with eyes closed"
+            difficulty: 2
+            indian_context: "A tabla, sitar, and flute all playing the same raga — each sounds distinct because of timbre."
+
+  # ============================================================
+  # Chapter 7: Electricity and Magnetism
+  # Units: 7A (Magnetism), 7B (Electric Circuits)
+  # Note: Limited content available from textbook reference
+  # ============================================================
+  - id: ch07
+    title: "Electricity and Magnetism"
+    textbook_chapter: 7
+    topics:
+      - id: ch07_t01
+        title: "Laws of Magnetism and Test for a Magnet"
+        learning_objectives:
+          - "Understand that magnets have two poles: North and South"
+          - "State the law of magnetism: like poles repel, unlike poles attract"
+          - "Know that a freely suspended magnet aligns North-South"
+          - "Distinguish between magnetic and non-magnetic materials"
+          - "Know ferromagnetic materials: iron, nickel, cobalt"
+          - "Test whether an object is a magnet using repulsion test"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "Magnets attract all metals (only ferromagnetic metals: iron, nickel, cobalt)"
+          - "Breaking a magnet gives separate N and S poles (each piece becomes a complete magnet with own N and S)"
+          - "Attraction test confirms a magnet (WRONG — a magnet attracts iron too; REPULSION test confirms a magnet)"
+          - "A compass needle is attracted by Earth's poles (it aligns with Earth's magnetic field)"
+        key_formulas:
+          - "Like poles repel (N-N, S-S)"
+          - "Unlike poles attract (N-S)"
+          - "Repulsion is the sure test of magnetism (attraction can happen between magnet and magnetic material too)"
+          - "Earth behaves as a giant magnet with geographic North near magnetic South"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Magnet:
+              ┌─── N ───┬─── S ───┐
+              └─────────┴─────────┘
+
+              Laws of Magnetism:
+              N ←→ N  REPEL        N ──→←── S  ATTRACT
+              S ←→ S  REPEL
+
+              Breaking a Magnet:
+              ┌── N ──┬── S ──┐  →  ┌─N─┬─S─┐ ┌─N─┬─S─┐
+              └───────┴───────┘     └───┴───┘ └───┴───┘
+              (each piece = complete magnet)
+            description: "Magnet properties and laws"
+        example_problems:
+          - problem: "You have an iron bar and a magnet. Both look identical. How do you find which is the magnet without using any other equipment?"
+            answer: "Bring one end of bar A near the middle of bar B. If it attracts, swap and try. If one end attracts both ends AND the middle of the other bar, it's the iron bar. OR: Use repulsion test — only two magnets can repel."
+            solution_steps:
+              - "A magnet has strongest attraction at poles, weak at center"
+              - "An iron bar is attracted uniformly"
+              - "If bar A repels bar B at one end, bar A IS a magnet"
+              - "Iron bars NEVER repel — only magnets can"
+              - "Repulsion is the sure test of magnetism"
+            difficulty: 2
+            indian_context: "A science experiment in school — identifying the magnet from an iron bar."
+
+          - problem: "Why does a compass needle always point in the North-South direction?"
+            answer: "Earth acts as a giant magnet. The compass needle (a small magnet) aligns with Earth's magnetic field, pointing North-South."
+            solution_steps:
+              - "A compass needle is a small magnet free to rotate"
+              - "Earth has a magnetic field (behaves like a giant bar magnet)"
+              - "The N pole of the compass is attracted toward Earth's geographic North"
+              - "(Earth's magnetic South is near geographic North)"
+              - "So compass always settles in North-South direction"
+            difficulty: 1
+            indian_context: "Ancient Indian navigators used magnetic compasses for sea voyages."
+
+      - id: ch07_t02
+        title: "Electric Circuit and Its Components"
+        learning_objectives:
+          - "Define electric circuit as a closed path for current flow"
+          - "Identify components: cell/battery, switch, bulb, wire, ammeter, voltmeter"
+          - "Understand open and closed circuits"
+          - "Distinguish between series and parallel circuits"
+          - "Draw circuit diagrams using standard symbols"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Current flows out of both terminals of a battery (current flows from + through circuit to -, completing the loop)"
+          - "An open switch means the circuit is working (open switch = broken circuit = no current flows)"
+          - "In a series circuit, the first bulb gets more current (current is SAME throughout a series circuit)"
+          - "Parallel and series circuits have the same total resistance (parallel has LOWER total resistance)"
+        key_formulas:
+          - "Closed circuit: continuous path for current → current flows"
+          - "Open circuit: broken path → no current flows"
+          - "Series: components connected end-to-end (same current, voltages add up)"
+          - "Parallel: components connected across same two points (same voltage, currents add up)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Circuit Symbols:
+              Cell:     ─┤├─  (long line = +, short line = -)
+              Battery:  ─┤├┤├─ (multiple cells)
+              Bulb:     ─⊗─
+              Switch:   ─/ ─ (open)  ─/─ (closed)
+              Wire:     ─────
+
+              Series Circuit:
+              ┤├── ⊗ ── ⊗ ── ⊗ ──┐
+              │                    │
+              └────────────────────┘
+              Same current flows through ALL bulbs
+
+              Parallel Circuit:
+              ┤├──┬── ⊗ ──┬──┐
+              │   ├── ⊗ ──┤  │
+              │   └── ⊗ ──┘  │
+              └──────────────┘
+              Each bulb gets FULL voltage
+            description: "Series and parallel circuit diagrams"
+        example_problems:
+          - problem: "In a series circuit with 3 bulbs, what happens if one bulb fuses (breaks)?"
+            answer: "All three bulbs go off. In a series circuit, the path is broken if any component fails."
+            solution_steps:
+              - "Series circuit: single path for current"
+              - "If one bulb fuses, the circuit is broken at that point"
+              - "No current can flow anywhere in the circuit"
+              - "All bulbs go off"
+              - "This is a disadvantage of series circuits"
+            difficulty: 1
+            indian_context: "Old-style Diwali serial lights — if one bulb burned out, the entire string went dark!"
+
+          - problem: "Your home has a TV, fan, and tube light. Are they connected in series or parallel? How do you know?"
+            answer: "Parallel. Because switching off one appliance doesn't affect the others."
+            solution_steps:
+              - "If series: switching off TV would also turn off fan and light (broken circuit)"
+              - "But in your home, you can turn off TV while fan keeps running"
+              - "This means each appliance has its own independent path for current"
+              - "This is parallel connection"
+              - "Also: each appliance gets the same voltage (220V in India)"
+            difficulty: 1
+            indian_context: "Every Indian home uses 220V parallel wiring — each switch controls one appliance independently."
+
+          - problem: "Why are household appliances connected in parallel and not in series?"
+            answer: "Three reasons: (1) Each appliance gets full voltage, (2) failure of one doesn't affect others, (3) each can be independently switched on/off"
+            solution_steps:
+              - "1. Same voltage: Each appliance gets 220V (Indian standard)"
+              - "2. Independent operation: One fusing doesn't affect others"
+              - "3. Individual switches: Each appliance can be controlled separately"
+              - "In series: voltage divides, one failure breaks all, no individual control"
+            difficulty: 2
+            indian_context: "Indian homes use 220V AC with MCB (Miniature Circuit Breaker) for safety — all parallel."

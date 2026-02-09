@@ -78,11 +78,10 @@ When a student asks to learn a concept (e.g., "learn math integers", "teach me a
 
 **How it works:**
 1. Read `tracking/student-profile.json` → get grade, board, learning_style
-2. Read `curriculum/{board}/grade-{grade}/{subject}.yaml` → find the topic
-3. Read `misconceptions/{subject}-grade-{grade}.yaml` → check for relevant misconceptions
-4. The subject-specialist skill (e.g., gurukul-ai-math) provides subject-specific teaching methodology
-5. Apply dual-chain pattern: analyze (hidden) + respond (shown)
-6. Generate personalized Socratic explanation
+2. Read `curriculum/{board}/grade-{grade}/{subject}.yaml` → find the topic (includes per-topic misconceptions and formulas)
+3. The subject-specialist skill (e.g., gurukul-ai-math) provides subject-specific teaching methodology and misconception detection patterns
+4. Apply dual-chain pattern: analyze (hidden) + respond (shown)
+5. Generate personalized Socratic explanation
 
 **Output structure:**
 - Start with a question that probes current understanding
@@ -138,23 +137,19 @@ All paths are relative to the project root directory.
 tracking/student-profile.json
 ```
 
-**Curriculum:**
+**Curriculum (source of truth — includes per-topic misconceptions and formulas):**
 ```
 curriculum/{board}/grade-{N}/{subject}.yaml
 Example: curriculum/cbse/grade-7/math.yaml
 ```
 
-**Misconceptions:**
-```
-misconceptions/{subject}-grade-{N}.yaml
-Example: misconceptions/math-grade-7.yaml
-```
-
-**Formulas:**
+**Formula Quick Reference (consolidated student-facing reference for /formulas command):**
 ```
 resources/formulas/{board}/grade-{N}/{subject}-formulas.md
 Example: resources/formulas/cbse/grade-7/math-formulas.md
 ```
+
+**Note:** Misconceptions are embedded per-topic in curriculum YAML files and as teaching patterns in subject SKILL.md files. No separate misconception files needed.
 
 **Mastery State:**
 ```
