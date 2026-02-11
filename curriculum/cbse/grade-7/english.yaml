@@ -1,0 +1,914 @@
+grade: 7
+subject: english-grammar
+board: CBSE
+textbook: "Sultan Chand English Grammar & Composition Class VII"
+schema_version: "1.0"
+
+chapters:
+  - id: ch01
+    title: "The Sentence"
+    textbook_chapter: 1
+    topics:
+      - id: ch01_t01
+        title: "Types of Sentences"
+        learning_objectives:
+          - "Identify declarative, interrogative, imperative, and exclamatory sentences"
+          - "Understand the purpose of each sentence type"
+          - "Convert between sentence types"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Every sentence ending with a question word is interrogative (but 'I don't know what he said' is declarative)"
+          - "Imperative sentences always sound commanding (but 'Please help me' is polite imperative)"
+          - "Exclamatory sentences always end with exclamation marks (context matters)"
+        example_problems:
+          - problem: "Identify the type: 'The sun rises in the east.'"
+            answer: "Declarative sentence"
+            explanation: "It makes a statement/declaration and ends with a period."
+            difficulty: 1
+
+          - problem: "Change to interrogative: 'She is a doctor.'"
+            answer: "Is she a doctor?"
+            explanation: "Invert subject and auxiliary verb 'is', add question mark."
+            difficulty: 2
+
+          - problem: "Convert to exclamatory: 'It is a very beautiful flower.'"
+            answer: "What a beautiful flower it is!"
+            explanation: "Use 'What + a/an + adjective + noun' structure for exclamations."
+            difficulty: 3
+
+      - id: ch01_t02
+        title: "Subject and Predicate"
+        learning_objectives:
+          - "Identify subject (who/what the sentence is about)"
+          - "Identify predicate (what is said about the subject)"
+          - "Recognize simple and complete subject/predicate"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "The subject is always the first word in a sentence (not true for questions or inverted sentences)"
+          - "Prepositional phrases can be the subject (they modify, but aren't the core subject)"
+        example_problems:
+          - problem: "Find subject and predicate: 'The children are playing in the garden.'"
+            answer: "Subject: The children | Predicate: are playing in the garden"
+            explanation: "Subject tells 'who' (The children), predicate tells what they're doing (are playing in the garden)."
+            difficulty: 1
+
+          - problem: "Find subject: 'In the box are some old books.'"
+            answer: "some old books"
+            explanation: "Don't be fooled by the inverted structure. 'Some old books' is what the sentence is about."
+            difficulty: 2
+
+  - id: ch02
+    title: "Nouns"
+    textbook_chapter: 2
+    topics:
+      - id: ch02_t01
+        title: "Types of Nouns"
+        learning_objectives:
+          - "Identify proper, common, collective, material, and abstract nouns"
+          - "Understand when to capitalize proper nouns"
+          - "Distinguish between concrete and abstract nouns"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Common nouns never get capitals (but they do at the start of sentences)"
+          - "All groups are collective nouns (but 'students' is plural common noun, 'class' is collective)"
+          - "Abstract nouns are always singular (but 'belongings', 'resources' are plural abstract nouns)"
+        example_problems:
+          - problem: "Identify noun type: 'honesty'"
+            answer: "Abstract noun"
+            explanation: "It names a quality/idea that cannot be touched or seen."
+            difficulty: 1
+
+          - problem: "Find the collective noun: 'The team of players won the match.'"
+            answer: "team"
+            explanation: "A team is a group of players acting as a single unit."
+            difficulty: 2
+
+          - problem: "Identify all nouns and their types: 'The Taj Mahal in Agra is made of white marble.'"
+            answer: "Taj Mahal (proper), Agra (proper), marble (material)"
+            explanation: "Taj Mahal and Agra are specific names (proper). Marble is a material noun."
+            difficulty: 3
+
+      - id: ch02_t02
+        title: "Number (Singular and Plural)"
+        learning_objectives:
+          - "Form plurals by adding -s, -es, -ies, -ves"
+          - "Identify irregular plurals (child→children, mouse→mice)"
+          - "Recognize nouns with same singular and plural forms"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "All plurals end in -s (but child→children, tooth→teeth)"
+          - "Just add -s to any noun (but baby→babies, knife→knives)"
+          - "Sheep in plural is 'sheeps' (it stays sheep)"
+        example_problems:
+          - problem: "Plural of 'city'"
+            answer: "cities"
+            explanation: "Nouns ending in consonant + y: change y to i and add -es."
+            difficulty: 1
+
+          - problem: "Plural of 'knife'"
+            answer: "knives"
+            explanation: "Nouns ending in -fe or -f often change to -ves."
+            difficulty: 2
+
+          - problem: "Give singular and plural forms that are the same."
+            answer: "sheep, deer, fish, aircraft"
+            explanation: "These nouns have identical singular and plural forms."
+            difficulty: 2
+
+      - id: ch02_t03
+        title: "Gender"
+        learning_objectives:
+          - "Identify masculine, feminine, common, and neuter gender"
+          - "Convert between masculine and feminine forms"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "All professions have separate gender forms (but 'teacher', 'doctor' are common gender)"
+        example_problems:
+          - problem: "Feminine of 'actor'"
+            answer: "actress"
+            explanation: "Add -ess suffix to make feminine form."
+            difficulty: 1
+
+          - problem: "What gender is 'teacher'?"
+            answer: "Common gender"
+            explanation: "Used for both males and females without change."
+            difficulty: 1
+
+      - id: ch02_t04
+        title: "Case"
+        learning_objectives:
+          - "Identify nominative, objective, and possessive cases"
+          - "Use apostrophes correctly for possessive case"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Its' is the possessive form (correct is: its, no apostrophe)"
+          - "James's is wrong (both James's and James' are acceptable)"
+        example_problems:
+          - problem: "Possessive form of 'children'"
+            answer: "children's"
+            explanation: "Plural not ending in -s: add apostrophe + s."
+            difficulty: 2
+
+          - problem: "Possessive form of 'boys' (plural)"
+            answer: "boys'"
+            explanation: "Plural ending in -s: add only apostrophe after s."
+            difficulty: 2
+
+  - id: ch03
+    title: "Adjectives"
+    textbook_chapter: 3
+    topics:
+      - id: ch03_t01
+        title: "Types of Adjectives"
+        learning_objectives:
+          - "Identify adjectives of quality, quantity, number, demonstrative, interrogative, possessive"
+          - "Use adjectives correctly to describe nouns"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Adjectives always come before nouns (but 'The sky is blue' has adjective after linking verb)"
+        example_problems:
+          - problem: "Identify adjective type: 'She has enough money.'"
+            answer: "Adjective of quantity (enough)"
+            explanation: "'Enough' tells how much money (quantity)."
+            difficulty: 2
+
+          - problem: "Find demonstrative adjective: 'That book is mine.'"
+            answer: "That"
+            explanation: "'That' points out which specific book."
+            difficulty: 1
+
+      - id: ch03_t02
+        title: "Degrees of Comparison"
+        learning_objectives:
+          - "Form positive, comparative, and superlative degrees"
+          - "Use 'more' and 'most' for longer adjectives"
+          - "Identify irregular comparisons (good→better→best)"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "More bigger is correct (incorrect: bigger alone or more big, not both)"
+          - "Most unique/perfect is correct (unique and perfect are absolute adjectives—no comparison)"
+        example_problems:
+          - problem: "Comparative and superlative of 'beautiful'"
+            answer: "more beautiful, most beautiful"
+            explanation: "Long adjectives (3+ syllables) use 'more' and 'most'."
+            difficulty: 2
+
+          - problem: "Correct the error: 'He is more stronger than me.'"
+            answer: "He is stronger than me."
+            explanation: "Use either 'more strong' or 'stronger', not both."
+            difficulty: 3
+
+  - id: ch04
+    title: "Articles"
+    textbook_chapter: 4
+    topics:
+      - id: ch04_t01
+        title: "Indefinite Articles (a, an)"
+        learning_objectives:
+          - "Use 'a' before consonant sounds"
+          - "Use 'an' before vowel sounds"
+          - "Understand sound-based rule, not letter-based"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "An university is correct (wrong: 'a university' because 'you' sound)"
+          - "A hour is correct (wrong: 'an hour' because silent h)"
+          - "Use 'a' before vowels if they sound like consonants (correct: 'a European', 'a one-rupee coin')"
+        example_problems:
+          - problem: "Fill: ___ honest man"
+            answer: "an"
+            explanation: "H is silent in honest, starts with vowel sound 'o'."
+            difficulty: 2
+
+          - problem: "Fill: ___ university"
+            answer: "a"
+            explanation: "University starts with 'you' sound (consonant sound)."
+            difficulty: 2
+
+      - id: ch04_t02
+        title: "Definite Article (the)"
+        learning_objectives:
+          - "Use 'the' for specific or previously mentioned nouns"
+          - "Omit 'the' for general plural and uncountable nouns"
+          - "Use 'the' with superlatives and unique things"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Always use 'the' with school, hospital, church (wrong if referring to purpose: 'go to school'=to study)"
+          - "Cats are animals needs 'the' (wrong: general statement doesn't need 'the')"
+        example_problems:
+          - problem: "Fill: I go to ___ school every day."
+            answer: "(no article)"
+            explanation: "Going for the purpose of studying—no article."
+            difficulty: 2
+
+          - problem: "Fill: My mother went to ___ school to meet the teacher."
+            answer: "the"
+            explanation: "Specific building, not for the purpose of studying—use 'the'."
+            difficulty: 3
+
+  - id: ch05
+    title: "Pronouns"
+    textbook_chapter: 5
+    topics:
+      - id: ch05_t01
+        title: "Types of Pronouns"
+        learning_objectives:
+          - "Identify personal, demonstrative, interrogative, relative, reflexive pronouns"
+          - "Use pronouns to avoid repetition"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "Themself is correct (correct: themselves)"
+        example_problems:
+          - problem: "Identify pronoun type: 'This is my book.'"
+            answer: "Demonstrative pronoun (This)"
+            explanation: "'This' points to the book."
+            difficulty: 1
+
+      - id: ch05_t02
+        title: "Pronoun Cases (Subject and Object Forms)"
+        learning_objectives:
+          - "Use subject forms (I, he, she, we, they) correctly"
+          - "Use object forms (me, him, her, us, them) correctly"
+        prerequisites: ["ch05_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Me and my friend went to school (correct: My friend and I)"
+          - "Between you and I (correct: between you and me—object of preposition)"
+        example_problems:
+          - problem: "Correct: Me and Rahul are going."
+            answer: "Rahul and I are going."
+            explanation: "Use subject form 'I' before verb. Also, put the other person first (polite)."
+            difficulty: 2
+
+          - problem: "Fill: The teacher gave the books to my friend and ___."
+            answer: "me"
+            explanation: "Object of preposition 'to'—use object form 'me'."
+            difficulty: 2
+
+  - id: ch06
+    title: "Verbs"
+    textbook_chapter: 6
+    topics:
+      - id: ch06_t01
+        title: "Types of Verbs"
+        learning_objectives:
+          - "Identify transitive and intransitive verbs"
+          - "Distinguish main verbs from auxiliary verbs"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "All action verbs are transitive (but 'sleep', 'run' are intransitive—no object)"
+        example_problems:
+          - problem: "Is 'eat' transitive or intransitive in: 'I eat apples'?"
+            answer: "Transitive"
+            explanation: "'Apples' is the object receiving the action."
+            difficulty: 1
+
+          - problem: "Is 'run' transitive or intransitive in: 'She runs fast'?"
+            answer: "Intransitive"
+            explanation: "No object—'fast' is an adverb, not an object."
+            difficulty: 2
+
+      - id: ch06_t02
+        title: "Subject-Verb Agreement"
+        learning_objectives:
+          - "Match singular subjects with singular verbs"
+          - "Match plural subjects with plural verbs"
+          - "Handle tricky cases (each, every, neither, either)"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Each of the boys are ready (correct: is ready—'each' is singular)"
+          - "Neither of them are coming (correct: is coming)"
+        example_problems:
+          - problem: "Correct: Each of the students have a book."
+            answer: "Each of the students has a book."
+            explanation: "'Each' is singular, so use 'has'."
+            difficulty: 3
+
+          - problem: "Fill: The team ___ playing well. (is/are)"
+            answer: "is (or are—both acceptable)"
+            explanation: "Collective nouns can take singular (team as unit) or plural (individual members)."
+            difficulty: 3
+
+  - id: ch07
+    title: "Verbs: Expressing the Present"
+    textbook_chapter: 7
+    topics:
+      - id: ch07_t01
+        title: "Simple Present Tense"
+        learning_objectives:
+          - "Use simple present for habitual actions and universal truths"
+          - "Form third-person singular correctly (add -s/-es)"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "He go to school (correct: He goes—add -s for third person singular)"
+        example_problems:
+          - problem: "Fill: She ___ (play) cricket every day."
+            answer: "plays"
+            explanation: "Habitual action + third person singular—add -s."
+            difficulty: 1
+
+          - problem: "When do we use simple present?"
+            answer: "For habits, routines, universal truths, and scheduled events"
+            explanation: "Example: The sun rises in the east. I go to school daily."
+            difficulty: 1
+
+      - id: ch07_t02
+        title: "Present Continuous Tense"
+        learning_objectives:
+          - "Use present continuous for actions happening now"
+          - "Form: am/is/are + verb-ing"
+          - "Understand stative verbs don't use continuous form"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "I am knowing the answer (correct: I know—'know' is stative verb)"
+          - "He is having a car (correct: He has—'have' meaning 'possess' is stative)"
+        example_problems:
+          - problem: "Fill: Right now, they ___ (watch) TV."
+            answer: "are watching"
+            explanation: "Action happening at this moment—use present continuous."
+            difficulty: 1
+
+          - problem: "Correct the error: I am understanding this lesson."
+            answer: "I understand this lesson."
+            explanation: "'Understand' is a stative verb—use simple present."
+            difficulty: 3
+
+      - id: ch07_t03
+        title: "Present Perfect Tense"
+        learning_objectives:
+          - "Use present perfect for completed actions with present relevance"
+          - "Form: has/have + past participle"
+          - "Use with 'since' and 'for' for duration"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "I have done it yesterday (correct: I did it yesterday—use simple past with specific past time)"
+        example_problems:
+          - problem: "Fill: She ___ (live) in Mumbai for five years."
+            answer: "has lived"
+            explanation: "Duration from past continuing to present—use present perfect with 'for'."
+            difficulty: 2
+
+          - problem: "Fill: They ___ already ___ (finish) their homework."
+            answer: "have, finished"
+            explanation: "Completed action with present relevance—use present perfect."
+            difficulty: 2
+
+      - id: ch07_t04
+        title: "Present Perfect Continuous Tense"
+        learning_objectives:
+          - "Use for actions that started in past and are still continuing"
+          - "Form: has/have + been + verb-ing"
+        prerequisites: ["ch07_t02", "ch07_t03"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "Since morning I am waiting (correct: I have been waiting—duration from past to present)"
+        example_problems:
+          - problem: "Fill: It ___ (rain) since morning."
+            answer: "has been raining"
+            explanation: "Action started in past (morning) and still continuing—use present perfect continuous."
+            difficulty: 3
+
+  - id: ch08
+    title: "Verbs: Expressing the Past"
+    textbook_chapter: 8
+    topics:
+      - id: ch08_t01
+        title: "Simple Past Tense"
+        learning_objectives:
+          - "Use simple past for completed actions in the past"
+          - "Form regular past tense (add -ed)"
+          - "Learn irregular past forms (go→went, eat→ate)"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "I goed to school (correct: I went—irregular verb)"
+        example_problems:
+          - problem: "Past tense of 'write'"
+            answer: "wrote"
+            explanation: "Irregular verb—not 'writed'."
+            difficulty: 1
+
+          - problem: "Fill: Yesterday, I ___ (visit) the Taj Mahal."
+            answer: "visited"
+            explanation: "Completed past action with specific time—use simple past."
+            difficulty: 1
+
+      - id: ch08_t02
+        title: "Past Continuous Tense"
+        learning_objectives:
+          - "Use past continuous for actions in progress at a specific past time"
+          - "Form: was/were + verb-ing"
+        prerequisites: ["ch07_t02", "ch08_t01"]
+        difficulty_range: [2, 3]
+        example_problems:
+          - problem: "Fill: At 8 PM yesterday, I ___ (study)."
+            answer: "was studying"
+            explanation: "Action in progress at a specific past time."
+            difficulty: 2
+
+      - id: ch08_t03
+        title: "Past Perfect Tense"
+        learning_objectives:
+          - "Use past perfect for action completed before another past action"
+          - "Form: had + past participle"
+        prerequisites: ["ch07_t03", "ch08_t01"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "If I would have known (correct: If I had known—past perfect in conditional)"
+        example_problems:
+          - problem: "Fill: The train ___ already ___ (leave) when I reached the station."
+            answer: "had, left"
+            explanation: "Leaving happened before reaching—use past perfect for the earlier action."
+            difficulty: 3
+
+  - id: ch09
+    title: "Verbs: Expressing the Future"
+    textbook_chapter: 9
+    topics:
+      - id: ch09_t01
+        title: "Simple Future Tense"
+        learning_objectives:
+          - "Use will/shall for future actions"
+          - "Understand shall (first person) vs will (all persons)"
+        prerequisites: ["ch07_t01"]
+        difficulty_range: [1, 2]
+        example_problems:
+          - problem: "Fill: Tomorrow, we ___ go to the park."
+            answer: "will (or shall)"
+            explanation: "Future action—use will/shall."
+            difficulty: 1
+
+      - id: ch09_t02
+        title: "Future Continuous and Future Perfect"
+        learning_objectives:
+          - "Use future continuous for actions in progress at future time"
+          - "Use future perfect for actions completed before future time"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [3, 4]
+        example_problems:
+          - problem: "Fill: This time tomorrow, I ___ (travel) to Delhi."
+            answer: "will be travelling"
+            explanation: "Action in progress at a specific future time—use future continuous."
+            difficulty: 3
+
+  - id: ch10
+    title: "Verbs: Modals"
+    textbook_chapter: 10
+    topics:
+      - id: ch10_t01
+        title: "Modal Verbs (can, could, may, might, must, should)"
+        learning_objectives:
+          - "Use modals to express ability, possibility, permission, obligation"
+          - "Understand differences between can/could, may/might, must/should"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Can I go? is for permission (both 'can' and 'may' acceptable, but 'may' is more formal)"
+        example_problems:
+          - problem: "Fill for permission: ___ I borrow your pen?"
+            answer: "May (or Can)"
+            explanation: "Both work, but 'May' is more polite/formal."
+            difficulty: 2
+
+          - problem: "Which modal shows obligation: can, may, or must?"
+            answer: "must"
+            explanation: "'Must' expresses strong obligation or necessity."
+            difficulty: 2
+
+  - id: ch11
+    title: "Verbs: Non-Finite Forms"
+    textbook_chapter: 11
+    topics:
+      - id: ch11_t01
+        title: "Infinitives, Gerunds, and Participles"
+        learning_objectives:
+          - "Identify infinitives (to + verb)"
+          - "Identify gerunds (verb-ing as noun)"
+          - "Identify participles (verb-ing/verb-ed as adjective)"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "All -ing forms are gerunds (but 'running water' uses participle as adjective)"
+        example_problems:
+          - problem: "Identify: 'Swimming is good exercise.' What is 'Swimming'?"
+            answer: "Gerund (verb-ing functioning as noun/subject)"
+            explanation: "'Swimming' acts as the subject of the sentence."
+            difficulty: 3
+
+          - problem: "Identify: 'I like to read books.' What is 'to read'?"
+            answer: "Infinitive"
+            explanation: "'To read' is the infinitive form of the verb."
+            difficulty: 2
+
+  - id: ch12
+    title: "Verbs: Active and Passive Voice"
+    textbook_chapter: 12
+    topics:
+      - id: ch12_t01
+        title: "Active and Passive Voice"
+        learning_objectives:
+          - "Identify active voice (subject does action)"
+          - "Identify passive voice (subject receives action)"
+          - "Convert active to passive and vice versa"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Passive voice is always wrong (passive is appropriate when doer is unknown/unimportant)"
+          - "All passives need 'by' phrase (but 'The window was broken' is fine without it)"
+        example_problems:
+          - problem: "Convert to passive: 'Priya wrote a letter.'"
+            answer: "A letter was written by Priya."
+            explanation: "Object becomes subject, use 'was' + past participle 'written', add 'by' + original subject."
+            difficulty: 2
+
+          - problem: "Convert to active: 'The match was won by our team.'"
+            answer: "Our team won the match."
+            explanation: "'By' phrase becomes subject, remove 'was', use simple past 'won'."
+            difficulty: 2
+
+          - problem: "When is passive voice appropriate?"
+            answer: "When the doer is unknown, unimportant, or when focusing on the action/receiver"
+            explanation: "Example: 'The Taj Mahal was built in the 17th century.' (doer known but focus on monument)"
+            difficulty: 3
+
+  - id: ch13
+    title: "Adverbs"
+    textbook_chapter: 13
+    topics:
+      - id: ch13_t01
+        title: "Types and Usage of Adverbs"
+        learning_objectives:
+          - "Identify adverbs of manner, time, place, frequency, degree"
+          - "Understand adverbs modify verbs, adjectives, or other adverbs"
+          - "Position adverbs correctly in sentences"
+        prerequisites: ["ch03_t01", "ch06_t01"]
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Adverbs always end in -ly (but 'fast', 'well', 'hard' are adverbs without -ly)"
+          - "Hard and hardly mean the same (hard = with effort; hardly = almost not)"
+        example_problems:
+          - problem: "Identify adverb and its type: 'She sings beautifully.'"
+            answer: "beautifully (adverb of manner)"
+            explanation: "Tells how she sings."
+            difficulty: 1
+
+          - problem: "What's the difference: 'He works hard' vs 'He hardly works'?"
+            answer: "'hard' = with effort; 'hardly' = almost never"
+            explanation: "Completely different meanings despite similar spelling."
+            difficulty: 3
+
+  - id: ch14
+    title: "Prepositions"
+    textbook_chapter: 14
+    topics:
+      - id: ch14_t01
+        title: "Prepositions of Time, Place, and Direction"
+        learning_objectives:
+          - "Use in, on, at for time and place correctly"
+          - "Use prepositions of direction (to, towards, into, from)"
+          - "Avoid common prepositional errors"
+        prerequisites: []
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Reached to the station (correct: reached the station—'reached' doesn't need 'to')"
+          - "Married with (correct: married to)"
+          - "Discuss about (correct: discuss—already transitive)"
+        example_problems:
+          - problem: "Fill: I will meet you ___ 5 PM ___ Monday."
+            answer: "at, on"
+            explanation: "Use 'at' for specific times, 'on' for days."
+            difficulty: 2
+
+          - problem: "Correct: He reached to the airport."
+            answer: "He reached the airport."
+            explanation: "'Reached' is transitive—doesn't need preposition 'to'."
+            difficulty: 3
+
+          - problem: "Fill: I am good ___ mathematics."
+            answer: "at"
+            explanation: "Correct collocation: 'good at' (a subject/skill)."
+            difficulty: 2
+
+  - id: ch15
+    title: "Conjunctions"
+    textbook_chapter: 15
+    topics:
+      - id: ch15_t01
+        title: "Coordinating and Subordinating Conjunctions"
+        learning_objectives:
+          - "Use coordinating conjunctions (and, but, or, so) to join equal clauses"
+          - "Use subordinating conjunctions (because, although, if, when) to join dependent clauses"
+        prerequisites: []
+        difficulty_range: [2, 3]
+        example_problems:
+          - problem: "Fill: I wanted to play, ___ it started raining."
+            answer: "but"
+            explanation: "'But' shows contrast between wanting to play and rain preventing it."
+            difficulty: 1
+
+          - problem: "Identify conjunction type: 'She will come when you call her.'"
+            answer: "Subordinating conjunction (when)"
+            explanation: "'When' introduces a dependent clause that cannot stand alone."
+            difficulty: 2
+
+  - id: ch16
+    title: "Direct and Indirect Speech"
+    textbook_chapter: 16
+    topics:
+      - id: ch16_t01
+        title: "Converting Direct to Indirect Speech"
+        learning_objectives:
+          - "Change pronouns correctly (I→he/she, you→I/we)"
+          - "Backshift tenses (present→past, past→past perfect)"
+          - "Change time/place expressions (today→that day, here→there)"
+        prerequisites: ["ch07_t01", "ch08_t01"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "Not changing time words (today→that day, tomorrow→the next day)"
+          - "Not backshifting tenses when reporting verb is past"
+          - "Pronoun errors: 'She said that I was tired' instead of 'She said that she was tired'"
+        example_problems:
+          - problem: "Convert: He said, 'I am busy.'"
+            answer: "He said that he was busy."
+            explanation: "Change pronoun 'I'→'he', backshift tense 'am'→'was', remove quotation marks."
+            difficulty: 2
+
+          - problem: "Convert: She said, 'I will go tomorrow.'"
+            answer: "She said that she would go the next day."
+            explanation: "Pronoun 'I'→'she', 'will'→'would', 'tomorrow'→'the next day'."
+            difficulty: 3
+
+          - problem: "Convert: He said to me, 'Are you coming?'"
+            answer: "He asked me if/whether I was coming."
+            explanation: "Question: use 'asked', add 'if/whether', change pronoun 'you'→'I', backshift tense."
+            difficulty: 4
+
+  - id: ch17
+    title: "Phrases"
+    textbook_chapter: 17
+    topics:
+      - id: ch17_t01
+        title: "Types of Phrases"
+        learning_objectives:
+          - "Identify noun, adjective, adverb, and prepositional phrases"
+          - "Understand phrases have no subject-verb combination"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [2, 3]
+        example_problems:
+          - problem: "Identify phrase type: 'The girl with long hair is my sister.'"
+            answer: "Prepositional phrase (with long hair)"
+            explanation: "Starts with preposition 'with', acts as adjective modifying 'girl'."
+            difficulty: 2
+
+  - id: ch18
+    title: "Clauses"
+    textbook_chapter: 18
+    topics:
+      - id: ch18_t01
+        title: "Independent and Dependent Clauses"
+        learning_objectives:
+          - "Identify independent clauses (can stand alone)"
+          - "Identify dependent clauses (cannot stand alone)"
+          - "Distinguish noun, adjective, and adverb clauses"
+        prerequisites: ["ch17_t01"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "All clauses can be sentences (dependent clauses cannot)"
+        example_problems:
+          - problem: "Identify clause type: 'I will come when you call me.'"
+            answer: "'I will come' = independent; 'when you call me' = dependent adverb clause"
+            explanation: "First can stand alone. Second cannot—it depends on the main clause."
+            difficulty: 3
+
+  - id: ch19
+    title: "Sentences: Simple, Compound, and Complex"
+    textbook_chapter: 19
+    topics:
+      - id: ch19_t01
+        title: "Sentence Structure Types"
+        learning_objectives:
+          - "Identify simple sentences (one independent clause)"
+          - "Identify compound sentences (two+ independent clauses joined by conjunction)"
+          - "Identify complex sentences (independent + dependent clause)"
+        prerequisites: ["ch18_t01"]
+        difficulty_range: [2, 4]
+        example_problems:
+          - problem: "Identify sentence type: 'The sun was shining and the birds were singing.'"
+            answer: "Compound sentence"
+            explanation: "Two independent clauses joined by coordinating conjunction 'and'."
+            difficulty: 2
+
+          - problem: "Identify: 'Although it was raining, we went to the park.'"
+            answer: "Complex sentence"
+            explanation: "Dependent clause 'Although it was raining' + independent clause 'we went to the park'."
+            difficulty: 3
+
+  - id: ch20
+    title: "Transformation of Sentences"
+    textbook_chapter: 20
+    topics:
+      - id: ch20_t01
+        title: "Transforming Sentence Types"
+        learning_objectives:
+          - "Convert simple to compound sentences"
+          - "Convert compound to complex sentences"
+          - "Convert affirmative to negative and vice versa"
+          - "Convert exclamatory to assertive"
+        prerequisites: ["ch19_t01"]
+        difficulty_range: [3, 4]
+        example_problems:
+          - problem: "Convert simple to compound: 'Being rich, he is unhappy.'"
+            answer: "He is rich but he is unhappy."
+            explanation: "Phrase 'Being rich' becomes independent clause 'He is rich', joined by 'but'."
+            difficulty: 3
+
+          - problem: "Convert to negative without changing meaning: 'He is very intelligent.'"
+            answer: "He is not unintelligent."
+            explanation: "Double negative creates affirmative meaning."
+            difficulty: 4
+
+  - id: ch21
+    title: "Punctuation and Capital Letters"
+    textbook_chapter: 21
+    topics:
+      - id: ch21_t01
+        title: "Punctuation Marks"
+        learning_objectives:
+          - "Use periods, commas, question marks, exclamation marks correctly"
+          - "Use quotation marks for direct speech"
+          - "Use apostrophes for possession and contractions"
+          - "Capitalize proper nouns and sentence beginnings"
+        prerequisites: []
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Its' is possessive (correct: its without apostrophe)"
+          - "Comma before 'and' is always wrong (Oxford comma is optional but acceptable)"
+        example_problems:
+          - problem: "Punctuate: he said i am going to delhi tomorrow"
+            answer: "He said, \"I am going to Delhi tomorrow.\""
+            explanation: "Capitalize 'He' and 'Delhi' (proper noun), add comma before quote, quotation marks for speech, period inside quotes."
+            difficulty: 3
+
+          - problem: "Add apostrophe: The boys books are here."
+            answer: "The boys' books are here."
+            explanation: "Plural possessive: add apostrophe after the s."
+            difficulty: 2
+
+  - id: ch22
+    title: "Words Often Confused"
+    textbook_chapter: 22
+    topics:
+      - id: ch22_t01
+        title: "Commonly Confused Word Pairs"
+        learning_objectives:
+          - "Distinguish between accept/except, affect/effect, its/it's"
+          - "Use commonly confused words correctly"
+        prerequisites: []
+        difficulty_range: [2, 3]
+        common_misconceptions:
+          - "Its' is correct (correct: its for possessive, it's for it is)"
+          - "Their, there, they're are interchangeable"
+        example_problems:
+          - problem: "Fill: The weather will ___ our plans. (affect/effect)"
+            answer: "affect"
+            explanation: "'Affect' is a verb meaning to influence. 'Effect' is usually a noun meaning result."
+            difficulty: 2
+
+          - problem: "Fill: ___ going to the market. (Their/There/They're)"
+            answer: "They're"
+            explanation: "Contraction of 'They are'. 'Their' = possessive, 'There' = place."
+            difficulty: 2
+
+  - id: ch23
+    title: "Words Followed by Appropriate Prepositions"
+    textbook_chapter: 23
+    topics:
+      - id: ch23_t01
+        title: "Prepositional Collocations"
+        learning_objectives:
+          - "Use correct prepositions after common adjectives and verbs"
+          - "Learn standard prepositional phrases"
+        prerequisites: ["ch14_t01"]
+        difficulty_range: [2, 3]
+        example_problems:
+          - problem: "Fill: She is afraid ___ dogs."
+            answer: "of"
+            explanation: "Correct collocation: 'afraid of'."
+            difficulty: 2
+
+          - problem: "Fill: He is good ___ mathematics."
+            answer: "at"
+            explanation: "Correct collocation: 'good at' (a skill/subject)."
+            difficulty: 2
+
+          - problem: "Fill: She is married ___ a doctor."
+            answer: "to"
+            explanation: "Correct collocation: 'married to' (not 'with')."
+            difficulty: 2
+
+  - id: ch24
+    title: "Synonyms and Antonyms"
+    textbook_chapter: 24
+    topics:
+      - id: ch24_t01
+        title: "Synonyms and Antonyms"
+        learning_objectives:
+          - "Identify synonyms (words with similar meanings)"
+          - "Identify antonyms (words with opposite meanings)"
+          - "Expand vocabulary through word relationships"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        example_problems:
+          - problem: "Synonym of 'happy'"
+            answer: "joyful, cheerful, delighted, pleased"
+            explanation: "Words with similar meaning to happy."
+            difficulty: 1
+
+          - problem: "Antonym of 'difficult'"
+            answer: "easy, simple"
+            explanation: "Opposite meaning."
+            difficulty: 1
+
+          - problem: "Synonym of 'courageous'"
+            answer: "brave, fearless, bold, valiant"
+            explanation: "Words meaning having courage."
+            difficulty: 2
+
+  - id: ch25
+    title: "Reading Skills"
+    textbook_chapter: 25
+    topics:
+      - id: ch25_t01
+        title: "Comprehension and Reading Strategies"
+        learning_objectives:
+          - "Read passages for understanding"
+          - "Identify main ideas and supporting details"
+          - "Make inferences from context"
+          - "Answer comprehension questions accurately"
+        prerequisites: []
+        difficulty_range: [2, 4]
+        example_problems:
+          - problem: "Read this: 'The sun was setting behind the mountains, painting the sky in shades of orange and pink. Birds flew home to their nests.' What time of day is it?"
+            answer: "Evening/Dusk"
+            explanation: "Clues: 'sun was setting', 'birds flew home' indicate end of day."
+            difficulty: 2
+
+          - problem: "What does 'painting the sky' mean in the passage?"
+            answer: "The sky was changing to orange and pink colors (figurative language)"
+            explanation: "It's a metaphor—the sunset makes the sky colorful like a painting."
+            difficulty: 3
