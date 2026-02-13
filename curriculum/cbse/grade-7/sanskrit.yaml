@@ -1,0 +1,692 @@
+grade: 7
+subject: sanskrit-grammar
+board: CBSE
+textbook: "NCERT Ruchira Bhag 2 (रुचिरा भाग २) — परिशिष्टम् (Grammar Appendix)"
+reference: "NCERT Solutions Guru Class 7 Sanskrit Grammar Book Solutions"
+schema_version: "1.0"
+
+chapters:
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 1: वर्णविचारः (Phonetics / Alphabet Study)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch01
+    title: "वर्णविचारः (Varna Vichara — Alphabet & Phonetics)"
+    textbook_section: "परिशिष्टम् 1"
+    english_bridge: "Just like English has vowels (a,e,i,o,u) and consonants, Sanskrit has स्वर (vowels) and व्यञ्जन (consonants) — but organized scientifically by where and how sounds are produced in the mouth."
+    topics:
+      - id: ch01_t01
+        title: "स्वर (Vowels) and व्यञ्जन (Consonants)"
+        learning_objectives:
+          - "Identify and pronounce all 13 स्वर (vowels) correctly"
+          - "Identify and pronounce all 33 व्यञ्जन (consonants) correctly"
+          - "Distinguish between हस्व (short) and दीर्घ (long) vowels"
+          - "Understand the mouth-position classification (कण्ठ्य, तालव्य, मूर्धन्य, दन्त्य, ओष्ठ्य)"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        english_bridge: "English has 5 vowels and 21 consonants. Sanskrit has 13 vowels and 33 consonants. But Sanskrit organizes them scientifically — consonants are grouped by WHERE in the mouth you make the sound (throat, palate, roof, teeth, lips)."
+        common_misconceptions:
+          - "अ and आ sound the same (अ is short, आ is long — the duration changes meaning)"
+          - "The Devanagari script IS Sanskrit (Devanagari is just a script; Sanskrit can be written in any script)"
+          - "ऋ is not a vowel (it IS a vowel in Sanskrit, unlike Hindi where it's rarely used)"
+          - "श and ष are the same sound (श is palatal, ष is retroflex — tongue position differs)"
+        example_problems:
+          - problem: "Classify these as स्वर or व्यञ्जन: अ, क, ई, प, उ, म"
+            answer: "स्वर: अ, ई, उ | व्यञ्जन: क, प, म"
+            explanation: "Vowels (स्वर) can be spoken independently. Consonants (व्यञ्जन) need a vowel to be pronounced (क = क् + अ)."
+            difficulty: 1
+
+          - problem: "Which are हस्व (short) and which are दीर्घ (long)? अ, आ, इ, ई, उ, ऊ"
+            answer: "हस्व: अ, इ, उ | दीर्घ: आ, ई, ऊ"
+            explanation: "Short vowels take 1 beat (मात्रा) to pronounce, long vowels take 2 beats."
+            difficulty: 1
+
+          - problem: "Identify the वर्ग (group) of these consonants: क, ख, ग, घ, ङ"
+            answer: "कवर्ग — These are कण्ठ्य (guttural/throat) consonants"
+            explanation: "All 5 are produced from the throat. Each group (वर्ग) has 5 consonants sharing the same mouth position."
+            difficulty: 2
+
+      - id: ch01_t02
+        title: "उच्चारणस्थान (Place of Articulation)"
+        learning_objectives:
+          - "Map consonant groups to their articulation points"
+          - "Pronounce retroflex sounds (ट-वर्ग) correctly"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "Think of your mouth as having 5 zones from back to front: throat → palate → roof → teeth → lips. Sanskrit groups consonants by which zone they use. English doesn't organize sounds this way, but the concept is the same — 't' and 'd' are both made with the tongue on the teeth."
+        common_misconceptions:
+          - "All त-sounds are the same (dental त and retroflex ट are different — tongue position matters)"
+        example_problems:
+          - problem: "Match the वर्ग with its उच्चारणस्थान: कवर्ग, चवर्ग, टवर्ग, तवर्ग, पवर्ग"
+            answer: "कवर्ग → कण्ठ (throat) | चवर्ग → तालु (palate) | टवर्ग → मूर्धा (roof) | तवर्ग → दन्त (teeth) | पवर्ग → ओष्ठ (lips)"
+            explanation: "Remember: 'कण्ठ-तालु-मूर्धा-दन्त-ओष्ठ' = Throat-Palate-Roof-Teeth-Lips (back to front)"
+            difficulty: 2
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 2: शब्दविचारः (Word Study)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch02
+    title: "शब्दविचारः (Shabda Vichara — Word Study)"
+    textbook_section: "परिशिष्टम् 2"
+    english_bridge: "In English, words are classified as nouns, verbs, adjectives etc. Sanskrit classifies words differently — into विकारी (words that change form) and अविकारी (words that never change form). This is like English 'run/runs/running' (changes) vs 'very/always' (never changes)."
+    topics:
+      - id: ch02_t01
+        title: "Word Classification — विकारी and अविकारी शब्द"
+        learning_objectives:
+          - "Classify words as विकारी (declinable) or अविकारी (indeclinable)"
+          - "Understand the 4 types of विकारी शब्द: संज्ञा, सर्वनाम, विशेषण, क्रिया"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [1, 2]
+        english_bridge: "'Run' can become runs, running, ran — it CHANGES. But 'very' is always 'very' — it NEVER changes. Sanskrit makes this same distinction: विकारी शब्द change their endings, अविकारी शब्द (अव्यय) never change."
+        common_misconceptions:
+          - "All Sanskrit words change form (अव्यय words like अपि, च, एव never change)"
+        example_problems:
+          - problem: "Classify: रामः, सदा, पठति, सुन्दरम्, अपि, बालिका"
+            answer: "विकारी: रामः (noun), पठति (verb), सुन्दरम् (adjective), बालिका (noun) | अविकारी: सदा (always), अपि (also)"
+            explanation: "रामः/पठति/सुन्दरम्/बालिका change form based on vibhakti/lakaara. सदा and अपि never change."
+            difficulty: 2
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 3: शब्दरूपाणि (Noun Declensions)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch03
+    title: "शब्दरूपाणि (Shabdrupani — Noun Declensions)"
+    textbook_section: "परिशिष्टम् 3"
+    english_bridge: "In English, nouns barely change: 'boy, boy's, boys'. In Sanskrit, the same noun takes DIFFERENT endings based on its role in the sentence (subject, object, instrument etc.) AND whether there's one, two, or many. It's like adding name tags that say 'I'm the doer!' or 'I'm the receiver!'"
+    topics:
+      - id: ch03_t01
+        title: "अकारान्त पुल्लिंग शब्दरूपाणि (Masculine nouns ending in अ)"
+        learning_objectives:
+          - "Decline राम-type nouns in all 8 vibhaktis and 3 vachanas"
+          - "Identify the vibhakti of a given noun form"
+          - "Map each vibhakti to its English preposition equivalent"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "In English: 'Ram, Ram's, to Ram, from Ram, with Ram' — we add prepositions. In Sanskrit: रामः, रामस्य, रामाय, रामात्, रामेण — the word ITSELF changes. Think of it as the word wearing different costumes for different roles!"
+        key_formulas:
+          - "राम: एकवचन — रामः, रामम्, रामेण, रामाय, रामात्, रामस्य, रामे, हे राम!"
+          - "राम: द्विवचन — रामौ, रामौ, रामाभ्याम्, रामाभ्याम्, रामाभ्याम्, रामयोः, रामयोः, हे रामौ!"
+          - "राम: बहुवचन — रामाः, रामान्, रामैः, रामेभ्यः, रामेभ्यः, रामाणाम्, रामेषु, हे रामाः!"
+        common_misconceptions:
+          - "Every masculine noun follows the राम pattern (only अकारान्त masculine nouns do)"
+          - "Dual (द्विवचन) is the same as plural (dual is specifically for TWO things)"
+        example_problems:
+          - problem: "Fill in the blank: रामः पुस्तकं _____ ददाति। (Ram gives a book TO Mohan) [Use मोहन in चतुर्थी]"
+            answer: "मोहनाय"
+            explanation: "चतुर्थी (4th vibhakti) means 'for/to' — the receiver. मोहन + आय = मोहनाय (like राम → रामाय pattern)."
+            difficulty: 2
+
+          - problem: "Identify the vibhakti: 'बालकैः' (by/with the boys)"
+            answer: "तृतीया विभक्ति, बहुवचन (3rd case, plural)"
+            explanation: "The ending ऐः indicates instrumental case (with/by) in plural. Compare: रामैः = with Rams."
+            difficulty: 2
+
+          - problem: "Translate using correct vibhakti: 'Ram goes FROM the village.'"
+            answer: "रामः ग्रामात् गच्छति।"
+            explanation: "'From' = पञ्चमी विभक्ति. ग्राम + आत् = ग्रामात्। रामः is प्रथमा (subject), गच्छति is verb."
+            difficulty: 3
+
+      - id: ch03_t02
+        title: "आकारान्त स्त्रीलिंग शब्दरूपाणि (Feminine nouns ending in आ)"
+        learning_objectives:
+          - "Decline लता/बालिका-type nouns in all 8 vibhaktis and 3 vachanas"
+          - "Compare masculine and feminine endings to spot the pattern differences"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "In English, 'girl' and 'boy' work the same way grammatically. In Sanskrit, feminine nouns get their OWN set of endings — different from masculine. Think of it as a different costume wardrobe for feminine words!"
+        key_formulas:
+          - "लता: एकवचन — लता, लताम्, लतया, लतायै, लतायाः, लतायाः, लतायाम्, हे लते!"
+          - "लता: द्विवचन — लते, लते, लताभ्याम्, लताभ्याम्, लताभ्याम्, लतयोः, लतयोः, हे लते!"
+          - "लता: बहुवचन — लताः, लताः, लताभिः, लताभ्यः, लताभ्यः, लतानाम्, लतासु, हे लताः!"
+        common_misconceptions:
+          - "Feminine and masculine endings are the same (they are quite different — compare रामाय vs लतायै)"
+        example_problems:
+          - problem: "Decline बालिका (girl) in प्रथमा विभक्ति (all three numbers)"
+            answer: "बालिका, बालिके, बालिकाः"
+            explanation: "Follows लता pattern: singular -आ, dual -ए, plural -आः."
+            difficulty: 2
+
+          - problem: "Fill: सीता _____ सह गच्छति। (Sita goes WITH Gita) [Use गीता in तृतीया]"
+            answer: "गीतया"
+            explanation: "तृतीया (instrumental/with) of आकारान्त स्त्रीलिंग: गीता → गीतया। सह (with) takes तृतीया विभक्ति."
+            difficulty: 3
+
+      - id: ch03_t03
+        title: "अकारान्त नपुंसकलिंग शब्दरूपाणि (Neuter nouns ending in अ)"
+        learning_objectives:
+          - "Decline फल/पुस्तक-type nouns in all vibhaktis"
+          - "Notice that neuter प्रथमा and द्वितीया are identical"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "English doesn't have neuter noun changes, but think of it this way: in Sanskrit, neuter nouns (like 'fruit', 'book', 'water') mostly follow the masculine pattern BUT the first two cases (subject and object) are SPECIAL — they look the same! The word 'fruit' as subject and 'fruit' as object have the same ending."
+        key_formulas:
+          - "फल: एकवचन — फलम्, फलम्, फलेन, फलाय, फलात्, फलस्य, फले, हे फल!"
+          - "फल: द्विवचन — फले, फले, फलाभ्याम्, फलाभ्याम्, फलाभ्याम्, फलयोः, फलयोः, हे फले!"
+          - "फल: बहुवचन — फलानि, फलानि, फलैः, फलेभ्यः, फलेभ्यः, फलानाम्, फलेषु, हे फलानि!"
+        common_misconceptions:
+          - "Neuter nouns are exactly like masculine (प्रथमा and द्वितीया differ: रामः/रामम् vs फलम्/फलम्)"
+        example_problems:
+          - problem: "Translate: 'The fruits are on the tree.' Use फल (fruit) and वृक्ष (tree)."
+            answer: "फलानि वृक्षे सन्ति।"
+            explanation: "फलानि = fruits (प्रथमा बहुवचन, neuter). वृक्षे = on the tree (सप्तमी एकवचन). सन्ति = are."
+            difficulty: 3
+
+      - id: ch03_t04
+        title: "सर्वनाम शब्दरूपाणि (Pronoun Declensions)"
+        learning_objectives:
+          - "Decline तत् (he/she/it), एतत् (this), किम् (who/what) in all genders"
+          - "Use pronouns correctly in sentences"
+        prerequisites: ["ch03_t01", "ch03_t02", "ch03_t03"]
+        difficulty_range: [3, 4]
+        english_bridge: "English pronouns change form too: I/me/my, he/him/his, she/her/her. Sanskrit pronouns change even MORE — they have forms for all 8 cases AND all 3 numbers AND all 3 genders. But the good news: once you know one set, the patterns repeat!"
+        common_misconceptions:
+          - "तत् only means 'that' (it also serves as he/she/it depending on gender)"
+          - "किम् is only used for questions (it's the interrogative pronoun — like English 'who/what/which')"
+        example_problems:
+          - problem: "Fill: _____ नाम किम्? (What is HIS name?) [Use तत् in षष्ठी पुल्लिंग]"
+            answer: "तस्य"
+            explanation: "तत् (he) in षष्ठी (possessive) पुल्लिंग एकवचन = तस्य (his)."
+            difficulty: 3
+
+          - problem: "Translate: 'She goes to school.' Use सा (she) and विद्यालय."
+            answer: "सा विद्यालयं गच्छति।"
+            explanation: "सा = she (तत् स्त्रीलिंग प्रथमा). विद्यालयम् = to school (द्वितीया with verb of motion)."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 4: धातुरूपाणि (Verb Conjugations)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch04
+    title: "धातुरूपाणि (Dhaturupani — Verb Conjugations)"
+    textbook_section: "परिशिष्टम् 4"
+    english_bridge: "English verbs change with person and tense: I read, he reads, I was reading. Sanskrit verbs also change — but they have a 3x3 grid (3 persons x 3 numbers) for EACH tense. And Sanskrit has 5 tenses to learn in Grade 7!"
+    topics:
+      - id: ch04_t01
+        title: "लट् लकारः (Present Tense)"
+        learning_objectives:
+          - "Conjugate common dhatus in present tense (all 9 forms)"
+          - "Match verb form to correct person and number"
+          - "Form simple present tense sentences"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        english_bridge: "In English: I read, you read, he reads — the verb barely changes. In Sanskrit: अहं पठामि, त्वं पठसि, सः पठति — EVERY combination gets a unique ending. It's like each person gets their own verb costume."
+        key_formulas:
+          - "पठ् (read) लट् — पठति पठतः पठन्ति | पठसि पठथः पठथ | पठामि पठावः पठामः"
+          - "गम् (go) लट् — गच्छति गच्छतः गच्छन्ति | गच्छसि गच्छथः गच्छथ | गच्छामि गच्छावः गच्छामः"
+          - "लिख् (write) लट् — लिखति लिखतः लिखन्ति | लिखसि लिखथः लिखथ | लिखामि लिखावः लिखामः"
+        common_misconceptions:
+          - "Sanskrit person order is same as English (it's REVERSED: 3rd person first, 1st person last)"
+          - "All dhatus follow the same pattern (some dhatus like गम् change root: गम् → गच्छ)"
+        example_problems:
+          - problem: "Conjugate पठ् (read) in लट् for all persons, एकवचन only."
+            answer: "प्रथमपुरुष: पठति | मध्यमपुरुष: पठसि | उत्तमपुरुष: पठामि"
+            explanation: "3rd person (he reads) = पठति. 2nd person (you read) = पठसि. 1st person (I read) = पठामि."
+            difficulty: 1
+
+          - problem: "Fill: बालकौ विद्यालयं _____। (Two boys go to school.) [Use गम् in लट्, dual]"
+            answer: "गच्छतः"
+            explanation: "Two boys = dual (द्विवचन), 3rd person (प्रथमपुरुष). गम् लट् dual = गच्छतः."
+            difficulty: 2
+
+          - problem: "Translate to Sanskrit: 'We write a letter.'"
+            answer: "वयं पत्रं लिखामः।"
+            explanation: "वयम् = we (उत्तमपुरुष बहुवचन). पत्रम् = letter (द्वितीया). लिखामः = we write (लिख् लट् उत्तम बहु)."
+            difficulty: 3
+
+      - id: ch04_t02
+        title: "लङ् लकारः (Past Tense)"
+        learning_objectives:
+          - "Form past tense by adding अ prefix (augment) and past endings"
+          - "Conjugate common dhatus in past tense"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "English past tense adds -ed (walked, played) or changes the word (go→went). Sanskrit past tense adds 'अ' at the BEGINNING and uses special endings. Think of 'अ' as a time-travel prefix that takes the verb to the past!"
+        key_formulas:
+          - "पठ् (read) लङ् — अपठत् अपठताम् अपठन् | अपठः अपठतम् अपठत | अपठम् अपठाव अपठाम"
+        common_misconceptions:
+          - "The 'अ' prefix is a separate word (it's inseparable — always joined to the verb)"
+          - "Past tense endings are same as present (they're different! Compare: पठति vs अपठत्)"
+        example_problems:
+          - problem: "Convert to past tense: सः पठति (He reads)"
+            answer: "सः अपठत् (He read)"
+            explanation: "Add अ prefix, change ending: पठति → अपठत्। Third person singular past."
+            difficulty: 2
+
+          - problem: "Fill: अहं गृहं _____। (I went home.) [Use गम् in लङ्]"
+            answer: "अगच्छम्"
+            explanation: "गम् → गच्छ (root change) + अ prefix + म् ending = अगच्छम् (I went)."
+            difficulty: 3
+
+      - id: ch04_t03
+        title: "लुट् लकारः (Future Tense)"
+        learning_objectives:
+          - "Form future tense using इष्य/स्य infix"
+          - "Conjugate common dhatus in future tense"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "English uses 'will' for future: 'I will read.' Sanskrit inserts a special sound (इष्य or स्य) between the root and ending. Think of इष्य as an embedded 'will' inside the word itself!"
+        key_formulas:
+          - "पठ् (read) लुट् — पठिष्यति पठिष्यतः पठिष्यन्ति | पठिष्यसि पठिष्यथः पठिष्यथ | पठिष्यामि पठिष्यावः पठिष्यामः"
+        example_problems:
+          - problem: "Convert to future: सः पठति (He reads)"
+            answer: "सः पठिष्यति (He will read)"
+            explanation: "Insert इष्य before the ending: पठ + इष्य + ति = पठिष्यति."
+            difficulty: 2
+
+          - problem: "Translate: 'She will sing a song.'"
+            answer: "सा गीतं गास्यति।"
+            explanation: "सा = she. गीतम् = song (द्वितीया). गै + स्य + ति = गास्यति (will sing)."
+            difficulty: 3
+
+      - id: ch04_t04
+        title: "लोट् लकारः (Imperative / Command)"
+        learning_objectives:
+          - "Form imperative/command forms"
+          - "Use polite requests and direct commands"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "In English: 'Read!' 'Please read.' 'Let him read.' These are commands/requests. Sanskrit has a whole tense (लोट्) for this! Different endings for 'let him', 'you should', and 'let me'."
+        key_formulas:
+          - "पठ् (read) लोट् — पठतु पठताम् पठन्तु | पठ पठतम् पठत | पठानि पठाव पठाम"
+        example_problems:
+          - problem: "How do you say 'Let him read' in Sanskrit?"
+            answer: "सः पठतु।"
+            explanation: "लोट् प्रथमपुरुष एकवचन = पठतु (let him/her read)."
+            difficulty: 2
+
+          - problem: "Form the command: 'You (singular) go!'"
+            answer: "त्वं गच्छ।"
+            explanation: "लोट् मध्यमपुरुष एकवचन of गम् = गच्छ (go!)."
+            difficulty: 2
+
+      - id: ch04_t05
+        title: "विधिलिङ् लकारः (Potential / Should)"
+        learning_objectives:
+          - "Form 'should/would/may' expressions"
+          - "Distinguish imperative (must do) from potential (should do)"
+        prerequisites: ["ch04_t04"]
+        difficulty_range: [3, 4]
+        english_bridge: "In English: 'He should read.' 'You ought to go.' Sanskrit has विधिलिङ् for this — it expresses advice, obligation, or possibility. Think of it as the 'should' tense."
+        key_formulas:
+          - "पठ् (read) विधिलिङ् — पठेत् पठेताम् पठेयुः | पठेः पठेतम् पठेत | पठेयम् पठेव पठेम"
+        example_problems:
+          - problem: "Translate: 'Students should study.'"
+            answer: "छात्राः पठेयुः।"
+            explanation: "छात्राः = students (प्रथमा बहुवचन). पठेयुः = should read (विधिलिङ् प्रथमपुरुष बहुवचन)."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 5: कारकम् (Cases / Karaka)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch05
+    title: "कारकम् (Karaka — Semantic Roles / Cases)"
+    textbook_section: "परिशिष्टम् 5"
+    english_bridge: "In English, word ORDER tells you who does what: 'Ram hit Shyam' vs 'Shyam hit Ram'. In Sanskrit, word order doesn't matter — the ENDINGS (vibhakti) tell you who does what. कारक is the system that assigns roles to nouns in a sentence."
+    topics:
+      - id: ch05_t01
+        title: "Six Karakas and their Vibhaktis"
+        learning_objectives:
+          - "Identify all 6 karakas: कर्ता, कर्म, करण, सम्प्रदान, अपादान, अधिकरण"
+          - "Map each karaka to its vibhakti and English equivalent"
+          - "Use the question-word method to identify karakas"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [2, 4]
+        english_bridge: "Think of karakas as job roles in a sentence-movie: कर्ता = the actor (who does it?), कर्म = the patient (whom is it done to?), करण = the prop (with what tool?), सम्प्रदान = the recipient (for whom?), अपादान = the origin (from where?), अधिकरण = the location (where/when?)."
+        key_formulas:
+          - "कर्ता (doer) → प्रथमा विभक्ति (who?) — रामः पठति"
+          - "कर्म (object) → द्वितीया विभक्ति (whom/what?) — रामः पुस्तकं पठति"
+          - "करण (instrument) → तृतीया विभक्ति (with/by what?) — रामः लेखन्या लिखति"
+          - "सम्प्रदान (recipient) → चतुर्थी विभक्ति (for/to whom?) — रामः बालकाय ददाति"
+          - "अपादान (source) → पञ्चमी विभक्ति (from where?) — रामः ग्रामात् आगच्छति"
+          - "अधिकरण (location) → सप्तमी विभक्ति (where/when?) — रामः गृहे वसति"
+        common_misconceptions:
+          - "करण and अपादान both use 'से' in Hindi, so they're the same (करण = tool/instrument, अपादान = separation/source — very different)"
+          - "कर्ता is always in प्रथमा (in passive voice, कर्ता takes तृतीया!)"
+        example_problems:
+          - problem: "Identify the karaka of each underlined word: रामः लेखन्या पत्रं लिखति।"
+            answer: "रामः = कर्ता (doer) | लेखन्या = करण (instrument — with pen) | पत्रम् = कर्म (object — the letter)"
+            explanation: "Who writes? = रामः (कर्ता). Writes what? = पत्रम् (कर्म). Writes with what? = लेखन्या (करण)."
+            difficulty: 3
+
+          - problem: "Fill correct vibhakti: बालकः _____ (गृह) पठति। (The boy studies AT HOME.)"
+            answer: "गृहे"
+            explanation: "'At home' = location = अधिकरण = सप्तमी विभक्ति. गृह + ए = गृहे."
+            difficulty: 2
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 6: अव्ययाः (Indeclinables)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch06
+    title: "अव्ययाः (Avyaya — Indeclinables)"
+    textbook_section: "परिशिष्टम् 6"
+    english_bridge: "English words like 'always', 'never', 'here', 'there', 'very', 'also' never change form. Sanskrit has these too — they're called अव्यय (a-vyaya = 'without change'). They always stay the same regardless of gender, number, or case."
+    topics:
+      - id: ch06_t01
+        title: "Common Avyayas and their Usage"
+        learning_objectives:
+          - "Learn 25+ common avyayas with their meanings"
+          - "Use avyayas correctly in sentence construction"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 2]
+        common_misconceptions:
+          - "Avyayas have vibhakti forms (they NEVER change — that's their defining feature)"
+        key_formulas:
+          - "अपि = also | च = and | एव = only/certainly | तु = but | यदा = when | तदा = then"
+          - "कदा = when? | कुत्र = where? | अत्र = here | तत्र = there | सर्वत्र = everywhere"
+          - "सदा/सर्वदा = always | अधुना = now | श्वः = tomorrow | ह्यः = yesterday"
+          - "सह = together/with | विना = without | यथा = as/like | तथा = so/similarly"
+          - "अतः = therefore | यतः = because | पुनः = again | बहिः = outside | अन्तः = inside"
+        example_problems:
+          - problem: "Fill: रामः _____ श्यामः गच्छतः। (Ram AND Shyam go.)"
+            answer: "च"
+            explanation: "च = and. Note: in Sanskrit, च comes AFTER both words (रामः श्यामः च), but simplified here."
+            difficulty: 1
+
+          - problem: "Translate using avyayas: 'Where is the book?'"
+            answer: "पुस्तकं कुत्र अस्ति?"
+            explanation: "कुत्र = where (avyaya). अस्ति = is. पुस्तकम् = book."
+            difficulty: 2
+
+          - problem: "Fill: अहं _____ गृहं गमिष्यामि। (I will go home TOMORROW.)"
+            answer: "श्वः"
+            explanation: "श्वः = tomorrow (avyaya — never changes form)."
+            difficulty: 1
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 7: प्रत्ययाः (Suffixes)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch07
+    title: "प्रत्ययाः (Pratyaya — Suffixes)"
+    textbook_section: "परिशिष्टम् 7"
+    english_bridge: "English uses suffixes too: teach→teacher, kind→kindness, run→running. Sanskrit does the same with प्रत्यय — add a suffix to a root word and you get a new word with a new meaning!"
+    topics:
+      - id: ch07_t01
+        title: "कृत् प्रत्ययाः (Suffixes added to verb roots)"
+        learning_objectives:
+          - "Form words using क्त, क्त्वा, तुमुन्, शतृ, शानच् pratyayas"
+          - "Understand how suffixes change a verb into noun/adjective"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [3, 4]
+        english_bridge: "In English: read → reader, reading, readable, read (past). Sanskrit does this with pratyayas: पठ् → पठितः (read/past), पठित्वा (having read), पठितुम् (to read). Same concept, different system!"
+        key_formulas:
+          - "क्त = past participle: पठ् + क्त = पठितः (read/studied)"
+          - "क्त्वा = having done: पठ् + क्त्वा = पठित्वा (having read)"
+          - "तुमुन् = to do (infinitive): पठ् + तुमुन् = पठितुम् (to read)"
+          - "शतृ = doing (present participle): पठ् + शतृ = पठन् (reading/one who reads)"
+        common_misconceptions:
+          - "क्त्वा means past tense (it means 'having done' — used when first action is completed before second)"
+        example_problems:
+          - problem: "Form word: गम् + क्त्वा = ?"
+            answer: "गत्वा (having gone)"
+            explanation: "गम् + क्त्वा = गत्वा. Meaning: 'after going' or 'having gone'. Used like: 'Having gone home, he ate food.'"
+            difficulty: 3
+
+          - problem: "Translate: 'He came to study.'"
+            answer: "सः पठितुम् आगच्छत्।"
+            explanation: "पठितुम् (to study) uses तुमुन् pratyaya. It shows purpose — why he came."
+            difficulty: 3
+
+      - id: ch07_t02
+        title: "तद्धित प्रत्ययाः (Suffixes added to nouns)"
+        learning_objectives:
+          - "Form derived words using मतुप्, त्व, ता pratyayas"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [3, 4]
+        english_bridge: "English: beauty→beautiful, kind→kindness, free→freedom. Sanskrit similarly adds suffixes to nouns: बुद्धि (intelligence) + मतुप् = बुद्धिमान् (intelligent one)."
+        key_formulas:
+          - "मतुप् = having/possessing: बुद्धि + मतुप् = बुद्धिमान् (intelligent)"
+          - "त्व = -ness (abstract quality): मनुष्य + त्व = मनुष्यत्वम् (humanity)"
+          - "ता = -ness: सुन्दर + ता = सुन्दरता (beauty)"
+        example_problems:
+          - problem: "Form: धन (wealth) + मतुप् = ?"
+            answer: "धनवान् (wealthy person)"
+            explanation: "मतुप् suffix means 'one who has'. धन + वान् = धनवान् = one who has wealth."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 8: उपसर्गाः (Prefixes)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch08
+    title: "उपसर्गाः (Upasarga — Prefixes)"
+    textbook_section: "परिशिष्टम् 8"
+    english_bridge: "English uses prefixes to change meaning: un-happy, re-do, pre-view, dis-like. Sanskrit has 22 उपसर्ग (prefixes) that work the same way — add them before a dhatu and the meaning changes!"
+    topics:
+      - id: ch08_t01
+        title: "Common Upasargas and Their Effects"
+        learning_objectives:
+          - "Learn the 22 standard upasargas"
+          - "Understand how prefixes change the meaning of verb roots"
+        prerequisites: ["ch04_t01"]
+        difficulty_range: [2, 3]
+        english_bridge: "Just like 'come' → 'overcome', 'become', 'income' — same root, different prefix, different meaning. Sanskrit: गम् (go) → आगम् (come), प्रगम् (proceed), उद्गम् (rise up)."
+        key_formulas:
+          - "प्र = forward (प्र + गम् = प्रगम् — to proceed)"
+          - "परा = away (परा + जय = पराजय — defeat)"
+          - "अप = away/down (अप + मान = अपमान — insult)"
+          - "सम् = together (सम् + गम = संगम — meeting/confluence)"
+          - "अनु = after/along (अनु + वाद = अनुवाद — translation)"
+          - "अव = down (अव + तृ = अवतार — descent/avatar)"
+          - "निस् = out/without (निस् + गम = निर्गम — exit)"
+          - "दुस् = bad/difficult (दुस् + कर = दुष्कर — difficult to do)"
+          - "सु = good/well (सु + कर = सुकर — easy to do)"
+          - "वि = special/apart (वि + ज्ञान = विज्ञान — science)"
+          - "आ = towards (आ + गम् = आगम् — to come)"
+          - "उप = near (उप + वन = उपवन — garden near forest)"
+          - "प्रति = against/towards (प्रति + दिन = प्रतिदिन — everyday)"
+        common_misconceptions:
+          - "Upasargas can be added to any word (they primarily attach to verb roots/dhatus)"
+          - "The prefix meaning is always literal (sometimes the combined word has an idiomatic meaning)"
+        example_problems:
+          - problem: "What does सम् + स्कृत mean?"
+            answer: "संस्कृत = refined/perfected"
+            explanation: "सम् (well/completely) + कृत (done) = संस्कृत — 'that which is well-made/refined'. This is the origin of the name 'Sanskrit'!"
+            difficulty: 2
+
+          - problem: "Match prefix to English equivalent: प्र, वि, अनु, प्रति"
+            answer: "प्र = pro/forward | वि = dis/apart | अनु = after/following | प्रति = against/counter"
+            explanation: "These have close English equivalents: proceed(प्र), divide(वि), follow(अनु), protest(प्रति)."
+            difficulty: 2
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 9: सन्धिः (Euphonic Combinations)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch09
+    title: "सन्धिः (Sandhi — Sound Combinations)"
+    textbook_section: "परिशिष्टम् 9"
+    english_bridge: "In English, 'do not' becomes 'don't', 'I am' becomes 'I'm'. Sounds merge when words are spoken fast. Sanskrit formalizes this into rules called सन्धि — when two sounds meet at a word boundary, they transform in predictable ways."
+    topics:
+      - id: ch09_t01
+        title: "स्वर सन्धिः (Vowel Sandhi)"
+        learning_objectives:
+          - "Apply दीर्घ, गुण, वृद्धि, यण्, and अयादि sandhi rules"
+          - "Split combined words (सन्धि-विच्छेद) back into components"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [2, 4]
+        english_bridge: "When you say 'go in' fast it sounds like 'goin'. Two vowels meeting and merging — that's vowel sandhi in a nutshell. Sanskrit has 5 specific rules for how different vowel pairs combine."
+        key_formulas:
+          - "दीर्घ सन्धि: same vowel + same vowel = long vowel (अ+अ=आ, इ+इ=ई, उ+उ=ऊ)"
+          - "गुण सन्धि: अ/आ + इ/ई=ए, अ/आ + उ/ऊ=ओ, अ/आ + ऋ=अर्"
+          - "वृद्धि सन्धि: अ/आ + ए/ऐ=ऐ, अ/आ + ओ/औ=औ"
+          - "यण् सन्धि: इ/ई+other vowel=य्+vowel, उ/ऊ+other=व्+vowel, ऋ+other=र्+vowel"
+          - "अयादि सन्धि: ए+vowel=अय्, ऐ+vowel=आय्, ओ+vowel=अव्, औ+vowel=आव्"
+        common_misconceptions:
+          - "Sandhi is just joining letters (it's sound transformation based on phonetic rules)"
+          - "Any two vowels can combine any way (each pair has ONE specific rule)"
+        example_problems:
+          - problem: "Apply sandhi: विद्या + आलयः = ?"
+            answer: "विद्यालयः"
+            explanation: "दीर्घ सन्धि: आ + आ = आ. School = विद्या (knowledge) + आलय (house)."
+            difficulty: 2
+
+          - problem: "Apply sandhi: सूर्य + उदयः = ?"
+            answer: "सूर्योदयः"
+            explanation: "गुण सन्धि: अ + उ = ओ. Sunrise = सूर्य (sun) + उदय (rising)."
+            difficulty: 2
+
+          - problem: "सन्धि-विच्छेद (split): देवेन्द्रः = ?"
+            answer: "देव + इन्द्रः"
+            explanation: "Reverse गुण सन्धि: ए comes from अ + इ. So देवे = देव + इ."
+            difficulty: 3
+
+          - problem: "Apply sandhi: यदि + अपि = ?"
+            answer: "यद्यपि"
+            explanation: "यण् सन्धि: इ + अ → the इ becomes य् (semi-vowel). So यदि + अपि = यद्यपि."
+            difficulty: 4
+
+      - id: ch09_t02
+        title: "व्यञ्जन सन्धिः (Consonant Sandhi)"
+        learning_objectives:
+          - "Apply basic consonant sandhi rules"
+          - "Understand how consonants change at word boundaries"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [3, 4]
+        english_bridge: "In English, 'in' + 'possible' becomes 'impossible' — the 'n' changes to 'm' because 'p' is a lip sound. Sanskrit consonant sandhi follows similar logic — consonants adapt to their neighbors."
+        key_formulas:
+          - "त् before voiced consonant → द् : तत् + जलम् = तज्जलम्"
+          - "त् before श → च्छ : तत् + शिवः = तच्छिवः"
+        example_problems:
+          - problem: "Apply sandhi: जगत् + ईश्वरः = ?"
+            answer: "जगदीश्वरः"
+            explanation: "त् before vowel (ई) → द्. जगत् + ईश्वर = जगदीश्वर."
+            difficulty: 3
+
+      - id: ch09_t03
+        title: "विसर्ग सन्धिः (Visarga Sandhi)"
+        learning_objectives:
+          - "Apply visarga sandhi rules when ः meets a vowel or consonant"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [3, 4]
+        example_problems:
+          - problem: "Apply sandhi: रामः + अस्ति = ?"
+            answer: "रामोऽस्ति"
+            explanation: "ः + अ → ओ + ऽ (avagraha). The visarga and the following अ combine."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 10: संख्यावाचकशब्दाः (Numerals)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch10
+    title: "संख्यावाचकशब्दाः (Sankhya — Numerals)"
+    textbook_section: "परिशिष्टम् 10"
+    english_bridge: "English numbers are simple: one, two, three. Sanskrit numbers are like German — they change form based on gender! एकः (one-masculine), एका (one-feminine), एकम् (one-neuter)."
+    topics:
+      - id: ch10_t01
+        title: "Sanskrit Numerals 1-50"
+        learning_objectives:
+          - "Read and write Sanskrit numerals from 1 to 50"
+          - "Match numerals with gender forms"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        key_formulas:
+          - "1=एकम्, 2=द्वे, 3=त्रीणि, 4=चत्वारि, 5=पञ्च"
+          - "6=षट्, 7=सप्त, 8=अष्ट, 9=नव, 10=दश"
+          - "20=विंशतिः, 30=त्रिंशत्, 40=चत्वारिंशत्, 50=पञ्चाशत्"
+        example_problems:
+          - problem: "Write in Sanskrit: 5 girls (बालिका)"
+            answer: "पञ्च बालिकाः"
+            explanation: "पञ्च (5) doesn't change with gender from 5 onwards. बालिकाः is plural."
+            difficulty: 1
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 11: वाक्यरचना तथा अनुवादः (Sentence Construction & Translation)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch11
+    title: "वाक्यरचना तथा अनुवादः (Sentence Construction & Translation)"
+    textbook_section: "परिशिष्टम् 11"
+    english_bridge: "English word order is Subject-Verb-Object (SVO): 'Ram reads a book.' Sanskrit typically uses Subject-Object-Verb (SOV): 'रामः पुस्तकं पठति' (Ram book reads). Think Yoda-speak!"
+    topics:
+      - id: ch11_t01
+        title: "Sanskrit Sentence Structure (SOV)"
+        learning_objectives:
+          - "Construct simple Sanskrit sentences using SOV order"
+          - "Translate English sentences to Sanskrit and vice versa"
+          - "Apply correct vibhakti, vachana, linga agreement"
+        prerequisites: ["ch03_t01", "ch04_t01", "ch05_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Sanskrit word order is fixed like English (actually quite flexible because endings encode meaning)"
+          - "Subject always comes first in Sanskrit (any order works; vibhakti tells you who does what)"
+        example_problems:
+          - problem: "Translate to Sanskrit: 'The girl drinks water.'"
+            answer: "बालिका जलं पिबति।"
+            explanation: "बालिका = girl (प्रथमा). जलम् = water (द्वितीया). पिबति = drinks (पा धातु, लट् प्रथमपुरुष एकवचन)."
+            difficulty: 2
+
+          - problem: "Translate to Sanskrit: 'Two boys play in the garden with a ball.'"
+            answer: "बालकौ कन्दुकेन उद्याने क्रीडतः।"
+            explanation: "बालकौ = two boys (dual). कन्दुकेन = with ball (तृतीया). उद्याने = in garden (सप्तमी). क्रीडतः = play (dual)."
+            difficulty: 4
+
+          - problem: "Translate to English: 'सीता विद्यालयात् गृहम् आगच्छति।'"
+            answer: "Sita comes home from school."
+            explanation: "विद्यालयात् = from school (पञ्चमी). गृहम् = home (द्वितीया — direction). आगच्छति = comes."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 12: अशुद्धिशोधनम् (Error Correction)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch12
+    title: "अशुद्धिशोधनम् (Ashudhi Shodhanam — Error Correction)"
+    textbook_section: "परिशिष्टम् 12"
+    english_bridge: "In English, you spot errors like 'He go to school' (should be 'goes'). Sanskrit error correction works the same way — find mismatches in vibhakti, vachana, linga, purusha, or lakaara."
+    topics:
+      - id: ch12_t01
+        title: "Common Errors and Correction"
+        learning_objectives:
+          - "Identify and correct vibhakti errors"
+          - "Identify and correct verb-subject agreement errors"
+          - "Identify and correct gender/number mismatches"
+        prerequisites: ["ch03_t01", "ch04_t01", "ch05_t01"]
+        difficulty_range: [3, 4]
+        common_misconceptions:
+          - "Only vibhakti endings can be wrong (verb forms, gender, and number can all be wrong too)"
+        example_problems:
+          - problem: "Correct: बालकाः विद्यालयं गच्छति।"
+            answer: "बालकाः विद्यालयं गच्छन्ति।"
+            explanation: "बालकाः is plural (बहुवचन), so verb must be गच्छन्ति (plural), not गच्छति (singular)."
+            difficulty: 3
+
+          - problem: "Correct: रामः पुस्तकं पठन्ति।"
+            answer: "रामः पुस्तकं पठति।"
+            explanation: "रामः is singular (एकवचन), so verb must be पठति (singular), not पठन्ति (plural)."
+            difficulty: 2
+
+          - problem: "Correct: सीता ग्रामं गच्छति।"
+            answer: "सीता ग्रामं गच्छति। (This is already correct!)"
+            explanation: "Trick question! सीता (feminine, singular) matches गच्छति (singular verb). ग्रामम् is correctly in द्वितीया (direction of movement)."
+            difficulty: 3
+
+  # ─────────────────────────────────────────────────────────────────
+  # Chapter 13: व्यावहारिकः शब्दकोशः (Practical Vocabulary)
+  # ─────────────────────────────────────────────────────────────────
+  - id: ch13
+    title: "व्यावहारिकः शब्दकोशः (Practical Vocabulary)"
+    textbook_section: "परिशिष्टम् 13"
+    english_bridge: "Learning vocabulary is like collecting trading cards — the more words you know, the more you can express. This chapter gives you the essential Sanskrit words for everyday life — things you see, do, and talk about every day!"
+    topics:
+      - id: ch13_t01
+        title: "Essential Vocabulary — Family, School, Nature, Body"
+        learning_objectives:
+          - "Learn 50+ everyday Sanskrit words with English meanings"
+          - "Use vocabulary in simple sentences"
+          - "Recognize Sanskrit-origin words used in daily Hindi/English"
+        prerequisites: []
+        difficulty_range: [1, 2]
+        key_formulas:
+          - "Family: पिता (father), माता (mother), भ्राता (brother), भगिनी (sister), पुत्रः (son), पुत्री (daughter)"
+          - "School: विद्यालयः (school), शिक्षकः (teacher), छात्रः (student), पुस्तकम् (book), लेखनी (pen)"
+          - "Nature: वृक्षः (tree), पुष्पम् (flower), जलम् (water), आकाशः (sky), सूर्यः (sun), चन्द्रः (moon)"
+          - "Body: शिरः (head), नेत्रम् (eye), कर्णः (ear), हस्तः (hand), पादः (foot)"
+          - "Actions: गच्छति (goes), आगच्छति (comes), पठति (reads), लिखति (writes), खादति (eats), पिबति (drinks)"
+          - "Time: प्रातः (morning), सायम् (evening), दिनम् (day), रात्रिः (night), अद्य (today), श्वः (tomorrow), ह्यः (yesterday)"
+        common_misconceptions:
+          - "Sanskrit words are completely alien (many are roots of Hindi words students already know!)"
+        example_problems:
+          - problem: "Match Sanskrit to English: पुष्पम्, जलम्, सूर्यः, चन्द्रः"
+            answer: "पुष्पम् = flower, जलम् = water, सूर्यः = sun, चन्द्रः = moon"
+            explanation: "You probably recognize these from Hindi! पुष्प, जल, सूर्य, चन्द्र are commonly used."
+            difficulty: 1
+
+          - problem: "Make a sentence: 'The teacher reads a book in school.'"
+            answer: "शिक्षकः विद्यालये पुस्तकं पठति।"
+            explanation: "शिक्षकः (teacher, प्रथमा). विद्यालये (in school, सप्तमी). पुस्तकम् (book, द्वितीया). पठति (reads)."
+            difficulty: 2
