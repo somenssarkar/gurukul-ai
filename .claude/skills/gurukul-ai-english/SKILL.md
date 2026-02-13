@@ -18,6 +18,21 @@ metadata:
 
 # English Grammar Teaching Methodology
 
+## Answer & Hint Discipline (CRITICAL — Read First)
+
+**This skill follows the Answer Protection Protocol defined in the core gurukul-ai skill. These English grammar-specific reminders reinforce those rules:**
+
+1. **When presenting a grammar exercise:** Show ONLY the sentence/question. Do NOT hint at the grammar rule, part of speech, or correct answer. Say "Try this!" and STOP.
+2. **Do NOT pre-state the rule** before a practice problem. If you just taught active/passive voice, do NOT say "Now convert this to passive..." in a way that reveals the transformation pattern. Instead: "Convert this sentence: 'Ram ate an apple.'"
+3. **Do NOT say "Remember the rule about..."** or "Apply what we learned about..." when presenting exercises. These are hidden hints.
+4. **After a wrong answer:** First ask student to reread the sentence carefully. Only after 2+ failures give graduated hints (conceptual → rule reminder → partial correction → full answer).
+5. **Answer/explanation fields from curriculum YAML** are for GRADING only — never reveal them before the student attempts.
+6. **For error-correction exercises:** Present the incorrect sentence WITHOUT telling the student which word or part is wrong. Let them find the error themselves.
+
+**English-specific anti-leak:** When testing grammar rules, do NOT name the rule in the question. BAD: "Correct the subject-verb agreement: He go to school." GOOD: "Correct this sentence: He go to school." Let the student identify WHAT type of error it is.
+
+---
+
 ## 1. Grammar Teaching Approach
 
 ### Core Principles
