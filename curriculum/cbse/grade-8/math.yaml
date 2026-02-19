@@ -1,0 +1,1968 @@
+grade: 8
+subject: mathematics
+board: CBSE
+textbook: "Mathematics 8 by R S Aggarwal"
+schema_version: "1.0"
+total_chapters: 25
+
+chapters:
+  # ============================================================
+  # Chapter 1: Rational Numbers
+  # Exercises: 1A, 1B, 1C, 1D, 1E, 1F, 1G, 1H (CCE Test Paper)
+  # ============================================================
+  - id: ch01
+    title: "Rational Numbers"
+    textbook_chapter: 1
+    topics:
+      - id: ch01_t01
+        title: "Properties of Rational Numbers"
+        learning_objectives:
+          - "Understand closure, commutative, associative properties of rational numbers"
+          - "Identify the role of 0 and 1 as additive and multiplicative identities"
+          - "Find additive and multiplicative inverses of rational numbers"
+          - "Apply distributive property of multiplication over addition"
+        prerequisites: []
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Rational numbers are not closed under division (division by zero is undefined, but otherwise closed)"
+          - "Every rational number has a multiplicative inverse (zero does NOT have a multiplicative inverse)"
+          - "p/q must have positive denominator for standard form (yes, denominator must be positive)"
+        key_formulas:
+          - "Closure (add): a/b + c/d is always rational"
+          - "Closure (mul): a/b × c/d is always rational"
+          - "Commutative (add): a/b + c/d = c/d + a/b"
+          - "Commutative (mul): a/b × c/d = c/d × a/b"
+          - "Associative (add): (a/b + c/d) + e/f = a/b + (c/d + e/f)"
+          - "Additive identity: a/b + 0 = a/b"
+          - "Multiplicative identity: a/b × 1 = a/b"
+          - "Additive inverse: a/b + (−a/b) = 0"
+          - "Multiplicative inverse (reciprocal): a/b × b/a = 1"
+          - "Distributive: a/b × (c/d + e/f) = a/b × c/d + a/b × e/f"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Number line: Rational numbers between integers
+              ←──┬────┬────┬────┬────┬────┬────┬────┬──→
+                -2  -3/2  -1  -1/2   0   1/2   1   3/2   2
+            description: "Rational numbers are dense on the number line"
+        example_problems:
+          - problem: "Find the additive inverse of -7/9"
+            answer: "7/9"
+            solution_steps:
+              - "Additive inverse means the number that gives 0 when added"
+              - "(-7/9) + (7/9) = 0"
+              - "So additive inverse of -7/9 is 7/9"
+            difficulty: 1
+            indian_context: "If you are ₹7/9 in debt, gaining ₹7/9 brings you back to zero."
+          - problem: "Find the multiplicative inverse of -5/8"
+            answer: "-8/5"
+            solution_steps:
+              - "Multiplicative inverse (reciprocal) flips numerator and denominator"
+              - "(-5/8) × (-8/5) = 40/40 = 1 ✓"
+              - "So multiplicative inverse is -8/5"
+            difficulty: 2
+            indian_context: "Like finding how many -8/5 pieces fit in a whole — they cancel to 1."
+          - problem: "Verify the distributive property: 3/4 × (2/3 + 1/6)"
+            answer: "3/4 × (2/3 + 1/6) = 3/4 × 2/3 + 3/4 × 1/6 = 5/8"
+            solution_steps:
+              - "LHS: 2/3 + 1/6 = 4/6 + 1/6 = 5/6"
+              - "3/4 × 5/6 = 15/24 = 5/8"
+              - "RHS: 3/4 × 2/3 = 6/12 = 1/2"
+              - "3/4 × 1/6 = 3/24 = 1/8"
+              - "1/2 + 1/8 = 4/8 + 1/8 = 5/8"
+              - "LHS = RHS = 5/8 ✓ Distributive property verified"
+            difficulty: 2
+            indian_context: "Distributive property helps in quick mental calculations while shopping at a kirana store."
+
+      - id: ch01_t02
+        title: "Operations on Rational Numbers"
+        learning_objectives:
+          - "Add and subtract rational numbers with unlike denominators"
+          - "Multiply and divide rational numbers"
+          - "Simplify rational expressions using properties"
+          - "Represent rational numbers on the number line"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "When adding fractions, add both numerators and denominators (WRONG — only add numerators after making denominators equal)"
+          - "Dividing by a fraction is the same as multiplying (correct — multiply by its reciprocal)"
+        key_formulas:
+          - "Add/Subtract: a/b ± c/d = (ad ± bc) / bd"
+          - "Multiply: a/b × c/d = ac / bd"
+          - "Divide: a/b ÷ c/d = a/b × d/c = ad / bc"
+          - "Standard form: denominator positive, HCF(|numerator|, denominator) = 1"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Operations on Number Line:
+              Addition: 1/2 + 1/3
+              Step 1: Start at 1/2
+              Step 2: Move 1/3 to the right
+              ←──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──→
+                 0  1/6 1/3 1/2 2/3 5/6  1
+
+              Subtraction: 3/4 − 1/2
+              Step 1: Start at 3/4
+              Step 2: Move 1/2 to the left → land on 1/4
+              ←──┬──┬──┬──┬──┬──┬──┬──┬──→
+                 0 1/4 1/2 3/4  1
+            description: "Addition and subtraction of rational numbers shown on the number line"
+        example_problems:
+          - problem: "Simplify: 3/4 + (-5/6)"
+            answer: "-1/12"
+            solution_steps:
+              - "LCM of 4 and 6 = 12"
+              - "3/4 = 9/12,  -5/6 = -10/12"
+              - "9/12 + (-10/12) = (9 - 10)/12 = -1/12"
+            difficulty: 2
+            indian_context: "You earn ₹3/4 of your daily target then spend ₹5/6 of it — your net is a small deficit."
+          - problem: "Simplify: (-7/12) ÷ (14/3)"
+            answer: "-1/8"
+            solution_steps:
+              - "Flip the divisor: (-7/12) × (3/14)"
+              - "= (-7 × 3) / (12 × 14)"
+              - "= -21 / 168"
+              - "Simplify by dividing by HCF 21: -1/8"
+            difficulty: 3
+            indian_context: "Dividing a fraction of a field among many farmers."
+          - problem: "Find 3 rational numbers between 1/4 and 1/2"
+            answer: "3/10, 7/20, 2/5"
+            solution_steps:
+              - "Convert to equivalent fractions with a larger common denominator"
+              - "1/4 = 5/20 and 1/2 = 10/20"
+              - "Rational numbers between 5/20 and 10/20 include: 6/20, 7/20, 8/20"
+              - "Simplify: 6/20 = 3/10, 7/20 = 7/20, 8/20 = 2/5"
+              - "Check: 1/4 = 0.25 < 0.3 < 0.35 < 0.4 < 0.5 = 1/2 ✓"
+            difficulty: 2
+            indian_context: "Finding intermediate values is like dividing land parcels between 1/4 and 1/2 acre among farmers."
+
+  # ============================================================
+  # Chapter 2: Exponents
+  # Exercises: 2A, 2B, 2C (CCE Test Paper)
+  # ============================================================
+  - id: ch02
+    title: "Exponents"
+    textbook_chapter: 2
+    topics:
+      - id: ch02_t01
+        title: "Laws of Exponents"
+        learning_objectives:
+          - "Apply laws of exponents for multiplication and division"
+          - "Use power of a power and power of a product laws"
+          - "Evaluate expressions with zero and negative exponents"
+          - "Express numbers in standard (scientific) notation"
+        prerequisites: ["ch01_t01"]
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "a⁰ = 0 (WRONG — a⁰ = 1 for any non-zero a)"
+          - "aᵐ × aⁿ = aᵐⁿ (WRONG — it equals aᵐ⁺ⁿ)"
+          - "(a + b)ⁿ = aⁿ + bⁿ (WRONG — this is NOT a law of exponents)"
+          - "Negative exponent means negative number (WRONG — a⁻ⁿ = 1/aⁿ, which is positive if a is positive)"
+          - "(-2)⁴ and -2⁴ are the same (WRONG — (-2)⁴ = 16 but -2⁴ = -(2⁴) = -16)"
+        key_formulas:
+          - "Product: aᵐ × aⁿ = aᵐ⁺ⁿ"
+          - "Quotient: aᵐ ÷ aⁿ = aᵐ⁻ⁿ (a ≠ 0)"
+          - "Power of power: (aᵐ)ⁿ = aᵐⁿ"
+          - "Power of product: (ab)ⁿ = aⁿ × bⁿ"
+          - "Power of quotient: (a/b)ⁿ = aⁿ/bⁿ"
+          - "Zero exponent: a⁰ = 1 (a ≠ 0)"
+          - "Negative exponent: a⁻ⁿ = 1/aⁿ"
+          - "Standard form: a × 10ⁿ where 1 ≤ a < 10"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Negative exponent pattern:
+              2³ = 8
+              2² = 4      (÷ 2 each time)
+              2¹ = 2
+              2⁰ = 1
+              2⁻¹ = 1/2
+              2⁻² = 1/4
+            description: "Pattern showing how negative exponents produce fractions"
+        example_problems:
+          - problem: "Simplify: (2³ × 2⁵) ÷ 2⁴"
+            answer: "16"
+            solution_steps:
+              - "Numerator: 2³ × 2⁵ = 2³⁺⁵ = 2⁸"
+              - "2⁸ ÷ 2⁴ = 2⁸⁻⁴ = 2⁴"
+              - "2⁴ = 16"
+            difficulty: 2
+            indian_context: "Like counting bacteria doubling in a lab experiment."
+          - problem: "Express 0.000045 in standard form"
+            answer: "4.5 × 10⁻⁵"
+            solution_steps:
+              - "Move decimal point to get a number between 1 and 10: 4.5"
+              - "Count places moved: 5 places to the right"
+              - "So power of 10 is negative: 10⁻⁵"
+              - "Answer: 4.5 × 10⁻⁵"
+            difficulty: 3
+            indian_context: "Scientists measure tiny particles like viruses using standard form."
+          - problem: "Simplify: (3⁻² × 5⁻¹) ÷ (3⁻⁴)"
+            answer: "9/5"
+            solution_steps:
+              - "3⁻² = 1/9, 5⁻¹ = 1/5, 3⁻⁴ = 1/81"
+              - "Numerator: 3⁻² × 5⁻¹ = 1/9 × 1/5 = 1/45"
+              - "Division: (1/45) ÷ (1/81) = (1/45) × (81/1) = 81/45"
+              - "Simplify: 81/45 = 9/5"
+              - "Alternatively: 3⁻² ÷ 3⁻⁴ = 3⁻²⁻⁽⁻⁴⁾ = 3² = 9, so answer = 9 × 5⁻¹ = 9/5"
+            difficulty: 3
+            indian_context: "Negative exponents appear in physics formulas like Coulomb's law used in CBSE Science."
+
+  # ============================================================
+  # Chapter 3: Squares and Square Roots
+  # Exercises: 3A, 3B, 3C, 3D, 3E, 3F, 3G, 3H (CCE Test Paper)
+  # ============================================================
+  - id: ch03
+    title: "Squares and Square Roots"
+    textbook_chapter: 3
+    topics:
+      - id: ch03_t01
+        title: "Perfect Squares and Properties"
+        learning_objectives:
+          - "Identify perfect squares and their properties"
+          - "Find the square of a number using identities"
+          - "Recognize patterns in squares (ending digits, odd/even)"
+          - "Understand Pythagorean triplets"
+        prerequisites: ["ch02_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "The square of a negative number is negative (WRONG — (−5)² = +25)"
+          - "All numbers ending in 1, 4, 5, 6, 9 are perfect squares (only some are)"
+        key_formulas:
+          - "(a + b)² = a² + 2ab + b²"
+          - "(a − b)² = a² − 2ab + b²"
+          - "(a + b)(a − b) = a² − b²"
+          - "Pythagorean triplet for m > 1: (2m, m²−1, m²+1)"
+          - "Sum of first n odd numbers = n²"
+          - "n² = sum of consecutive odd numbers from 1 to (2n−1)"
+        example_problems:
+          - problem: "Find 85² using identity"
+            answer: "7225"
+            solution_steps:
+              - "85 = 80 + 5"
+              - "(80 + 5)² = 80² + 2(80)(5) + 5²"
+              - "= 6400 + 800 + 25"
+              - "= 7225"
+            difficulty: 2
+            indian_context: "Useful for mental math during competitive exams like JEE or olympiads."
+          - problem: "Find a Pythagorean triplet with m = 5"
+            answer: "(10, 24, 26)"
+            solution_steps:
+              - "Formula: (2m, m²−1, m²+1)"
+              - "2m = 10, m²−1 = 24, m²+1 = 26"
+              - "Check: 10² + 24² = 100 + 576 = 676 = 26² ✓"
+            difficulty: 3
+            indian_context: "Pythagorean triplets help in carpentry — checking if a corner is a right angle."
+          - problem: "Find the smallest number by which 1452 must be multiplied to get a perfect square."
+            answer: "3"
+            solution_steps:
+              - "Prime factorise 1452: 1452 = 2 × 726 = 2 × 2 × 363 = 2² × 363"
+              - "363 = 3 × 121 = 3 × 11²"
+              - "So 1452 = 2² × 3 × 11²"
+              - "For a perfect square, all prime factors must appear an even number of times"
+              - "Factor 3 appears only once (odd), so multiply by 3"
+              - "1452 × 3 = 4356 = 2² × 3² × 11² = (2 × 3 × 11)² = 66²"
+              - "Smallest number = 3"
+            difficulty: 3
+            indian_context: "This type of question is common in CBSE board exams and NTSE preparation."
+
+      - id: ch03_t02
+        title: "Square Roots"
+        learning_objectives:
+          - "Find square roots by prime factorisation method"
+          - "Find square roots by long division method"
+          - "Find square roots of decimals and fractions"
+          - "Estimate square roots of non-perfect squares"
+        prerequisites: ["ch03_t01"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "√(a + b) = √a + √b (WRONG — e.g., √(9+16) ≠ √9 + √16)"
+          - "Every number has a rational square root (only perfect squares have rational roots)"
+        key_formulas:
+          - "√(a × b) = √a × √b"
+          - "√(a/b) = √a / √b"
+          - "If N = p₁² × p₂² × ..., then √N = p₁ × p₂ × ..."
+          - "Square root of a decimal: pair digits from decimal point"
+        example_problems:
+          - problem: "Find √1764 by prime factorisation"
+            answer: "42"
+            solution_steps:
+              - "1764 = 2 × 882 = 2 × 2 × 441 = 4 × 441"
+              - "441 = 3 × 147 = 3 × 3 × 49 = 9 × 49"
+              - "1764 = 4 × 9 × 49 = 2² × 3² × 7²"
+              - "√1764 = 2 × 3 × 7 = 42"
+            difficulty: 3
+            indian_context: "Finding the side of a square plot with area 1764 m²."
+          - problem: "Find √2.89"
+            answer: "1.7"
+            solution_steps:
+              - "289 = 17²"
+              - "2.89 = 289/100"
+              - "√(289/100) = √289 / √100 = 17/10 = 1.7"
+            difficulty: 3
+            indian_context: "Calculating the side of a square tile of area 2.89 cm²."
+          - problem: "Find √5329 by long division method"
+            answer: "73"
+            solution_steps:
+              - "Pair the digits from right: 53 | 29"
+              - "Find largest number whose square ≤ 53: 7² = 49 ≤ 53. Write 7 as first digit of root."
+              - "Subtract: 53 − 49 = 4. Bring down next pair 29 → 429"
+              - "Double the current quotient: 2 × 7 = 14. New divisor starts with 14_"
+              - "Find digit d such that 14d × d ≤ 429: try d=3 → 143 × 3 = 429 ✓"
+              - "Remainder = 429 − 429 = 0"
+              - "√5329 = 73"
+            difficulty: 4
+            indian_context: "Long division method for square roots is a key technique tested in CBSE board exams."
+
+  # ============================================================
+  # Chapter 4: Cubes and Cube Roots
+  # Exercises: 4A, 4B, 4C, 4D (CCE Test Paper)
+  # ============================================================
+  - id: ch04
+    title: "Cubes and Cube Roots"
+    textbook_chapter: 4
+    topics:
+      - id: ch04_t01
+        title: "Perfect Cubes and Cube Roots"
+        learning_objectives:
+          - "Identify perfect cubes up to 20³"
+          - "Find cube roots by prime factorisation"
+          - "Recognize properties of cubes (odd/even, digit patterns)"
+          - "Apply cube root in practical problems"
+        prerequisites: ["ch03_t02"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Cube of a negative number is positive (WRONG — (−4)³ = −64)"
+          - "Cube root always gives a whole number (only for perfect cubes)"
+          - "∛(a+b) = ∛a + ∛b (WRONG — e.g., ∛(8+27) = ∛35 ≈ 3.27 but ∛8 + ∛27 = 2 + 3 = 5)"
+        key_formulas:
+          - "(a + b)³ = a³ + 3a²b + 3ab² + b³"
+          - "(a − b)³ = a³ − 3a²b + 3ab² − b³"
+          - "Perfect cubes: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000"
+          - "∛(a × b) = ∛a × ∛b"
+          - "∛(a/b) = ∛a / ∛b"
+          - "If N = p₁³ × p₂³ × ..., then ∛N = p₁ × p₂ × ..."
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Cubes to memorize:
+              1³=1   2³=8   3³=27  4³=64  5³=125
+              6³=216 7³=343 8³=512 9³=729 10³=1000
+            description: "Perfect cubes reference table"
+        example_problems:
+          - problem: "Find ∛13824"
+            answer: "24"
+            solution_steps:
+              - "13824 = 2 × 6912 = ... = 2⁹ × 3³ × ... let me factor fully"
+              - "13824 = 8 × 1728 = 2³ × 12³"
+              - "∛(2³ × 12³) = 2 × 12 = 24"
+            difficulty: 3
+            indian_context: "A cubic tank holds 13824 litres. Find the side length in decimetres."
+          - problem: "Is 5832 a perfect cube? If yes, find its cube root."
+            answer: "Yes, ∛5832 = 18"
+            solution_steps:
+              - "5832 = 2³ × 729 = 2³ × 3⁶ = 2³ × (3²)³ = (2 × 9)³ = 18³"
+              - "Yes, 5832 is a perfect cube"
+              - "∛5832 = 18"
+            difficulty: 3
+            indian_context: "Checking if a cubic storage box volume is a perfect cube to find its dimensions."
+          - problem: "Find the smallest number by which 2916 must be multiplied to make it a perfect cube."
+            answer: "2"
+            solution_steps:
+              - "Prime factorise 2916: 2916 = 2 × 1458 = 2 × 2 × 729 = 2² × 729"
+              - "729 = 3⁶"
+              - "So 2916 = 2² × 3⁶"
+              - "For a perfect cube, all prime factors must appear in multiples of 3"
+              - "2 appears 2 times — need 1 more factor of 2 (to make 2³)"
+              - "3 appears 6 times — already a multiple of 3 ✓"
+              - "Smallest number to multiply = 2"
+              - "Verify: 2916 × 2 = 5832 = 2³ × 3⁶ = (2 × 3²)³ = 18³ ✓"
+            difficulty: 3
+            indian_context: "Finding the smallest multiplier for perfect cubes is a frequent CBSE board exam question."
+
+  # ============================================================
+  # Chapter 5: Playing with Numbers
+  # Exercises: 5A, 5B, 5C, 5D (CCE Test Paper)
+  # ============================================================
+  - id: ch05
+    title: "Playing with Numbers"
+    textbook_chapter: 5
+    topics:
+      - id: ch05_t01
+        title: "Number Puzzles and Divisibility"
+        learning_objectives:
+          - "Express 2-digit and 3-digit numbers in generalised form"
+          - "Solve number puzzles using algebraic approach"
+          - "Apply divisibility rules for 2, 3, 4, 5, 6, 8, 9, 10, 11"
+          - "Solve cryptarithmetic (letters for digits) problems"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "Divisibility by 6 means just divisibility by 2 or 3 (needs BOTH 2 AND 3)"
+          - "If the last two digits are divisible by 4, the number is divisible by 8 (WRONG — last 3 digits for 8)"
+        key_formulas:
+          - "2-digit number: 10a + b (a = tens digit, b = units digit)"
+          - "3-digit number: 100a + 10b + c"
+          - "Divisible by 2: last digit even"
+          - "Divisible by 3: digit sum divisible by 3"
+          - "Divisible by 4: last two digits divisible by 4"
+          - "Divisible by 5: last digit 0 or 5"
+          - "Divisible by 6: divisible by both 2 and 3"
+          - "Divisible by 8: last three digits divisible by 8"
+          - "Divisible by 9: digit sum divisible by 9"
+          - "Divisible by 11: (sum of odd-position digits) − (sum of even-position digits) divisible by 11"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Generalised form of a 2-digit number:
+              ┌──────────┬──────────┐
+              │ Tens (a) │ Units (b)│
+              └──────────┴──────────┘
+              Number = 10a + b   (where 1 ≤ a ≤ 9, 0 ≤ b ≤ 9)
+
+              Example: 73 → a=7, b=3 → 10(7) + 3 = 73
+
+              Reversed number = 10b + a
+              Sum: (10a+b) + (10b+a) = 11(a+b)  ← always divisible by 11!
+              Diff: (10a+b) − (10b+a) = 9(a−b)  ← always divisible by 9!
+            description: "Generalised form of a 2-digit number and its properties"
+        example_problems:
+          - problem: "Find A if 4A6 is divisible by 3 and A is a single digit"
+            answer: "A = 2 or A = 5 or A = 8"
+            solution_steps:
+              - "For divisibility by 3, sum of digits must be divisible by 3"
+              - "4 + A + 6 = 10 + A must be divisible by 3"
+              - "10 + A = 12 → A = 2"
+              - "10 + A = 15 → A = 5"
+              - "10 + A = 18 → A = 8"
+              - "So A can be 2, 5, or 8"
+            difficulty: 2
+            indian_context: "Number puzzles are common in Math Olympiad and competitive exams in India."
+          - problem: "A number 37B is divisible by 9. Find B."
+            answer: "B = 8"
+            solution_steps:
+              - "Sum of digits = 3 + 7 + B = 10 + B"
+              - "For divisibility by 9: 10 + B must equal 18 (next multiple of 9 after 10)"
+              - "B = 8"
+              - "Check: 378 ÷ 9 = 42 ✓"
+            difficulty: 2
+            indian_context: "Useful in checking account numbers and codes in banking."
+          - problem: "Check if 82764 is divisible by 11."
+            answer: "Yes, 82764 is divisible by 11"
+            solution_steps:
+              - "Digits from left: 8, 2, 7, 6, 4"
+              - "Sum of digits at odd positions (1st, 3rd, 5th): 8 + 7 + 4 = 19"
+              - "Sum of digits at even positions (2nd, 4th): 2 + 6 = 8"
+              - "Difference = 19 − 8 = 11"
+              - "Since 11 is divisible by 11, the number 82764 is divisible by 11"
+              - "Verify: 82764 ÷ 11 = 7524 ✓"
+            difficulty: 3
+            indian_context: "Divisibility by 11 is useful for checking ISBN numbers of Indian textbooks."
+
+  # ============================================================
+  # Chapter 6: Operations on Algebraic Expressions
+  # Exercises: 6A, 6B, 6C, 6D, 6E (CCE Test Paper)
+  # ============================================================
+  - id: ch06
+    title: "Operations on Algebraic Expressions"
+    textbook_chapter: 6
+    topics:
+      - id: ch06_t01
+        title: "Addition, Subtraction and Multiplication of Polynomials"
+        learning_objectives:
+          - "Add and subtract polynomials by collecting like terms"
+          - "Multiply a monomial by a polynomial"
+          - "Multiply two binomials using FOIL or distributive property"
+          - "Multiply two polynomials systematically"
+        prerequisites: ["ch01_t02", "ch02_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "x² + x = x³ (WRONG — you cannot add terms with different powers)"
+          - "(a + b)² = a² + b² (WRONG — middle term 2ab is missing)"
+        key_formulas:
+          - "Like terms: same variable(s) raised to same power(s)"
+          - "FOIL: (a+b)(c+d) = ac + ad + bc + bd"
+          - "(a + b)² = a² + 2ab + b²"
+          - "(a − b)² = a² − 2ab + b²"
+          - "(a + b)(a − b) = a² − b²"
+          - "(x + a)(x + b) = x² + (a+b)x + ab"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Polynomial Multiplication Grid (Box Method):
+              Multiply (2x + 3)(x + 4):
+
+                    │   x    │   4    │
+              ──────┼────────┼────────┤
+               2x   │  2x²   │   8x   │
+              ──────┼────────┼────────┤
+                3   │   3x   │   12   │
+              ──────┴────────┴────────┘
+
+              Collect: 2x² + 8x + 3x + 12 = 2x² + 11x + 12
+            description: "Grid (box) method for multiplying two binomials"
+        example_problems:
+          - problem: "Expand: (3x + 4y)²"
+            answer: "9x² + 24xy + 16y²"
+            solution_steps:
+              - "Use (a + b)² = a² + 2ab + b² with a = 3x, b = 4y"
+              - "= (3x)² + 2(3x)(4y) + (4y)²"
+              - "= 9x² + 24xy + 16y²"
+            difficulty: 2
+            indian_context: "Area of a square farm with side (3x + 4y) metres."
+          - problem: "Multiply: (2x² − 3x + 1)(x + 2)"
+            answer: "2x³ + x² − 5x + 2"
+            solution_steps:
+              - "Multiply each term of first polynomial by (x + 2)"
+              - "2x²(x + 2) = 2x³ + 4x²"
+              - "−3x(x + 2) = −3x² − 6x"
+              - "1(x + 2) = x + 2"
+              - "Add: 2x³ + (4x² − 3x²) + (−6x + x) + 2"
+              - "= 2x³ + x² − 5x + 2"
+            difficulty: 4
+            indian_context: "Polynomial multiplication appears in engineering and physics calculations."
+          - problem: "Find the product: (x + 5)(x − 3)"
+            answer: "x² + 2x − 15"
+            solution_steps:
+              - "Use identity (x + a)(x + b) = x² + (a+b)x + ab"
+              - "Here a = 5, b = −3"
+              - "= x² + (5 + (−3))x + (5)(−3)"
+              - "= x² + 2x − 15"
+            difficulty: 2
+            indian_context: "This identity simplifies calculations in algebra problems in CBSE exams."
+
+      - id: ch06_t02
+        title: "Division of Algebraic Expressions"
+        learning_objectives:
+          - "Divide a monomial by a monomial"
+          - "Divide a polynomial by a monomial"
+          - "Divide a polynomial by a binomial using long division"
+          - "Verify division using: Dividend = Divisor × Quotient + Remainder"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [3, 5]
+        common_misconceptions:
+          - "You can cancel terms in addition (only factors in multiplication can be cancelled)"
+          - "Degree of quotient = degree of dividend (it equals degree of dividend minus degree of divisor)"
+        key_formulas:
+          - "Division algorithm: Dividend = Divisor × Quotient + Remainder"
+          - "aⁿ/aᵐ = aⁿ⁻ᵐ (for a ≠ 0)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Long Division Layout for Polynomials:
+
+                          Quotient
+                       ┌──────────────
+              Divisor  │  Dividend
+                       │  − (Divisor × 1st term of Quotient)
+                       │  ─────────────
+                       │    Remainder₁
+                       │  − (Divisor × 2nd term of Quotient)
+                       │  ─────────────
+                       │    Remainder₂ (or Final Remainder)
+
+              Example: (x² + 5x + 6) ÷ (x + 2)
+                           x + 3
+                       ┌──────────────
+              (x + 2)  │  x² + 5x + 6
+                       │  x² + 2x
+                       │  ─────────
+                       │       3x + 6
+                       │       3x + 6
+                       │       ──────
+                       │         0       Remainder = 0
+            description: "Polynomial long division layout with worked example"
+        example_problems:
+          - problem: "Divide (6x³ − 4x² + 2x) by 2x"
+            answer: "3x² − 2x + 1"
+            solution_steps:
+              - "Divide each term by 2x separately"
+              - "6x³ ÷ 2x = 3x²"
+              - "−4x² ÷ 2x = −2x"
+              - "2x ÷ 2x = 1"
+              - "Result: 3x² − 2x + 1"
+            difficulty: 2
+            indian_context: "Like dividing resources equally among a number of groups."
+          - problem: "Divide (2x³ + 3x² − 5x + 7) by (x + 3) and state the remainder."
+            answer: "Quotient = 2x² − 3x + 4, Remainder = −5"
+            solution_steps:
+              - "Step 1: 2x³ ÷ x = 2x². Multiply (x+3) by 2x² = 2x³ + 6x²"
+              - "Subtract: (2x³ + 3x²) − (2x³ + 6x²) = −3x²"
+              - "Bring down −5x: −3x² − 5x"
+              - "Step 2: −3x² ÷ x = −3x. Multiply (x+3) by −3x = −3x² − 9x"
+              - "Subtract: (−3x² − 5x) − (−3x² − 9x) = 4x"
+              - "Bring down +7: 4x + 7"
+              - "Step 3: 4x ÷ x = 4. Multiply (x+3) by 4 = 4x + 12"
+              - "Subtract: (4x + 7) − (4x + 12) = −5"
+              - "Remainder = −5"
+              - "Verify: (x+3)(2x²−3x+4) + (−5) = 2x³−3x²+4x+6x²−9x+12−5 = 2x³+3x²−5x+7 ✓"
+            difficulty: 4
+            indian_context: "Polynomial division with remainder is an important concept for higher classes and entrance exams."
+
+  # ============================================================
+  # Chapter 7: Factorisation
+  # Exercises: 7A, 7B, 7C, 7D, 7E (CCE Test Paper)
+  # ============================================================
+  - id: ch07
+    title: "Factorisation"
+    textbook_chapter: 7
+    topics:
+      - id: ch07_t01
+        title: "Methods of Factorisation"
+        learning_objectives:
+          - "Factorise by taking out the common factor (HCF method)"
+          - "Factorise by regrouping terms"
+          - "Factorise using standard algebraic identities"
+          - "Factorise trinomials of the form x² + bx + c and ax² + bx + c"
+        prerequisites: ["ch06_t01"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "a² − b² = (a − b)² (WRONG — a² − b² = (a+b)(a−b))"
+          - "a² + b² can be factorised over integers (it CANNOT be factorised)"
+          - "After taking HCF, the remaining factor has the same degree (it is lower by the degree of HCF)"
+        key_formulas:
+          - "HCF method: ab + ac = a(b + c)"
+          - "Difference of squares: a² − b² = (a + b)(a − b)"
+          - "Perfect square: a² + 2ab + b² = (a + b)²"
+          - "Perfect square: a² − 2ab + b² = (a − b)²"
+          - "Sum of cubes: a³ + b³ = (a + b)(a² − ab + b²)"
+          - "Difference of cubes: a³ − b³ = (a − b)(a² + ab + b²)"
+          - "Trinomial: x² + (a+b)x + ab = (x + a)(x + b)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Identity Matching Flowchart for Factorisation:
+
+              Given expression
+                  │
+                  ├── 2 terms?
+                  │     ├── a² − b² → (a+b)(a−b)
+                  │     ├── a³ + b³ → (a+b)(a²−ab+b²)
+                  │     └── a³ − b³ → (a−b)(a²+ab+b²)
+                  │
+                  ├── 3 terms?
+                  │     ├── a² + 2ab + b² → (a+b)²
+                  │     ├── a² − 2ab + b² → (a−b)²
+                  │     └── x² + bx + c → (x+p)(x+q) where p+q=b, pq=c
+                  │
+                  └── 4+ terms?
+                        └── Try regrouping into pairs, then factor
+            description: "Flowchart for choosing the right factorisation identity"
+        example_problems:
+          - problem: "Factorise: 25x² − 49y²"
+            answer: "(5x + 7y)(5x − 7y)"
+            solution_steps:
+              - "Recognise as difference of squares: a² − b² = (a+b)(a−b)"
+              - "25x² = (5x)², 49y² = (7y)²"
+              - "= (5x + 7y)(5x − 7y)"
+            difficulty: 2
+            indian_context: "Used in architecture for computing areas of geometric shapes."
+          - problem: "Factorise: x² + 7x + 12"
+            answer: "(x + 3)(x + 4)"
+            solution_steps:
+              - "Find two numbers that multiply to 12 and add to 7"
+              - "3 × 4 = 12 and 3 + 4 = 7 ✓"
+              - "x² + 7x + 12 = (x + 3)(x + 4)"
+            difficulty: 3
+            indian_context: "Factorisation is the foundation of solving quadratic equations in higher classes."
+          - problem: "Factorise: 8a³ − 27b³"
+            answer: "(2a − 3b)(4a² + 6ab + 9b²)"
+            solution_steps:
+              - "Recognise as difference of cubes: a³ − b³ = (a−b)(a²+ab+b²)"
+              - "8a³ = (2a)³, 27b³ = (3b)³"
+              - "= (2a − 3b)((2a)² + (2a)(3b) + (3b)²)"
+              - "= (2a − 3b)(4a² + 6ab + 9b²)"
+            difficulty: 4
+            indian_context: "Advanced factorisation used in Class 9 and beyond."
+          - problem: "Factorise: ax + bx + ay + by"
+            answer: "(a + b)(x + y)"
+            solution_steps:
+              - "Group the terms in pairs: (ax + bx) + (ay + by)"
+              - "Take common factor from each pair: x(a + b) + y(a + b)"
+              - "Now (a + b) is common: (a + b)(x + y)"
+            difficulty: 2
+            indian_context: "Factorisation by regrouping is tested regularly in CBSE Class 8 exams."
+
+  # ============================================================
+  # Chapter 8: Linear Equations
+  # Exercises: 8A, 8B, 8C (CCE Test Paper)
+  # ============================================================
+  - id: ch08
+    title: "Linear Equations"
+    textbook_chapter: 8
+    topics:
+      - id: ch08_t01
+        title: "Solving Linear Equations in One Variable"
+        learning_objectives:
+          - "Solve linear equations involving fractions and brackets"
+          - "Form and solve equations from word problems"
+          - "Solve equations with variables on both sides"
+          - "Apply equations to problems involving ages, money, and geometry"
+        prerequisites: ["ch06_t01", "ch07_t01"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "Transposing changes the sign for addition/subtraction but not for multiplication/division (actually the operation reverses)"
+          - "You can multiply both sides differently (must use the SAME operation on BOTH sides)"
+        key_formulas:
+          - "Transposition: move a term to the other side by reversing its operation"
+          - "Linear equation in one variable: ax + b = c → x = (c − b)/a"
+          - "Always verify: substitute solution back into original equation"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Balance / Equation Diagram:
+
+              An equation is like a balanced scale:
+
+                    LHS    =    RHS
+                  ┌─────┐     ┌─────┐
+                  │3x+5 │     │  20 │
+                  └──┬──┘     └──┬──┘
+                     │   ⚖️    │
+                  ───┴────────┴───
+
+              Step 1: Subtract 5 from both sides
+                  3x = 15
+              Step 2: Divide both sides by 3
+                  x = 5
+
+              Whatever you do to one side, do to the other!
+            description: "Balance model showing that both sides of an equation must stay equal"
+        example_problems:
+          - problem: "Solve: (3x − 5)/2 = (2x + 1)/3"
+            answer: "x = 17/5 (i.e., 3.4)"
+            solution_steps:
+              - "Cross multiply: 3(3x − 5) = 2(2x + 1)"
+              - "9x − 15 = 4x + 2"
+              - "9x − 4x = 2 + 15"
+              - "5x = 17"
+              - "x = 17/5 = 3.4"
+              - "Verify: LHS = (3×3.4 − 5)/2 = (10.2−5)/2 = 5.2/2 = 2.6"
+              - "RHS = (2×3.4 + 1)/3 = (6.8+1)/3 = 7.8/3 = 2.6 ✓"
+            difficulty: 3
+            indian_context: "Equations model problems like calculating price per item at a mela."
+          - problem: "Ravi is 4 years older than Meena. 8 years ago, Ravi was twice as old as Meena. Find their ages."
+            answer: "Meena = 12, Ravi = 16"
+            solution_steps:
+              - "Let Meena's age = x, then Ravi's age = x + 4"
+              - "8 years ago: Meena = x − 8, Ravi = x + 4 − 8 = x − 4"
+              - "Condition: (x − 4) = 2(x − 8)"
+              - "x − 4 = 2x − 16"
+              - "16 − 4 = 2x − x"
+              - "x = 12 (Meena), Ravi = 16"
+            difficulty: 4
+            indian_context: "Age problems are extremely common in Indian competitive exams."
+          - problem: "The sum of three consecutive odd numbers is 51. Find the numbers."
+            answer: "15, 17, 19"
+            solution_steps:
+              - "Let the three consecutive odd numbers be x, x+2, x+4"
+              - "x + (x+2) + (x+4) = 51"
+              - "3x + 6 = 51"
+              - "3x = 45"
+              - "x = 15"
+              - "The numbers are 15, 17, 19"
+              - "Verify: 15 + 17 + 19 = 51 ✓"
+            difficulty: 2
+            indian_context: "Number problems like these appear frequently in CBSE and state board exams."
+
+  # ============================================================
+  # Chapter 9: Percentage
+  # Exercises: 9A, 9B (CCE Test Paper)
+  # ============================================================
+  - id: ch09
+    title: "Percentage"
+    textbook_chapter: 9
+    topics:
+      - id: ch09_t01
+        title: "Percentage — Conversion and Applications"
+        learning_objectives:
+          - "Convert between fractions, decimals, and percentages"
+          - "Find percentage of a quantity"
+          - "Calculate percentage increase and decrease"
+          - "Solve problems involving discounts, tax, and commission"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "Percentage increase/decrease is symmetric (25% increase then 20% decrease brings you back — actually doesn't)"
+          - "10% of 200 = 20% of 100 (both are 20 — this IS true)"
+        key_formulas:
+          - "x% of N = (x/100) × N"
+          - "A as % of B = (A/B) × 100"
+          - "% increase = (increase/original) × 100"
+          - "% decrease = (decrease/original) × 100"
+          - "New value after x% increase = original × (100 + x)/100"
+          - "New value after x% decrease = original × (100 − x)/100"
+          - "Discount = Marked Price − Selling Price"
+          - "Discount% = (Discount/Marked Price) × 100"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Percentage Bar:
+
+              0%              50%             100%
+              ├───────────────┼───────────────┤
+              0              250             500
+
+              Example: What is 30% of 500?
+              0%    30%       50%             100%
+              ├──────┤────────┼───────────────┤
+              0    150       250             500
+
+              30% of 500 = (30/100) × 500 = 150
+            description: "Visual bar showing percentages as portions of a whole"
+        example_problems:
+          - problem: "A shirt marked ₹800 is sold at 15% discount. Find the selling price."
+            answer: "₹680"
+            solution_steps:
+              - "Discount = 15% of 800 = (15/100) × 800 = ₹120"
+              - "SP = MP − Discount = 800 − 120 = ₹680"
+              - "Alternative: SP = 800 × (100−15)/100 = 800 × 85/100 = ₹680"
+            difficulty: 2
+            indian_context: "Discount calculation is important when shopping during festivals like Diwali sales."
+          - problem: "Population of a town was 50,000. It increased by 4% in one year. Find new population."
+            answer: "52,000"
+            solution_steps:
+              - "Increase = 4% of 50000 = (4/100) × 50000 = 2000"
+              - "New population = 50000 + 2000 = 52000"
+            difficulty: 2
+            indian_context: "Population growth is used in Geography and Social Studies chapters."
+          - problem: "In an exam, Priya scored 372 marks out of 500. What percentage did she score?"
+            answer: "74.4%"
+            solution_steps:
+              - "Percentage = (Marks obtained / Total marks) × 100"
+              - "= (372 / 500) × 100"
+              - "= 0.744 × 100"
+              - "= 74.4%"
+            difficulty: 1
+            indian_context: "Calculating percentage of marks is essential for every Indian student after exams."
+
+  # ============================================================
+  # Chapter 10: Profit and Loss
+  # Exercises: 10A, 10B, 10C, 10D (CCE Test Paper)
+  # ============================================================
+  - id: ch10
+    title: "Profit and Loss"
+    textbook_chapter: 10
+    topics:
+      - id: ch10_t01
+        title: "Profit, Loss and Discount"
+        learning_objectives:
+          - "Calculate profit and loss in rupees"
+          - "Find profit% and loss% on cost price"
+          - "Find selling price and cost price from given percentages"
+          - "Understand marked price, discount, and net selling price"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "Profit% is calculated on selling price (WRONG — it's always on cost price)"
+          - "Two successive discounts of 20% each = 40% discount (WRONG — it's 36%)"
+        key_formulas:
+          - "Profit = SP − CP (when SP > CP)"
+          - "Loss = CP − SP (when CP > SP)"
+          - "Profit% = (Profit/CP) × 100"
+          - "Loss% = (Loss/CP) × 100"
+          - "SP = CP × (100 + Profit%)/100"
+          - "SP = CP × (100 − Loss%)/100"
+          - "CP = SP × 100/(100 + Profit%)"
+          - "CP = SP × 100/(100 − Loss%)"
+          - "Net SP after two discounts d₁% and d₂% on MP: SP = MP × (100−d₁)/100 × (100−d₂)/100"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Relationship between CP, MP, and SP:
+
+              Cost Price (CP)
+                │
+                │ + Markup %
+                ▼
+              Marked Price (MP)
+                │
+                │ − Discount %
+                ▼
+              Selling Price (SP)
+
+              If SP > CP → Profit = SP − CP
+              If SP < CP → Loss = CP − SP
+
+              Example: CP=₹100, Markup=30%, Discount=10%
+              MP = 100 + 30 = ₹130
+              SP = 130 − 13 = ₹117  → Profit = ₹17 (17%)
+            description: "Flow diagram showing how CP, MP, and SP are related"
+        example_problems:
+          - problem: "A bicycle bought for ₹3500 is sold at ₹3080. Find loss%."
+            answer: "12%"
+            solution_steps:
+              - "CP = ₹3500, SP = ₹3080"
+              - "Loss = CP − SP = 3500 − 3080 = ₹420"
+              - "Loss% = (420/3500) × 100 = 12%"
+            difficulty: 2
+            indian_context: "Common in market transaction problems in India."
+          - problem: "A merchant marks goods at 25% above cost price and allows 10% discount. Find profit%."
+            answer: "12.5%"
+            solution_steps:
+              - "Let CP = ₹100, then MP = ₹125"
+              - "Discount = 10% of 125 = ₹12.50"
+              - "SP = 125 − 12.50 = ₹112.50"
+              - "Profit = SP − CP = 112.50 − 100 = ₹12.50"
+              - "Profit% = 12.50%"
+            difficulty: 4
+            indian_context: "This type of problem appears in CAT, banking exams, and Olympiads."
+          - problem: "A shopkeeper offers successive discounts of 20% and 10% on a saree marked at ₹2000. Find the selling price."
+            answer: "₹1440"
+            solution_steps:
+              - "First discount: 20% of 2000 = ₹400"
+              - "Price after first discount = 2000 − 400 = ₹1600"
+              - "Second discount: 10% of 1600 = ₹160"
+              - "SP = 1600 − 160 = ₹1440"
+              - "Alternative: SP = 2000 × (80/100) × (90/100) = 2000 × 0.8 × 0.9 = ₹1440"
+              - "Note: Equivalent single discount = (1 − 0.8×0.9) × 100 = 28% (not 30%)"
+            difficulty: 3
+            indian_context: "Successive discounts are common during festive sales at Indian retail stores and e-commerce platforms."
+
+  # ============================================================
+  # Chapter 11: Compound Interest
+  # Exercises: 11A, 11B, 11C, 11D (CCE Test Paper)
+  # ============================================================
+  - id: ch11
+    title: "Compound Interest"
+    textbook_chapter: 11
+    topics:
+      - id: ch11_t01
+        title: "Simple Interest vs Compound Interest"
+        learning_objectives:
+          - "Recall simple interest formula"
+          - "Understand what compound interest means"
+          - "Calculate CI by computing year by year"
+          - "Use the CI formula directly"
+        prerequisites: ["ch09_t01", "ch10_t01"]
+        difficulty_range: [2, 5]
+        common_misconceptions:
+          - "CI and SI give the same result for 1 year (TRUE only for 1 year; CI > SI for more than 1 year)"
+          - "CI formula gives amount including principal (YES — A = P(1 + r/100)ⁿ gives Amount, not just interest)"
+          - "CI formula only works for whole years (WRONG — it works with half-yearly compounding using A = P(1 + R/200)²ⁿ and quarterly using A = P(1 + R/400)⁴ⁿ)"
+        key_formulas:
+          - "SI = (P × R × T) / 100"
+          - "Amount with CI: A = P(1 + R/100)ⁿ"
+          - "Compound Interest: CI = A − P = P[(1 + R/100)ⁿ − 1]"
+          - "CI compounded half-yearly: A = P(1 + R/200)²ⁿ"
+          - "CI compounded quarterly: A = P(1 + R/400)⁴ⁿ"
+          - "For 2 years: CI − SI = P(R/100)²"
+          - "Population / Depreciation: V = P(1 ± r/100)ⁿ"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              ₹10,000 at 10% p.a. for 2 years:
+              Year 1: Interest = 10% of 10000 = ₹1000  → Balance = ₹11000
+              Year 2: Interest = 10% of 11000 = ₹1100  → Balance = ₹12100
+              CI = ₹2100 vs SI = ₹2000 (₹100 extra due to compounding)
+            description: "Year-by-year compounding example"
+        example_problems:
+          - problem: "Find CI on ₹12,000 at 10% p.a. for 2 years compounded annually."
+            answer: "CI = ₹2520"
+            solution_steps:
+              - "A = P(1 + R/100)ⁿ = 12000(1 + 10/100)²"
+              - "= 12000 × (1.1)²"
+              - "= 12000 × 1.21"
+              - "= ₹14520"
+              - "CI = A − P = 14520 − 12000 = ₹2520"
+            difficulty: 3
+            indian_context: "Banks like SBI, HDFC compound interest — understanding this helps students make smart savings decisions."
+          - problem: "The value of a machine is ₹50,000. It depreciates at 10% per year. Find its value after 2 years."
+            answer: "₹40,500"
+            solution_steps:
+              - "Use depreciation formula: V = P(1 − r/100)ⁿ"
+              - "V = 50000 × (1 − 10/100)²"
+              - "= 50000 × (0.9)²"
+              - "= 50000 × 0.81 = ₹40,500"
+            difficulty: 4
+            indian_context: "Depreciation of cars and machinery is relevant in commerce and everyday life."
+          - problem: "Find CI on ₹20,000 at 10% p.a. for 1 year compounded half-yearly."
+            answer: "CI = ₹2050"
+            solution_steps:
+              - "For half-yearly compounding: rate per half-year = 10/2 = 5%"
+              - "Number of half-year periods in 1 year = 2"
+              - "A = P(1 + R/200)²ⁿ = 20000 × (1 + 5/100)²"
+              - "= 20000 × (1.05)²"
+              - "= 20000 × 1.1025"
+              - "= ₹22050"
+              - "CI = A − P = 22050 − 20000 = ₹2050"
+              - "Compare: SI for 1 year = 20000 × 10/100 = ₹2000. CI > SI even for 1 year with half-yearly compounding."
+            difficulty: 4
+            indian_context: "Many Indian banks like SBI compound interest half-yearly on fixed deposits."
+
+  # ============================================================
+  # Chapter 12: Direct and Inverse Proportions
+  # Exercises: 12A, 12B, 12C (CCE Test Paper)
+  # ============================================================
+  - id: ch12
+    title: "Direct and Inverse Proportions"
+    textbook_chapter: 12
+    topics:
+      - id: ch12_t01
+        title: "Direct Proportion"
+        learning_objectives:
+          - "Identify situations of direct proportion"
+          - "Set up and solve direct proportion problems"
+          - "Understand that the ratio is constant in direct proportion"
+        prerequisites: ["ch01_t02"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "All word problems with two quantities are direct proportion (some are inverse)"
+          - "Direct proportion means the values are equal (it means their ratio is constant)"
+        key_formulas:
+          - "Direct proportion: x/y = constant (k), so x₁/y₁ = x₂/y₂"
+          - "If x ∝ y then y = kx (k is constant of proportionality)"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Direct vs Inverse Proportion:
+              DIRECT: x increases → y increases (ratio constant)
+                x:  2   4   6   8
+                y:  5  10  15  20   (y/x = 2.5 always)
+
+              INVERSE: x increases → y decreases (product constant)
+                x:  2   4   6   8
+                y: 24  12   8   6   (x×y = 48 always)
+            description: "Comparison of direct and inverse proportion"
+        example_problems:
+          - problem: "If 5 metres of cloth costs ₹210, find the cost of 13 metres of the same cloth."
+            answer: "₹546"
+            solution_steps:
+              - "More cloth → more cost → direct proportion"
+              - "Cost/length = constant: 210/5 = 42 per metre"
+              - "Cost of 13m = 13 × 42 = ₹546"
+              - "Alternative: 5/13 = 210/x → x = 210 × 13/5 = 546"
+            difficulty: 2
+            indian_context: "Buying fabric at a textile shop in India — price is directly proportional to length."
+          - problem: "A recipe for 4 people uses 250g of rice. How much rice for 10 people?"
+            answer: "625g"
+            solution_steps:
+              - "More people → more rice → direct proportion"
+              - "4/10 = 250/x"
+              - "x = 250 × 10/4 = 625g"
+            difficulty: 1
+            indian_context: "Scaling recipes for family gatherings and festivals."
+          - problem: "If a map has scale 1:50000 and distance on map is 3.5 cm, find actual distance."
+            answer: "1.75 km"
+            solution_steps:
+              - "Scale is a direct proportion: map/actual = 1/50000"
+              - "Actual = 3.5 × 50000 = 175000 cm"
+              - "175000 cm = 1750 m = 1.75 km"
+            difficulty: 3
+            indian_context: "Reading Survey of India topographic maps."
+
+      - id: ch12_t02
+        title: "Inverse Proportion"
+        learning_objectives:
+          - "Identify situations of inverse proportion"
+          - "Set up and solve inverse proportion problems"
+          - "Compare and contrast with direct proportion"
+        prerequisites: ["ch12_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Inverse proportion means one increases and the other also increases (WRONG — one increases, other decreases)"
+          - "Dividing both quantities gives the constant (WRONG — you multiply them: x × y = k)"
+        key_formulas:
+          - "Inverse proportion: x × y = constant (k), so x₁y₁ = x₂y₂"
+          - "If x ∝ 1/y then xy = k"
+        example_problems:
+          - problem: "If 8 workers complete a wall in 12 days, how long for 6 workers?"
+            answer: "16 days"
+            solution_steps:
+              - "Fewer workers → more days → inverse proportion"
+              - "workers × days = constant: 8 × 12 = 96"
+              - "6 × d = 96 → d = 96/6 = 16 days"
+            difficulty: 2
+            indian_context: "Construction planning in Indian infrastructure projects like road building."
+          - problem: "A car travelling at 60 km/h covers a distance in 4 hours. At 80 km/h, how long?"
+            answer: "3 hours"
+            solution_steps:
+              - "More speed → less time → inverse proportion"
+              - "Speed × Time = constant (same distance)"
+              - "60 × 4 = 80 × t"
+              - "240 = 80t → t = 3 hours"
+            difficulty: 2
+            indian_context: "Travel time calculations for road trips across India."
+          - problem: "15 cows can graze a field in 20 days. How long for 25 cows?"
+            answer: "12 days"
+            solution_steps:
+              - "More cows → less time → inverse proportion"
+              - "15 × 20 = 25 × d"
+              - "300 = 25d → d = 12 days"
+            difficulty: 2
+            indian_context: "Agricultural and dairy farming calculations in rural India."
+
+  # ============================================================
+  # Chapter 13: Time and Work
+  # Exercises: 13A, 13B (CCE Test Paper)
+  # ============================================================
+  - id: ch13
+    title: "Time and Work"
+    textbook_chapter: 13
+    topics:
+      - id: ch13_t01
+        title: "Work Done and Efficiency"
+        learning_objectives:
+          - "Calculate work done in 1 day for each person/machine"
+          - "Find time taken when working together"
+          - "Solve problems where one person joins later"
+          - "Calculate wages based on work done"
+        prerequisites: ["ch12_t01", "ch12_t02"]
+        difficulty_range: [3, 5]
+        common_misconceptions:
+          - "If A can do work in n days, together with B it always takes n/2 days (only if they have equal rates)"
+          - "Work done in 1 day = n (WRONG — 1/n)"
+        key_formulas:
+          - "If A completes work in n days: A's 1-day work = 1/n"
+          - "Combined work per day of A and B: 1/a + 1/b"
+          - "Time for A and B together: T = ab/(a+b)"
+          - "Work done in t days = t × (work per day)"
+          - "Wages proportional to work done"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Work Rate Diagram:
+
+              A does 1 job in 12 days → Rate = 1/12 per day
+              B does 1 job in 15 days → Rate = 1/15 per day
+
+              Together:
+              ┌──────────────────────────────┐
+              │  Day 1: A does 1/12 + B does 1/15 = 3/20  │
+              │  Day 2: another 3/20                       │
+              │  ...                                       │
+              │  After 20/3 days: Work = 1 (complete)      │
+              └──────────────────────────────┘
+
+              Rate_A + Rate_B = Combined Rate
+              1/12  +  1/15  = 5/60 + 4/60 = 9/60 = 3/20
+              Time = 1 ÷ (3/20) = 20/3 days
+            description: "Work rate addition diagram for two workers"
+        example_problems:
+          - problem: "A can do a work in 12 days, B in 15 days. How long together?"
+            answer: "6⅔ days"
+            solution_steps:
+              - "A's 1-day work = 1/12, B's 1-day work = 1/15"
+              - "Together in 1 day = 1/12 + 1/15"
+              - "LCM of 12 and 15 = 60"
+              - "= 5/60 + 4/60 = 9/60 = 3/20"
+              - "Time = 20/3 = 6⅔ days"
+            difficulty: 3
+            indian_context: "Work problems model real-life scenarios like building a dam or painting a house."
+          - problem: "Pipes A and B can fill a tank in 10 and 15 hours. Pipe C empties it in 20 hours. How long to fill if all open?"
+            answer: "60/7 hours (approximately 8 hours 34 minutes)"
+            solution_steps:
+              - "A fills 1/10, B fills 1/15, C empties 1/20 per hour"
+              - "Net per hour = 1/10 + 1/15 − 1/20"
+              - "LCM of 10, 15, 20 = 60"
+              - "= 6/60 + 4/60 − 3/60 = 7/60"
+              - "Time to fill = 60/7 ≈ 8 hours 34 minutes"
+            difficulty: 4
+            indian_context: "Water tank filling problems mirror real water supply management in Indian towns."
+          - problem: "A can complete a job in 12 days. After working alone for 4 days, B joins and together they finish the remaining work in 4 days. How long would B take alone?"
+            answer: "12 days"
+            solution_steps:
+              - "A's rate = 1/12 per day"
+              - "Work done by A in 4 days = 4/12 = 1/3"
+              - "Remaining work = 1 − 1/3 = 2/3"
+              - "A and B together finish 2/3 in 4 days"
+              - "Combined rate = (2/3) ÷ 4 = 2/12 = 1/6 per day"
+              - "B's rate = Combined rate − A's rate = 1/6 − 1/12"
+              - "= 2/12 − 1/12 = 1/12"
+              - "Time for B alone = 12 days"
+              - "Verify: A works 4 days alone (does 1/3), then A+B work 4 days (do 4 × 1/6 = 2/3). Total = 1/3 + 2/3 = 1 ✓"
+            difficulty: 4
+            indian_context: "Problems where workers join midway are common in Indian competitive exam preparation."
+
+  # ============================================================
+  # Chapter 14: Polygons
+  # Exercises: 14A, 14B (CCE Test Paper)
+  # ============================================================
+  - id: ch14
+    title: "Polygons"
+    textbook_chapter: 14
+    topics:
+      - id: ch14_t01
+        title: "Interior and Exterior Angles of Polygons"
+        learning_objectives:
+          - "Name and classify polygons by number of sides"
+          - "Find sum of interior angles of any polygon"
+          - "Find each interior and exterior angle of regular polygons"
+          - "Understand the relationship between interior and exterior angles"
+        prerequisites: []  # Builds on Grade 7 Ch13-14 (Lines, Angles, Triangles)
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "Sum of interior angles is the same for all polygons (WRONG — it depends on number of sides)"
+          - "Each interior angle of any polygon = 180°/n (only for triangles)"
+        key_formulas:
+          - "Sum of interior angles of n-gon = (n − 2) × 180°"
+          - "Each interior angle of regular n-gon = (n − 2) × 180° / n"
+          - "Each exterior angle of regular n-gon = 360° / n"
+          - "Interior + Exterior angle = 180° (supplementary)"
+          - "Sum of all exterior angles of any convex polygon = 360°"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Polygon interior angle sums:
+              Triangle (3): (3−2)×180 = 180°
+              Quadrilateral (4): (4−2)×180 = 360°
+              Pentagon (5): (5−2)×180 = 540°
+              Hexagon (6): (6−2)×180 = 720°
+              Octagon (8): (8−2)×180 = 1080°
+            description: "Sum of interior angles for common polygons"
+        example_problems:
+          - problem: "Each interior angle of a regular polygon is 135°. How many sides?"
+            answer: "8 sides (Octagon)"
+            solution_steps:
+              - "Each exterior angle = 180° − 135° = 45°"
+              - "Number of sides = 360°/exterior angle = 360°/45° = 8"
+              - "So the polygon is a regular octagon"
+            difficulty: 3
+            indian_context: "Tile patterns and mandalas in Indian art often use regular polygons."
+
+  # ============================================================
+  # Chapter 15: Quadrilaterals
+  # Exercises: 15A, 15B (CCE Test Paper)
+  # ============================================================
+  - id: ch15
+    title: "Quadrilaterals"
+    textbook_chapter: 15
+    topics:
+      - id: ch15_t01
+        title: "Properties of Quadrilaterals"
+        learning_objectives:
+          - "Recall that sum of angles of a quadrilateral = 360°"
+          - "Identify and differentiate types of quadrilaterals"
+          - "Understand properties of trapezium and kite"
+          - "Use angle and side properties to find unknown values"
+        prerequisites: ["ch14_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "A square is not a rectangle (WRONG — square IS a special rectangle)"
+          - "All quadrilaterals with equal sides are squares (WRONG — rhombus also has equal sides but may not have right angles)"
+        key_formulas:
+          - "Sum of interior angles of quadrilateral = 360°"
+          - "Trapezium: one pair of parallel sides"
+          - "Parallelogram: both pairs of opposite sides parallel and equal"
+          - "Rhombus: parallelogram with all sides equal"
+          - "Rectangle: parallelogram with all right angles"
+          - "Square: rectangle with all sides equal"
+          - "Kite: two pairs of adjacent equal sides"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Quadrilateral family:
+              Quadrilateral
+              ├── Trapezium (1 pair parallel)
+              │   └── Parallelogram (2 pairs parallel)
+              │       ├── Rectangle (90° angles)
+              │       │   └── Square (all sides =, 90°)
+              │       └── Rhombus (all sides equal)
+              └── Kite (2 pairs adjacent sides equal)
+            description: "Hierarchy of quadrilaterals"
+        example_problems:
+          - problem: "Three angles of a quadrilateral are 70°, 110°, 80°. Find the fourth angle."
+            answer: "100°"
+            solution_steps:
+              - "Sum of angles = 360°"
+              - "Fourth angle = 360° − (70° + 110° + 80°)"
+              - "= 360° − 260° = 100°"
+            difficulty: 1
+            indian_context: "Used in land surveying and architectural design."
+          - problem: "In a quadrilateral ABCD, ∠A = 3x, ∠B = 5x, ∠C = 7x, ∠D = 9x. Find all angles."
+            answer: "∠A = 45°, ∠B = 75°, ∠C = 105°, ∠D = 135°"
+            solution_steps:
+              - "Sum of angles = 360°"
+              - "3x + 5x + 7x + 9x = 360°"
+              - "24x = 360°"
+              - "x = 15°"
+              - "∠A = 3(15) = 45°, ∠B = 5(15) = 75°"
+              - "∠C = 7(15) = 105°, ∠D = 9(15) = 135°"
+              - "Verify: 45 + 75 + 105 + 135 = 360° ✓"
+            difficulty: 2
+            indian_context: "Angle relationships in quadrilaterals help in understanding the geometry of rangoli patterns."
+
+  # ============================================================
+  # Chapter 16: Parallelograms
+  # Exercises: 16A, 16B (CCE Test Paper)
+  # ============================================================
+  - id: ch16
+    title: "Parallelograms"
+    textbook_chapter: 16
+    topics:
+      - id: ch16_t01
+        title: "Properties of Parallelograms"
+        learning_objectives:
+          - "Apply properties of parallelograms to find angles and sides"
+          - "Prove simple results using properties"
+          - "Understand diagonal properties of parallelograms"
+          - "Solve problems involving rectangles, rhombus, and square"
+        prerequisites: ["ch15_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Diagonals of a parallelogram are equal (WRONG — only true for rectangles)"
+          - "Diagonals of a rhombus bisect each other at right angles but are equal (WRONG — diagonals of rhombus are NOT necessarily equal)"
+        key_formulas:
+          - "Opposite sides are equal: AB = CD, BC = DA"
+          - "Opposite angles are equal: ∠A = ∠C, ∠B = ∠D"
+          - "Co-interior angles are supplementary: ∠A + ∠B = 180°"
+          - "Diagonals bisect each other (meet at midpoints)"
+          - "Rectangle: diagonals are equal and bisect each other"
+          - "Rhombus: diagonals bisect at right angles"
+          - "Square: diagonals equal, bisect each other at right angles"
+        example_problems:
+          - problem: "In parallelogram ABCD, ∠A = 70°. Find all other angles."
+            answer: "∠B = 110°, ∠C = 70°, ∠D = 110°"
+            solution_steps:
+              - "∠A + ∠B = 180° (co-interior angles)"
+              - "∠B = 180° − 70° = 110°"
+              - "∠C = ∠A = 70° (opposite angles)"
+              - "∠D = ∠B = 110° (opposite angles)"
+            difficulty: 2
+            indian_context: "Parallelogram properties are used in designing windows and floor patterns."
+          - problem: "In a rhombus PQRS, the diagonals PR = 16 cm and QS = 12 cm. Find the side of the rhombus."
+            answer: "10 cm"
+            solution_steps:
+              - "Diagonals of a rhombus bisect each other at right angles"
+              - "Half of PR = 16/2 = 8 cm, Half of QS = 12/2 = 6 cm"
+              - "Each side forms a right triangle with half-diagonals as legs"
+              - "Side = √(8² + 6²) = √(64 + 36) = √100 = 10 cm"
+            difficulty: 3
+            indian_context: "Rhombus-shaped kites are popular in India during Makar Sankranti — knowing diagonal properties helps in designing them."
+
+  # ============================================================
+  # Chapter 17: Construction of Quadrilaterals
+  # Exercises: 17A, 17B (CCE Test Paper)
+  # ============================================================
+  - id: ch17
+    title: "Construction of Quadrilaterals"
+    textbook_chapter: 17
+    topics:
+      - id: ch17_t01
+        title: "Constructing Quadrilaterals"
+        learning_objectives:
+          - "Construct a quadrilateral when 4 sides and 1 diagonal are given"
+          - "Construct a quadrilateral when 3 sides and 2 included angles are given"
+          - "Construct a quadrilateral when 2 diagonals and 3 sides are given"
+          - "Construct special quadrilaterals (parallelograms, rhombus, rectangles)"
+        prerequisites: ["ch16_t01"]
+        difficulty_range: [3, 5]
+        common_misconceptions:
+          - "A quadrilateral is uniquely determined by its 4 sides (NOT unique — you also need an angle or diagonal)"
+          - "Any 4 lengths can form a quadrilateral (sum of any 3 sides must exceed the 4th)"
+        key_formulas:
+          - "A quadrilateral needs 5 measurements to be uniquely determined"
+          - "Diagonal divides quadrilateral into 2 triangles"
+        example_problems:
+          - problem: "How many measurements are needed to uniquely construct a quadrilateral? Why?"
+            answer: "5 measurements"
+            solution_steps:
+              - "A quadrilateral has 4 sides and 4 angles"
+              - "Knowing 3 sides and 2 diagonals, OR 4 sides and 1 angle, etc. = 5 measurements"
+              - "This is because a diagonal splits it into two triangles, each needing 3 measurements, sharing the diagonal"
+              - "Total = 3 + 3 − 1 (diagonal counted once) = 5"
+            difficulty: 2
+            indian_context: "Engineering drawings in India require precise measurements for construction."
+          - problem: "Construct a parallelogram ABCD with AB = 5 cm, BC = 4 cm, and ∠B = 60°. Describe the steps."
+            answer: "Parallelogram ABCD with AB = CD = 5 cm, BC = DA = 4 cm, ∠B = 60°"
+            solution_steps:
+              - "Step 1: Draw AB = 5 cm"
+              - "Step 2: At B, draw ∠ABX = 60° using protractor"
+              - "Step 3: On ray BX, mark C such that BC = 4 cm"
+              - "Step 4: From C, draw an arc of radius 5 cm (= AB, since opposite sides are equal)"
+              - "Step 5: From A, draw an arc of radius 4 cm (= BC, since opposite sides are equal)"
+              - "Step 6: The arcs intersect at D. Join AD and CD"
+              - "ABCD is the required parallelogram"
+              - "Verify: AB = CD = 5 cm, BC = DA = 4 cm (opposite sides equal) ✓"
+            difficulty: 3
+            indian_context: "Constructing parallelograms is used in making floor tile patterns in Indian homes."
+
+  # ============================================================
+  # Chapter 18: Area of a Trapezium and a Polygon
+  # Exercises: 18A, 18B (CCE Test Paper)
+  # ============================================================
+  - id: ch18
+    title: "Area of a Trapezium and a Polygon"
+    textbook_chapter: 18
+    topics:
+      - id: ch18_t01
+        title: "Area Formulae for Trapezium and Other Polygons"
+        learning_objectives:
+          - "Find area of trapezium using formula"
+          - "Find area of a general quadrilateral using diagonals"
+          - "Calculate area of polygons by dividing into triangles/trapezoids"
+          - "Solve real-world problems involving irregular areas"
+        prerequisites: ["ch16_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Trapezium area = base × height (WRONG — must average the two parallel sides)"
+          - "Both diagonals in rhombus area formula must be equal (WRONG — diagonals of rhombus are generally different)"
+        key_formulas:
+          - "Area of trapezium = ½ × (sum of parallel sides) × height = ½(a + b)h"
+          - "Area of rhombus = ½ × d₁ × d₂ (diagonals d₁ and d₂)"
+          - "Area of quadrilateral = ½ × diagonal × (sum of heights on both sides)"
+          - "Area of regular hexagon = (3√3/2) × side²"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Labeled Trapezium with Measurements:
+
+                    a = 10 cm (parallel side)
+                 ┌───────────┐
+                 │            │
+                 │  h = 8 cm  │
+                 │            │
+              └──┴────────────────┘
+                  b = 14 cm (parallel side)
+
+              Area = ½ x (a + b) x h
+                   = ½ x (10 + 14) x 8
+                   = ½ x 24 x 8
+                   = 96 cm²
+            description: "Labeled trapezium showing parallel sides and height with area calculation"
+        example_problems:
+          - problem: "A trapezium has parallel sides 10 cm and 14 cm, height 8 cm. Find area."
+            answer: "96 cm²"
+            solution_steps:
+              - "Area = ½ × (a + b) × h"
+              - "= ½ × (10 + 14) × 8"
+              - "= ½ × 24 × 8"
+              - "= 96 cm²"
+            difficulty: 2
+            indian_context: "Calculating area of trapezoidal plots of land common in Indian villages."
+          - problem: "A rhombus has diagonals 12 cm and 16 cm. Find its area."
+            answer: "96 cm²"
+            solution_steps:
+              - "Area = ½ × d₁ × d₂"
+              - "= ½ × 12 × 16"
+              - "= 96 cm²"
+            difficulty: 2
+            indian_context: "Rhombus-shaped tiles used in Indian architecture and flooring."
+          - problem: "A quadrilateral has a diagonal of 20 cm. The perpendicular distances from the other two vertices to this diagonal are 6 cm and 8 cm. Find the area."
+            answer: "140 cm²"
+            solution_steps:
+              - "Area of quadrilateral = ½ × diagonal × (sum of perpendicular heights)"
+              - "= ½ × 20 × (6 + 8)"
+              - "= ½ × 20 × 14"
+              - "= 140 cm²"
+            difficulty: 3
+            indian_context: "Calculating irregular plot areas is essential for land revenue records in Indian villages."
+
+  # ============================================================
+  # Chapter 19: Three-Dimensional Figures
+  # Exercises: 19A, 19B (CCE Test Paper)
+  # ============================================================
+  - id: ch19
+    title: "Three-Dimensional Figures"
+    textbook_chapter: 19
+    topics:
+      - id: ch19_t01
+        title: "Faces, Edges and Vertices of 3D Shapes"
+        learning_objectives:
+          - "Identify faces, edges, and vertices of 3D shapes"
+          - "Verify Euler's formula for polyhedra"
+          - "Recognise nets of 3D shapes"
+          - "Distinguish between prisms and pyramids"
+        prerequisites: ["ch14_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "A sphere is a polyhedron (WRONG — it has no flat faces, edges, or vertices)"
+          - "A cylinder has 2 faces (it has 3 — 2 flat circular + 1 curved)"
+        key_formulas:
+          - "Euler's formula: F + V − E = 2 (for any convex polyhedron)"
+          - "Prism with n-sided base: F = n+2, V = 2n, E = 3n"
+          - "Pyramid with n-sided base: F = n+1, V = n+1, E = 2n"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              3D Shape Quick Reference:
+              Shape          | F  | V  | E  | F+V-E
+              Cube           | 6  | 8  | 12 | 2
+              Cuboid         | 6  | 8  | 12 | 2
+              Triangular prism| 5  | 6  | 9  | 2
+              Square pyramid | 5  | 5  | 8  | 2
+              Tetrahedron    | 4  | 4  | 6  | 2
+            description: "Faces, vertices, edges of common 3D shapes"
+        example_problems:
+          - problem: "A polyhedron has 12 faces and 20 vertices. How many edges?"
+            answer: "30 edges"
+            solution_steps:
+              - "Euler's formula: F + V − E = 2"
+              - "12 + 20 − E = 2"
+              - "E = 30"
+            difficulty: 2
+            indian_context: "Used in designing 3D models for science projects and engineering."
+          - problem: "Verify Euler's formula for a pentagonal prism."
+            answer: "F + V − E = 7 + 10 − 15 = 2 ✓"
+            solution_steps:
+              - "A pentagonal prism has a pentagon (5 sides) as its base"
+              - "Faces: 5 rectangular side faces + 2 pentagonal bases = 7"
+              - "Vertices: 5 on top + 5 on bottom = 10"
+              - "Edges: 5 on top + 5 on bottom + 5 vertical = 15"
+              - "F + V − E = 7 + 10 − 15 = 2 ✓"
+              - "Alternatively using formulas: n=5, F = n+2 = 7, V = 2n = 10, E = 3n = 15"
+            difficulty: 2
+            indian_context: "Pentagonal shapes appear in Indian temple architecture and geometry projects."
+
+  # ============================================================
+  # Chapter 20: Volume and Surface Area of Solids
+  # Exercises: 20A, 20B, 20C, 20D (CCE Test Paper)
+  # ============================================================
+  - id: ch20
+    title: "Volume and Surface Area of Solids"
+    textbook_chapter: 20
+    topics:
+      - id: ch20_t01
+        title: "Cuboid and Cube"
+        learning_objectives:
+          - "Find total surface area and lateral surface area of cuboid and cube"
+          - "Calculate volume of cuboid and cube"
+          - "Solve problems involving capacity and material cost"
+        prerequisites: ["ch19_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Lateral surface area includes the base (it does NOT include bases)"
+          - "Volume of cuboid = surface area in some cases (only numerically possible, not conceptually)"
+          - "Volume and capacity are different units (capacity = volume but measured in litres; 1L = 1000 cm³)"
+        key_formulas:
+          - "Cuboid: TSA = 2(lb + bh + hl)"
+          - "Cuboid: LSA = 2h(l + b)"
+          - "Cuboid: Volume = l × b × h"
+          - "Cube: TSA = 6a²"
+          - "Cube: LSA = 4a²"
+          - "Cube: Volume = a³"
+          - "1 litre = 1000 cm³ = 1 dm³"
+        example_problems:
+          - problem: "A room is 8m × 5m × 4m. Find cost to paint all 4 walls at ₹20/m²."
+            answer: "₹2080"
+            solution_steps:
+              - "LSA of room = 2h(l + b) = 2 × 4 × (8 + 5)"
+              - "= 8 × 13 = 104 m²"
+              - "Cost = 104 × 20 = ₹2080"
+            difficulty: 3
+            indian_context: "Painting walls is a very common household calculation in India."
+          - problem: "Find the length of the diagonal of a cuboid with dimensions 12 cm × 4 cm × 3 cm."
+            answer: "13 cm"
+            solution_steps:
+              - "Diagonal of cuboid = √(l² + b² + h²)"
+              - "= √(12² + 4² + 3²)"
+              - "= √(144 + 16 + 9)"
+              - "= √169"
+              - "= 13 cm"
+            difficulty: 3
+            indian_context: "Diagonal calculations help when fitting objects inside boxes — useful for packing and shipping."
+
+      - id: ch20_t02
+        title: "Cylinder, Cone and Sphere"
+        learning_objectives:
+          - "Find curved surface area, total surface area, and volume of a cylinder"
+          - "Find curved surface area, total surface area, and volume of a cone"
+          - "Find surface area and volume of a sphere and hemisphere"
+          - "Solve combined solid problems"
+        prerequisites: ["ch20_t01"]
+        difficulty_range: [3, 5]
+        common_misconceptions:
+          - "CSA of cylinder = πr²h (WRONG — CSA = 2πrh; TSA = 2πr(r+h))"
+          - "Volume of cone = πr²h (WRONG — it is 1/3 πr²h)"
+          - "Hemisphere TSA = half of sphere TSA (WRONG — hemisphere TSA = 3πr², which includes the flat circular base; half of sphere SA would be just 2πr²)"
+        key_formulas:
+          - "Cylinder: CSA = 2πrh"
+          - "Cylinder: TSA = 2πr(r + h)"
+          - "Cylinder: Volume = πr²h"
+          - "Cone: CSA = πrl (l = slant height = √(r²+h²))"
+          - "Cone: TSA = πr(r + l)"
+          - "Cone: Volume = (1/3)πr²h"
+          - "Sphere: SA = 4πr²"
+          - "Sphere: Volume = (4/3)πr³"
+          - "Hemisphere: CSA = 2πr²"
+          - "Hemisphere: TSA = 3πr²"
+          - "Hemisphere: Volume = (2/3)πr³"
+          - "π ≈ 22/7 ≈ 3.14"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              3D Shapes Formula Quick Reference:
+
+              CYLINDER (r, h):
+                CSA = 2πrh    TSA = 2πr(r+h)    V = πr²h
+
+              CONE (r, h, l=√(r²+h²)):
+                CSA = πrl     TSA = πr(r+l)      V = ⅓πr²h
+
+              SPHERE (r):
+                SA = 4πr²     V = ⁴⁄₃πr³
+
+              HEMISPHERE (r):
+                CSA = 2πr²    TSA = 3πr²         V = ⅔πr³
+
+              Mnemonics:
+              • Cylinder V: "pi r squared h" (pie are square? No, pies are round!)
+              • Cone V = ⅓ of cylinder (3 cones fill 1 cylinder)
+              • Sphere V = ⁴⁄₃ π r³ ("4 by 3 pi r cubed")
+            description: "All 3D shape formulas with mnemonics"
+        example_problems:
+          - problem: "A cylinder has radius 7 cm and height 10 cm. Find TSA and volume. (π = 22/7)"
+            answer: "TSA = 748 cm², Volume = 1540 cm³"
+            solution_steps:
+              - "TSA = 2πr(r + h) = 2 × 22/7 × 7 × (7 + 10)"
+              - "= 2 × 22 × 17 = 748 cm²"
+              - "Volume = πr²h = 22/7 × 7² × 10 = 22 × 7 × 10 = 1540 cm³"
+            difficulty: 3
+            indian_context: "Cylindrical tanks for water storage are common in Indian homes."
+          - problem: "A sphere has radius 6 cm. Find its surface area and volume. (Use π = 22/7)"
+            answer: "SA = 452 4/7 cm², Volume = 905 1/7 cm³"
+            solution_steps:
+              - "SA = 4πr² = 4 × (22/7) × 36 = 4 × 22 × 36/7 = 3168/7 = 452 4/7 cm²"
+              - "Volume = (4/3)πr³ = (4/3) × (22/7) × 216"
+              - "= (4 × 22 × 216) / (3 × 7) = 19008/21 = 6336/7 = 905 1/7 cm³"
+            difficulty: 3
+            indian_context: "Spherical containers like matkas (earthen pots) use volume and surface area."
+          - problem: "A cone has radius 7 cm and height 24 cm. Find its CSA and volume. (π = 22/7)"
+            answer: "CSA = 550 cm², Volume = 1232 cm³"
+            solution_steps:
+              - "First find slant height: l = √(r² + h²) = √(49 + 576) = √625 = 25 cm"
+              - "CSA = πrl = (22/7) × 7 × 25 = 22 × 25 = 550 cm²"
+              - "Volume = (1/3)πr²h = (1/3) × (22/7) × 49 × 24"
+              - "= (1/3) × 22 × 7 × 24"
+              - "= (22 × 7 × 24) / 3"
+              - "= 3696 / 3 = 1232 cm³"
+            difficulty: 3
+            indian_context: "Conical tents and joker caps used in Indian fairs require CSA for fabric calculation."
+
+  # ============================================================
+  # Chapter 21: Data Handling
+  # Exercises: 21A, 21B, 21C (CCE Test Paper)
+  # ============================================================
+  - id: ch21
+    title: "Data Handling"
+    textbook_chapter: 21
+    topics:
+      - id: ch21_t01
+        title: "Grouped Data and Histograms"
+        learning_objectives:
+          - "Organise data into class intervals (grouped frequency distribution)"
+          - "Draw and interpret histograms"
+          - "Find mean, median, mode for grouped data"
+          - "Understand the difference between bar chart and histogram"
+        prerequisites: []
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Histogram bars have gaps between them (WRONG — they are continuous, no gaps)"
+          - "Mode in grouped data is the class with highest frequency (that class is called MODAL CLASS; mode is calculated)"
+          - "Mean always gives the central value (can be affected by outliers)"
+          - "Histogram is same as bar chart (WRONG — histogram has no gaps and represents continuous data; bar chart has gaps and represents discrete/categorical data)"
+        key_formulas:
+          - "Class width = upper boundary − lower boundary"
+          - "Mid-value (class mark) = (lower + upper boundary) / 2"
+          - "Mean (assumed mean method): x̄ = A + Σfd/Σf (d = deviation from assumed mean A)"
+          - "Mean (direct method): x̄ = Σfx / Σf"
+          - "Median class: cumulative frequency just exceeds n/2"
+          - "Mode class: class with highest frequency"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Histogram Structure:
+
+              Frequency
+              │
+              12│      ┌────┐
+              10│      │    │
+               8│ ┌────┤    │
+               7│ │    │    ├────┐
+               3│ │    │    │    │
+               │ │    │    │    │
+               └─┴────┴────┴────┴──→ Class Intervals
+                10-20 20-30 30-40 40-50
+
+              Key features:
+              • No gaps between bars (continuous data)
+              • Width of bar = class width
+              • Height of bar = frequency
+              • X-axis: class intervals, Y-axis: frequency
+            description: "Structure of a histogram showing continuous bars with no gaps"
+        example_problems:
+          - problem: "Find the mean of: marks 10-20 (f=3), 20-30 (f=7), 30-40 (f=12), 40-50 (f=8)"
+            answer: "33.33 (or 100/3)"
+            solution_steps:
+              - "Class marks: 15, 25, 35, 45"
+              - "Σf = 3+7+12+8 = 30"
+              - "Σfx = 3×15 + 7×25 + 12×35 + 8×45"
+              - "= 45 + 175 + 420 + 360 = 1000"
+              - "Mean = Σfx/Σf = 1000/30 = 33.33 (recurring)"
+            difficulty: 3
+            indian_context: "Marks distribution analysis is done in every Indian school after exams."
+          - problem: "From the data: 0-10 (f=5), 10-20 (f=8), 20-30 (f=15), 30-40 (f=10), 40-50 (f=2), find the modal class."
+            answer: "20-30"
+            solution_steps:
+              - "List the frequencies: 5, 8, 15, 10, 2"
+              - "The highest frequency is 15"
+              - "The class interval with frequency 15 is 20-30"
+              - "Therefore, the modal class is 20-30"
+            difficulty: 2
+            indian_context: "Finding the modal class helps identify the most common score range in school exam results."
+
+  # ============================================================
+  # Chapter 22: Introduction to Coordinate Geometry
+  # Exercises: 22A, 22B (CCE Test Paper)
+  # ============================================================
+  - id: ch22
+    title: "Introduction to Coordinate Geometry"
+    textbook_chapter: 22
+    topics:
+      - id: ch22_t01
+        title: "Cartesian Plane and Plotting Points"
+        learning_objectives:
+          - "Identify the x-axis, y-axis, and origin"
+          - "Understand and name the four quadrants"
+          - "Plot ordered pairs (x, y) on the Cartesian plane"
+          - "Find coordinates of a plotted point"
+        prerequisites: ["ch01_t01"]  # Requires understanding of positive/negative rational numbers
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "(x, y) and (y, x) represent the same point (WRONG — order matters)"
+          - "A point on the x-axis has y = 0 (TRUE) and a point on y-axis has x = 0 (TRUE)"
+          - "All quadrants have positive coordinates (WRONG — only Quadrant I)"
+        key_formulas:
+          - "Point (x, y): x is horizontal (right +, left −), y is vertical (up +, down −)"
+          - "Quadrant I: (+, +), Quadrant II: (−, +), Quadrant III: (−, −), Quadrant IV: (+, −)"
+          - "Origin: (0, 0)"
+          - "On x-axis: y = 0; On y-axis: x = 0"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Q II    y    Q I
+              (−,+)   |   (+,+)
+              ────────┼──────── x
+              (−,−)   |   (+,−)
+              Q III   |   Q IV
+            description: "Cartesian plane with four quadrants"
+        example_problems:
+          - problem: "In which quadrant is the point (−3, 5)?"
+            answer: "Quadrant II"
+            solution_steps:
+              - "x = −3 (negative), y = 5 (positive)"
+              - "Quadrant II has negative x and positive y"
+            difficulty: 1
+            indian_context: "Coordinate geometry is used in navigation, GPS, and Google Maps."
+          - problem: "Plot the points A(2, 3), B(−4, 1), C(−2, −5), D(3, −2) and identify the quadrant of each."
+            answer: "A: Quadrant I, B: Quadrant II, C: Quadrant III, D: Quadrant IV"
+            solution_steps:
+              - "A(2, 3): x=2 (+), y=3 (+) → Quadrant I"
+              - "B(−4, 1): x=−4 (−), y=1 (+) → Quadrant II"
+              - "C(−2, −5): x=−2 (−), y=−5 (−) → Quadrant III"
+              - "D(3, −2): x=3 (+), y=−2 (−) → Quadrant IV"
+              - "Each point lies in a different quadrant"
+            difficulty: 2
+            indian_context: "Plotting points on a grid is similar to reading coordinates on a map of Indian cities."
+
+  # ============================================================
+  # Chapter 23: Line Graphs and Linear Graphs
+  # Exercises: 23 (CCE Test Paper)
+  # ============================================================
+  - id: ch23
+    title: "Line Graphs and Linear Graphs"
+    textbook_chapter: 23
+    topics:
+      - id: ch23_t01
+        title: "Reading and Drawing Line Graphs"
+        learning_objectives:
+          - "Read and interpret line graphs for given data"
+          - "Draw line graphs for time-series data"
+          - "Understand linear graphs as graphs of linear equations"
+          - "Identify slope (gradient) from a linear graph"
+        prerequisites: ["ch22_t01", "ch08_t01"]
+        difficulty_range: [1, 3]
+        common_misconceptions:
+          - "A line graph and a bar graph show the same type of data (line graphs show trends/changes over time)"
+          - "A steeper line always means more growth (need to check scale)"
+        key_formulas:
+          - "Linear equation: y = mx + c (m = slope, c = y-intercept)"
+          - "Graph of y = kx passes through origin (direct proportion)"
+          - "Slope = (change in y)/(change in x) = rise/run"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Slope Illustration:
+
+              y                    Positive slope (m > 0):
+              │          /         line goes UP from left to right
+              │        /
+              │      / ← rise = 2
+              │    /───┘
+              │  / run = 1        slope = rise/run = 2/1 = 2
+              └──────────── x
+
+              y                    Negative slope (m < 0):
+              │ \                  line goes DOWN from left to right
+              │   \
+              │     \ ← fall = 3
+              │       \──┘
+              │         \ run = 1  slope = −3/1 = −3
+              └──────────── x
+
+              y                    Zero slope (m = 0):
+              │ ─────────          horizontal line (y = constant)
+              └──────────── x
+            description: "Visual illustration of positive, negative, and zero slopes"
+        example_problems:
+          - problem: "Draw the graph of y = 2x + 1 and find x when y = 7."
+            answer: "x = 3"
+            solution_steps:
+              - "Make a table: x=0→y=1, x=1→y=3, x=2→y=5, x=3→y=7"
+              - "Plot and connect points — straight line"
+              - "When y=7: 7 = 2x+1 → 2x=6 → x=3"
+            difficulty: 2
+            indian_context: "Line graphs are used in charts showing India's GDP, temperature, or rainfall."
+          - problem: "The temperature of a city at different times was: 6AM=18°C, 9AM=22°C, 12PM=28°C, 3PM=30°C, 6PM=24°C, 9PM=20°C. At what time was the temperature highest? What is the rise from 6AM to 12PM?"
+            answer: "Highest at 3PM (30°C). Rise from 6AM to 12PM = 10°C."
+            solution_steps:
+              - "Plot the points: (6AM, 18), (9AM, 22), (12PM, 28), (3PM, 30), (6PM, 24), (9PM, 20)"
+              - "Connect with straight lines to form a line graph"
+              - "The highest point is at 3PM with 30°C"
+              - "Rise from 6AM to 12PM = 28 − 18 = 10°C"
+            difficulty: 2
+            indian_context: "Temperature data from Indian cities is regularly plotted in Geography and Science classes."
+
+  # ============================================================
+  # Chapter 24: Pie Charts
+  # Exercises: 24 (CCE Test Paper)
+  # ============================================================
+  - id: ch24
+    title: "Pie Charts"
+    textbook_chapter: 24
+    topics:
+      - id: ch24_t01
+        title: "Drawing and Interpreting Pie Charts"
+        learning_objectives:
+          - "Convert data to central angles for a pie chart"
+          - "Draw a pie chart for given data"
+          - "Read and interpret pie charts"
+          - "Find values from a pie chart given total"
+        prerequisites: ["ch09_t01"]
+        difficulty_range: [2, 4]
+        common_misconceptions:
+          - "Larger area sectors always have more value (TRUE — but only if the circle is the same size)"
+          - "All sectors must be equal in a pie chart (WRONG — sectors are proportional to data values)"
+        key_formulas:
+          - "Central angle for a category = (Category value / Total value) × 360°"
+          - "Percentage of category = (Category value / Total value) × 100"
+          - "Value from angle = (Angle / 360°) × Total"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              Pie Chart Sectors:
+
+              A pie chart is a circle (360°) divided into sectors.
+
+                    Food (90°)
+                   ╱    ╲
+                  ╱      ╲
+                 ╱  Food  ╲
+                │  ₹3000   │── Rent (135°)
+                │          │   ₹4500
+                 ╲Savings ╱
+                  ╲₹3000 ╱── Clothing (45°)
+                   ╲    ╱    ₹1500
+                    ╲  ╱
+                  Savings (90°)
+
+              Calculation:
+              Total = ₹12000
+              Food:     (3000/12000) × 360° = 90°
+              Rent:     (4500/12000) × 360° = 135°
+              Clothing: (1500/12000) × 360° = 45°
+              Savings:  (3000/12000) × 360° = 90°
+              Check: 90+135+45+90 = 360° ✓
+            description: "Pie chart showing sectors with angles and values"
+        example_problems:
+          - problem: "Monthly budget: Food ₹3000, Rent ₹4500, Clothing ₹1500, Savings ₹3000. Find angle for rent in pie chart."
+            answer: "135°"
+            solution_steps:
+              - "Total = 3000 + 4500 + 1500 + 3000 = ₹12000"
+              - "Angle for Rent = (4500/12000) × 360°"
+              - "= (3/8) × 360° = 135°"
+            difficulty: 2
+            indian_context: "Family budget planning is taught using pie charts in Indian schools."
+          - problem: "In a pie chart, the sector for 'Sports' has a central angle of 72°. If the total number of students is 500, how many chose Sports?"
+            answer: "100 students"
+            solution_steps:
+              - "Value from angle = (Angle / 360°) × Total"
+              - "= (72 / 360) × 500"
+              - "= (1/5) × 500"
+              - "= 100 students"
+            difficulty: 2
+            indian_context: "Surveys about favourite sports (cricket, kabaddi, badminton) are commonly shown as pie charts in Indian schools."
+
+  # ============================================================
+  # Chapter 25: Probability
+  # Exercises: 25 (CCE Test Paper)
+  # ============================================================
+  - id: ch25
+    title: "Probability"
+    textbook_chapter: 25
+    topics:
+      - id: ch25_t01
+        title: "Basic Probability"
+        learning_objectives:
+          - "Understand experiment, outcome, sample space, and event"
+          - "Calculate probability of simple events"
+          - "Recognise that probability lies between 0 and 1"
+          - "Find probability of complementary events"
+        prerequisites: ["ch01_t02"]  # Requires rational number operations (fractions); independent of data handling
+        difficulty_range: [1, 4]
+        common_misconceptions:
+          - "Probability can be greater than 1 (WRONG — 0 ≤ P(E) ≤ 1 always)"
+          - "If P(A) = 0.3, then P(not A) = 0.3 (WRONG — P(not A) = 1 − 0.3 = 0.7)"
+          - "Getting heads 5 times in a row means tails is 'due' next (each toss is independent)"
+        key_formulas:
+          - "P(E) = Number of favourable outcomes / Total number of equally likely outcomes"
+          - "0 ≤ P(E) ≤ 1"
+          - "P(certain event) = 1"
+          - "P(impossible event) = 0"
+          - "P(not E) = 1 − P(E)"
+          - "P(E) + P(not E) = 1"
+        visual_aids:
+          - type: "ascii_diagram"
+            content: |
+              A standard die: outcomes = {1, 2, 3, 4, 5, 6}
+              P(even) = 3/6 = 1/2
+              P(prime) = P(2,3,5) = 3/6 = 1/2
+              P(>4) = P(5,6) = 2/6 = 1/3
+              P(7) = 0 (impossible)
+              P(≤6) = 1 (certain)
+            description: "Sample space and events for a standard die"
+        example_problems:
+          - problem: "A bag has 5 red, 3 blue, 2 green balls. What is P(blue ball is picked)?"
+            answer: "3/10"
+            solution_steps:
+              - "Total balls = 5 + 3 + 2 = 10"
+              - "Favourable outcomes (blue) = 3"
+              - "P(blue) = 3/10"
+            difficulty: 1
+            indian_context: "Lucky draws and lucky dips at school fairs use probability."
+          - problem: "Two coins are tossed. Find P(at least one head)."
+            answer: "3/4"
+            solution_steps:
+              - "Sample space: {HH, HT, TH, TT} — 4 outcomes"
+              - "At least one head: {HH, HT, TH} — 3 outcomes"
+              - "P(at least one head) = 3/4"
+              - "Alternative: P(at least one head) = 1 − P(no head) = 1 − 1/4 = 3/4"
+            difficulty: 3
+            indian_context: "Probability of rain, exam questions having certain topics — useful in daily reasoning."
+          - problem: "A card is drawn at random from a well-shuffled deck of 52 cards. Find the probability of getting a king."
+            answer: "1/13"
+            solution_steps:
+              - "Total cards in a deck = 52"
+              - "Number of kings = 4 (one in each suit: spades, hearts, diamonds, clubs)"
+              - "P(king) = 4/52 = 1/13"
+            difficulty: 2
+            indian_context: "Card games like teen patti are popular in India — understanding card probabilities adds a mathematical angle."
+          - problem: "Two dice are thrown together. Find the probability that the sum of numbers on both dice is 8."
+            answer: "5/36"
+            solution_steps:
+              - "Total outcomes when two dice are thrown = 6 × 6 = 36"
+              - "Favourable outcomes (sum = 8): (2,6), (3,5), (4,4), (5,3), (6,2)"
+              - "Number of favourable outcomes = 5"
+              - "P(sum = 8) = 5/36"
+            difficulty: 3
+            indian_context: "Dice-based board games like Ludo are played widely in Indian households — probability helps predict outcomes."
